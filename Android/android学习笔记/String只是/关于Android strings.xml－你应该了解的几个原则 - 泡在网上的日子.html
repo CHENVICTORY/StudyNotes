@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0303/7179.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/shares.php" charset="utf-8"></script><script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/ca-pub-8583773779396897.js.下载"></script><script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/id.php" charset="utf-8"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子</title>
+<meta name="keywords" content="Android,strings.xml,amp,#8202,">
+<meta name="description" content="不同的页面不要重用一个string，同一页面的string用前缀和注释分离，使用 Resources#getString(int id, Object… formatArgs) 来格式化 strings，使用 Resources#getQuantityString (int id, int quantity) 来处理复数">
+<link href="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/new.css" rel="stylesheet" type="text/css">
+<script language="javascript" type="text/javascript" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/jquery-1.7.1.min.js.下载"></script>
+<link href="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/tranquil-heart.min.css" rel="stylesheet">
+<script language="javascript" type="text/javascript" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/myajax.js.下载"></script>
+<script language="javascript" type="text/javascript">
+	function CheckLogin(){
+	    var taget_obj = document.getElementById('login_info');
+	    myajax = new MyAjax(taget_obj,false,false,'','','');
+	    myajax.SendGet2("/member/ajax_loginsta.php");
+	    DedeXHTTP = null;
+	}
+	function checkSubmit(){
+		if(document.feedback.msg.value!='') document.feedback.submit();
+		else alert("评论内容不能为空！");
+	}		
+
+	function postBadGood(ftype,fid)
+	{
+		var taget_obj = document.getElementById(ftype+fid);
+		var saveid = GetCookie('badgoodid');
+		if(saveid != null)
+		{
+			var saveids = saveid.split(',');
+			var hasid = false;
+			saveid = '';
+			j = 1;
+			for(i=saveids.length-1;i>=0;i--)
+			{
+				if(saveids[i]==fid && hasid) continue;
+				else {
+					if(saveids[i]==fid && !hasid) hasid = true;
+					saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+					j++;
+					if(j==10 && hasid) break;
+					if(j==9 && !hasid) break;
+				}
+			}
+			if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+			else saveid += ','+fid;
+			SetCookie('badgoodid',saveid,1);
+		}
+		else
+		{
+			SetCookie('badgoodid',fid,1);
+		}
+		myajax = new MyAjax(taget_obj,false,false,'','','');
+		myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	}
+	function postStow(aid)
+	{
+		var taget_obj = document.getElementById('newdigg');
+ 
+		myajax = new MyAjax(taget_obj,false,false,'','','');
+		myajax.SendGet2("/plus/stow.php?aid="+aid);
+	}
+	function postDigg(ftype,aid)
+	{
+		var taget_obj = document.getElementById('newdigg');
+		var saveid = GetCookie('diggid');
+		if(saveid != null)
+		{
+			var saveids = saveid.split(',');
+			var hasid = false;
+			saveid = '';
+			j = 1;
+			for(i=saveids.length-1;i>=0;i--)
+			{
+				if(saveids[i]==aid && hasid) continue;
+				else {
+					if(saveids[i]==aid && !hasid) hasid = true;
+					saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+					j++;
+					if(j==20 && hasid) break;
+					if(j==19 && !hasid) break;
+				}
+			}
+			if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+			else saveid += ','+aid;
+			SetCookie('diggid',saveid,1);
+		}
+		else
+		{
+			SetCookie('diggid',aid,1);
+		}
+		myajax = new MyAjax(taget_obj,false,false,'','','');
+		var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+		myajax.SendGet2(url);
+	}
+	function getDigg(aid)
+	{
+		var taget_obj = document.getElementById('newdigg');
+		myajax = new MyAjax(taget_obj,false,false,'','','');
+		myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+		DedeXHTTP = null;
+	} 
+	function getcollectionuser(aid)
+	{
+		var taget_obj = document.getElementById('collection-users-list');
+		myajax = new MyAjax(taget_obj,false,false,'','','');
+		myajax.SendGet2("/plus/collection_user_ajax.php?id="+aid);
+		DedeXHTTP = null;
+	} 	
+	jQuery(document).ready(function($) {
+		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+	    prettyPrint();
+	
+	    //注意最后的@me必须要加两重引号，不然js语法会出错
+	    var htmlstr =  '';
+	    $(".arc_body").prepend(htmlstr); 
+	});
+			
+</script>
+
+</head>
+<body><link href="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/jiathis_counter.css" rel="stylesheet" type="text/css"><link href="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/jiathis_share.css" rel="stylesheet" type="text/css"><iframe frameborder="0" style="position: absolute; display: none; opacity: 0;" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/saved_resource.html"></iframe><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; top: 50%; left: 50%; overflow: auto;"></div><div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; overflow: auto;"></div><iframe frameborder="0" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/jiathis_utility.html" style="display: none;"></iframe>
+
+<div class="header">  
+	<div class="headercon container clearfix">
+        <div class="row">
+            <div class="col-md-12">
+            	<!-- 导航部分 -->
+                <a class="logo-t" href="http://www.jcodecraeer.com/"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/logo.png">泡在网上的日子</a>
+                <ul class="nav-ul">
+                	<li id="nav-index"><a href="http://www.jcodecraeer.com/">首页</a></li>
+                    <li id="nav-code"><a href="http://www.jcodecraeer.com/plus/list.php?tid=31">代码</a></li>
+                    <li id="nav-feed"><a class="" href="http://www.jcodecraeer.com/plus/freelist.php?lid=12">话题</a></li>
+                    <li id="nav-ask"><a class="" href="http://www.jcodecraeer.com/ask">问答</a></li>
+                    <li id="nav-tag"><a href="http://www.jcodecraeer.com/tags.php" class="trigger">标签</a></li>
+                    <li><a href="http://www.jcodecraeer.com/about.html" class="">关于</a></li>
+                </ul>
+                <!-- 导航部分 end -->
+                
+                <!-- 搜索-下拉 -->
+                <div class="header_right">
+                	<div class="search_start">
+                         <div class="search_cont">
+                            <form action="http://www.jcodecraeer.com/plus/search.php" method="get">
+                            	<input type="hidden" name="kwtype" value="0">
+                                <input type="text" name="q" class="in_search" autocomplete="off" value="搜索">
+                                <input type="submit" class="in_submit">
+        						<span class="glyphicon glyphicon-search icon-search"></span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- 消息下拉 -->
+                    <div class="header_right_msg z">  
+                        <!-- 登录 -->
+                        <div class="right_login" id="login_info">
+                            <a class="l" href="http://www.jcodecraeer.com/member/login.php">登录</a>
+                            <a href="http://www.jcodecraeer.com/member/reg_new.php">注册</a>
+                        </div>
+                        <!-- 登录 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript">CheckLogin();</script>
+<script language="javascript" type="text/javascript">
+  $(function(){
+	
+	$(".in_search").click(function(){
+		$(".search_cont").addClass('ser').animate({
+			width:200,
+		},200);
+		if($(this).val() == '搜索'){
+			$(".in_search").val('');
+		}
+	})
+	$(".in_search").blur(function(){
+		if($(this).val() !== ''){
+			return false;
+		}
+		$(".search_cont").removeClass('ser').animate({
+			width:90,
+		},200);
+		$(".in_search").val('搜索');
+	});
+	
+});
+</script>
+
+
+<div class="container main">
+	<div class="row">		
+		<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/fuckblok.php" language="javascript"></script><script async="" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/adsbygoogle.js.下载"></script>
+<!-- 超大横幅 -->
+<ins class="adsbygoogle" style="display:inline-block;width:970px;height:250px" data-ad-client="ca-pub-8583773779396897" data-ad-slot="3361054319" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent"><iframe width="970" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	</div>
+	<div class="row">	
+        <div class="col-md-9">
+			<div class="arc_position">
+				  <a href="http://www.jcodecraeer.com/">首页</a>&nbsp;&#8250;&nbsp;<a href="http://www.jcodecraeer.com/plus/list.php?tid=16">安卓开发</a>&nbsp;&#8250;&nbsp;<a href="http://www.jcodecraeer.com/plus/list.php?tid=18">android开发</a>
+			</div>	
+					
+            <div class="articlecon clearfix">
+				<h1 class="title">关于Android strings.xml－你应该了解的几个原则</h1>
+			
+				<div class="subinfo clearfix">              
+					<span>泡在网上的日子 / 文</span>
+					<span> 发表于2017-03-03 02:42</span>   
+					<span>第<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/count.php" type="text/javascript" language="javascript"></script>713次阅读
+					</span>
+					<span class="tags" id="arc_tags">                            
+						<a href="http://www.jcodecraeer.com/tags.php?/%C3%FC%C3%FB/" class="tag">命名</a>,<a href="http://www.jcodecraeer.com/tags.php?/string/" class="tag">string</a>
+					 </span>
+					<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/is_admin.php" type="text/javascript" language="javascript"> </script>  
+				</div>
+				<!-- JiaThis Button BEGIN -->
+				<div class="jiathis_style" style=" height:30px; width:180px; margin:auto;text-align:center;">
+					<a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+					<a class="jiathis_button_tsina" title="分享到微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+					<a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+					<a class="jiathis_button_weixin" title="分享到微信"><span class="jiathis_txt jtico jtico_weixin"></span></a>
+					<a class="jiathis_button_renren" title="分享到人人网"><span class="jiathis_txt jtico jtico_renren"></span></a>
+					<a class="jiathis_button_xiaoyou" title="分享到朋友网"><span class="jiathis_txt jtico jtico_xiaoyou"></span></a>
+					<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+					<a class="jiathis_counter_style"><span class="jiathis_button_expanded jiathis_counter jiathis_bubble_style" id="jiathis_counter_22" title="累计分享0次">0</span></a>
+				</div>
+				<script type="text/javascript" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/jia.js.下载" charset="utf-8"></script><script type="text/javascript" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/plugin.client.js.下载" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+             
+				<div class="arc_body"> 
+					 <p style="margin-top:10px">
+						<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/fuckblok(1).php" language="javascript"></script><strong>编辑推荐：</strong><a href="http://gold.xitu.io/">稀土掘金</a>，这是一个针对技术开发者的一个应用，你可以在掘金上获取最新最优质的技术干货，不仅仅是Android知识、前端、后端以至于产品和设计都有涉猎，想成为全栈工程师的朋友不要错过！
+					</p>
+					 <style> .runtimead{  text-align:center ;}</style>
+<p>英文原文：<a href="https://medium.com/google-developer-experts/android-strings-xml-things-to-remember-c155025bb8bb#.9kubvdgny" target="_self" textvalue="Android strings.xml&#8202;—&#8202;things to remember">Android strings.xml&#8202;—&#8202;things to remember</a>。&nbsp;</p><h3 name="e926" id="e926">不要试图重用</h3><blockquote name="3ce1" id="3ce1">不同的页面不要重用一个string。</blockquote><ol class=" list-paddingleft-2" style="list-style-type: decimal;"><li><p name="9794" id="9794">假设你的登录和注册页面都有一个加载对话框。因为都有加载界面所以你决定使用同一个string－R.string.loading。<br></p></li></ol><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479346130743.png" title="1488479346130743.png" alt="1-JS87DDYrThImLteYAXtFhQ.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p> <p class="runtimead"><script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/fuckblok(2).php" language="javascript"></script></p>  <p>但是说不定什么时候你使用不同的string了，这时你就需要重新创建两个新的string，而且还要修改java代码。如果一开始你就使用两个string的话，你需要修改的就只有strings.xml文件。</p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479458237879.png" title="1488479458237879.png" alt="1-36F3gYBBrh0Df8BjfSUW-g.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p><p>2. 你永远不知道你的应用要支持哪些语言。在某一种语言中－或许你可以在不同的上下文中使用同一个词语，但是在另一种语言中很可能不同的上下文需要不同的词语。</p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479501910896.png" title="1488479501910896.png" alt="1-gyimVk1AvhWWQ6LF4vxL7A.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479533113866.png" title="1488479533113866.png" alt="1-hG4uYDhTEIHOyVeU0lRqXw.png"></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values-UA/strings.xml</span></span></p><p name="8b2f" id="8b2f">注意这里英语版本的strings.xml中，R.string.download_file_yes&nbsp;和 R.string.terms_of_use_yes两个string都是同一个单词－&#8202;“Yes”。</p><p name="5619" id="5619">但是在乌克兰语版本中R.string.download_file_yes用的是&#8202;“Гаразд”，而&nbsp;R.string.terms_of_use_yes用的是“Так”。</p><h3 name="f92b" id="f92b">分离</h3><blockquote name="3faf" id="3faf">同一页面的string用前缀和注释分离</blockquote><figure name="0fc2" id="0fc2" class="graf graf--figure graf-after--blockquote" style="margin: 43px 0px 0px; position: relative; clear: both; outline: 0px; box-sizing: border-box; user-select: auto; z-index: 100; color: rgba(0, 0, 0, 0.8); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255);"><figcaption class="imageCaption" style="position: relative; left: 0px; width: 700px; top: 0px; margin-top: 10px; color: rgba(0, 0, 0, 0.6); outline: 0px; text-align: center; z-index: 300; --baseline-multiplier:0.157; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-feature-settings: &#39;liga&#39; 1, &#39;lnum&#39; 1; font-size: 14px; line-height: 1.4; letter-spacing: 0px;"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479618108491.png" title="1488479618108491.png" alt="1-i24UBT-ET2iv6Q9UUakC1Q.png"></figcaption><figcaption class="imageCaption" style="position: relative; left: 0px; width: 700px; top: 0px; margin-top: 10px; color: rgba(0, 0, 0, 0.6); outline: 0px; text-align: center; z-index: 300; --baseline-multiplier:0.157; font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-feature-settings: &#39;liga&#39; 1, &#39;lnum&#39; 1; font-size: 14px; line-height: 1.4; letter-spacing: 0px;">res/values/strings.xml</figcaption></figure><ol class="postList list-paddingleft-2" style="list-style-type: none;"><li><p>为每个string添加页面前缀，帮助你立即识别出一个string属于哪个页面。</p></li><li><p>干净的strings.xml文件可以帮助你轻松维护与翻译成不同的语言－一个一个页面的来。</p></li></ol><blockquote name="bd21" id="bd21">为每个页面创建单独的<span style="font-size: 14px; background-color: rgb(245, 245, 245);">strings.xml 文件</span></blockquote><p name="83e4" id="83e4">如果你想为每个页面创建一个&nbsp;strings.xml文件，可以这样命名：settings-strings.xml,&nbsp;profile-strings.xml。但是一个app通常有10到20个页面。所以每一个语言目录下都会有10到20个strings.xml文件，个人认为这带来的是混乱。</p><h3 name="0a35" id="0a35">Format格式化</h3><blockquote name="d215" id="d215">使用 Resources#getString(int id, Object… formatArgs) 来格式化 strings</blockquote><p name="de7d" id="de7d">永远不要使用＋号来拼接字符串，因为不同的语言语序是不同的。</p><p name="de7d" id="de7d"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479654409361.png" title="1488479654409361.png" alt="1-CY9aQc_Zg8q0Q17_y20MyA.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span><br></p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479686612772.png" title="1488479686612772.png" alt="1-CMnyPXvHDND8RAFBfceSMQ.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; letter-spacing: 0px; text-align: center; background-color: rgb(255, 255, 255);">java code</span></p><p name="7753" id="7753">正确的方式是使用<a href="https://developer.android.com/reference/android/content/res/Resources.html#getString%28int,%20java.lang.Object...%29" data-href="https://developer.android.com/reference/android/content/res/Resources.html#getString%28int,%20java.lang.Object...%29" rel="nofollow noopener" target="_blank" style="white-space: normal;">Resources#getString(int id, Object… formatArgs)</a>。</p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479732597410.png" title="1488479732597410.png" alt="1-DSiEeB9gWTwCOJyxzUqMyA.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479780955004.png" title="1488479780955004.png" alt="1-YFqXBcP_XDswNZwFeXmYOw.png"></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values-UA/strings.xml</span></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479835873932.png" title="1488479835873932.png" alt="1-YXwYDDkBkDmopx47uJtR6w.png"></span></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">java code</span></span></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"></span></span></p><h3 name="39db" id="39db">复数</h3><blockquote name="ada0" id="ada0">使用 Resources#getQuantityString (int id, int quantity) 来处理复数</blockquote><p name="b933" id="b933">永远不要在java代码中解决复数问题，因为不同语言中复数的语法规则是不同的。</p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479920451833.png" title="1488479920451833.png" alt="1-4NH4qsPMMSQ70QV8zvOH-A.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479958883571.png" title="1488479958883571.png" alt="1-WxoCPGta9uGTIoxfmXg3pA.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; letter-spacing: 0px; text-align: center; background-color: rgb(255, 255, 255);">java code</span></p><p name="7c88" id="7c88">正确的方式是使用<a href="https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString%28int,%20int%29" data-href="https://developer.android.com/reference/android/content/res/Resources.html#getQuantityString%28int,%20int%29" rel="nofollow noopener noopener" target="_blank" style="white-space: normal;">Resources#getQuantityString (int id, int quantity</a>)。</p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488479996907411.png" title="1488479996907411.png" alt="1-_KVd1Fhu4xUIy9cAdL7Acw.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488480028761963.png" title="1488480028761963.png" alt="1-jaGAm1mVsrKUCYH0LBN-_A.png"></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">注：关于<span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">getQuantityString方法请看：<a href="http://blog.csdn.net/a78270528/article/details/46791533" target="_self" textvalue="Android Quantity Strings 的 getQuantityString方法取值问题">Android Quantity Strings 的 getQuantityString方法取值问题</a>&nbsp;</span></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">java code</span></span></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);"></span></p><h3 name="ead4" id="ead4">词语高亮显示</h3><blockquote name="57e9" id="57e9">使用<span style="font-size: 14px; background-color: rgb(245, 245, 245);">html文本来高亮静态词语</span></blockquote><p name="4059" id="4059">如果你想改变TextView中的某些单词的颜色－&#8202;<a href="https://developer.android.com/reference/android/text/style/ForegroundColorSpan.html" data-href="https://developer.android.com/reference/android/text/style/ForegroundColorSpan.html" rel="nofollow noopener" target="_blank" style="white-space: normal;">ForegroundColorSpan</a>并不总是最佳选择，因为它的高亮是通过索引来完成的，而且在多语言下不安全。最好在&nbsp;strings.xml文件中使用html的font color标签。</p><p name="4881" id="4881">假设你有一个“Discover and play games.” 的文本。你想让单词&nbsp;“Discover” 和 “play” 显示成蓝色。</p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488480072628737.png" title="1488480072628737.png" alt="1--v6s0KtpNaszxun2wITpoQ.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">res/values/strings.xml</span></p><p><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/1488480097109718.png" title="1488480097109718.png" alt="1-jWwEWf0E9GFE6_hos9zWzw.png"></p><p><span style="color: rgba(0, 0, 0, 0.6); font-family: medium-content-sans-serif-font, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Geneva, Arial, sans-serif; font-size: 14px; text-align: center; background-color: rgb(255, 255, 255);">java code</span></p><blockquote><p>注：其实本文的很多观点和<a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2016/1104/6745.html" target="_self" textvalue="这篇文章">这篇文章</a>&nbsp;不谋而合。</p></blockquote>
+				</div>
+			 
+				<div class="pageActive clearfix" id="newdigg"><a href="javascript:void(0)" class="pageActive-item" onclick="postStow(7179)"><span><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/collection.png"></span>收藏(3)</a>
+			<a href="javascript:void(0)" class="pageActive-item" onclick="postDigg(&#39;good&#39;,7179)"> <span><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/approve.png"></span>赞(5)</a>
+			<a href="javascript:void(0)" class="pageActive-item" onclick="postDigg(&#39;bad&#39;,7179)"> <span><img src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/disapprove.png"></span>踩(0)</a>
+          							
+				</div>				
+				<div id="collection-users-list" class="mgt60"><div class="sub-title">他们收藏了这篇文章</div><ul class="users-list clearfix"><li class="users-list-item"><a href="http://www.jcodecraeer.com/member/index.php?uid=%B8%FA%D7%C5%B4%F3%C9%F1%D1%A7%BF%AA%B7%A2"> <img class="avatar" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/myface.png">  </a></li><li class="users-list-item"><a href="http://www.jcodecraeer.com/member/index.php?uid=yjz850314"> <img class="avatar" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/index.php">  </a></li><li class="users-list-item"><a href="http://www.jcodecraeer.com/member/index.php?uid=android%D0%A1%C3%CF"> <img class="avatar" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/myface.jpg">  </a></li></ul>
+				</div>			
+				<div class="related_arc">
+					<div class="sub-title">相关文章</div>
+					<div class="rearc_list clearfix">
+						<ul>   
+						<li>
+							 <a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2016/1104/6745.html" target="_blank">一种富有成效的资源文件命名规则</a>  <span class="pull-right"> 2016-11-04 </span></li>
+<li>
+							 <a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0303/7180.html" target="_blank"> Android Quantity Strings 的 getQuantityString方法取值问题</a>  <span class="pull-right"> 2017-03-03 </span></li>
+
+						    
+						</ul>
+			   
+					</div>  						
+				</div>	
+				<ul>				 
+					<li style="margin-top:10px"><script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/fuckblok(3).php" language="javascript"></script></li>			
+				</ul>										
+            </div>				
+             
+            <div style="width:680px;"></div> 
+			<div class="pre_next">
+            	<div class="row"> 
+                	 <div class="col-md-6">
+					<div class="div_button">上一篇：<a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0228/7174.html">使用FlexboxLayout构建灵活的布局</a> <div>去年的Google I/O大会上我们宣布了 ConstraintLayout , 一个用简单的视图结构就能构建复杂布局的控件。另外，它还完全支持Android Studio的 可视化布局编辑器 。 At the same time, we open sourced FlexboxLayout to bring the same functionalities of the</div></div>
+					</div>
+					 <div class="col-md-6">
+					<div class="div_button">下一篇：<a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0303/7180.html"> Android Quantity Strings 的 getQuantityString方法取值问题</a> <div>不同的语言对数量的语法规定有不同的规则。在英语里面，例如，1是特例。我们会直接写1book，而针对一个以上的我们会在book后加复数形式。这种区别对单数和复数来说是很普遍的。对 Android 来说，它支持zero,one,two,few,many,和other。 对一个给定的语言和数</div></div>
+					</div>
+                </div>
+            </div>
+            <div class="dede_comment_post">
+				
+<div class="comments_body">
+	<form action="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2017/0303/7179.html#" method="post" name="feedback" onsubmit="return false;">
+		<input type="hidden" name="dopost" value="send">
+		<input type="hidden" name="comtype" value="comments">
+		<input type="hidden" name="arcauthor" value="1 ">
+		<input type="hidden" name="aid" value="7179">
+		<input type="hidden" name="fid" id="feedbackfid" value="0">
+		<div class="post_box clearfix">
+            <textarea cols="60" name="msg" id="cm_content" rows="5" class="ipt-txt"></textarea>	
+            <div class="post_act">
+            	<button type="button clearfix" onclick="PostComment()">发表评论</button>
+            </div>
+		</div>
+		
+		
+    </form>	
+</div>
+
+
+<!-- //评论表单区结束 -->
+<!-- //评论内容区 -->
+<a name="commettop"></a>
+
+<div id="commetcontentNew">
+
+</div>
+<div id="commetcontent"></div>
+<!--
+//由于评论载入时使用异步传输，因此必须在最后一步加载（DIGG和评论框须放在评论内容前面）
+//如果一定需要提前的把myajax.SendGet改为myajax.SendGet2，但可能会引起页面阻滞
+-->
+<script language="javascript">
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new MyAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax.php?dopost=getlist&aid=7179&page="+page);
+		DedeXHTTP = null;
+}
+function updatetag(){
+	var tags = $DE("tags").value;
+	var nfeedbacktype = 'feedback';
+	var taget_obj = $DE('tag_response');
+	var myajax = new MyAjax(taget_obj, false, true, '', '', "...");
+	myajax.sendlang = 'gb2312';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('id', '7179');
+	myajax.AddKeyN('tags', tags);
+	myajax.SendPost2('/action/update_tags.php');	
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var msg = $DE("cm_content").value;
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(msg=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(msg.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		/*
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		*/
+
+		
+		var myajax = new MyAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '7179');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', msg);
+		myajax.AddKeyN('arcauthor', f.arcauthor.value);
+
+		myajax.SendPost2('/plus/feedback_ajax.php');
+		//msg = '';
+		CKEDITOR.instances.msg.setData('');
+		//taget_obj.removeAttribute('id');
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+}
+function quoteCommet(fid)
+{
+	    document.feedback.fid.value = fid;
+}
+  
+function ajaxFeedback(aid, fid, type)
+{
+	var taget_obj = $DE('ajaxfeedback_'+fid);
+	if(taget_obj.innerHTML == '')
+	{
+		var myajax = new MyAjax(taget_obj, true, true, '', 'x');
+		myajax.SendGet2("/plus/feedback.php?aid="+aid+"&fid="+fid+"&action=quote&type=ajax");
+		eval('var result = typeof CKEDITOR.instances.msg_'+fid);
+		if(result != 'undefined')
+		{
+			// 删除实例
+			eval('var edit = CKEDITOR.instances.msg_'+fid);
+			CKEDITOR.remove(edit);
+		}
+		CKEDITOR.replace(document.getElementById('msg_'+fid) , CKEDITOR.instances.msg.config);
+		scroll(0, taget_obj.offsetTop - 120);
+		var formname = 'f = document.ajaxfeedback_'+fid;
+		eval(formname);
+		if(f.validate)
+		{
+			if($DE('vdimg_'+fid)) $DE('vdimg_'+fid).src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+		DedeXHTTP = null;
+	}else{
+		taget_obj.innerHTML = '';
+	}
+}
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new MyAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+
+function ajaxQuotePost(fid)
+{
+	var formname = 'f = document.ajaxfeedback_'+fid;
+	eval(formname);
+	//var f = document.formname;
+	//var f = f[0];
+	var nvalidate = '';
+	var nnotuser = '';
+	var nusername = '';
+	var npwd = '';
+	var taget_obj = $DE('commetcontentNew');
+	var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+	eval('var msg = $DE("msg_'+fid+'").value');
+	if(f.validate)
+	{
+		if(f.validate.value=='') {
+			alert("请填写验证码！");
+			return;
+		}
+		else {
+			nvalidate = f.validate.value;
+		}
+	}
+	var myajax = new MyAjax(taget_obj, false, true, '', '', waithtml);
+	
+
+	
+	myajax.sendlang = 'gb2312';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('aid', '7179');
+	myajax.AddKeyN('fid', f.fid.value);
+	myajax.AddKeyN('type', 'ajax');
+	myajax.AddKeyN('comtype', f.comtype.value);
+	myajax.AddKeyN('isconfirm','yes');
+	
+	myajax.AddKeyN('typeid', f.typeid.value);
+	myajax.AddKeyN('quotemsg', f.quotemsg.value);
+	myajax.AddKeyN('validate', nvalidate);
+	myajax.AddKeyN('notuser', nnotuser);
+	myajax.AddKeyN('username', nusername);
+	myajax.AddKeyN('pwd', npwd);
+	myajax.AddKeyN('msg', msg);
+	myajax.SendPost2('/plus/feedback_ajax.php');
+	//alert(f.quotemsg.value);
+	if($DE('ajaxfeedback_'+fid).innerHTML != null)
+	{
+		$DE('ajaxfeedback_'+fid).innerHTML = '';
+	}
+	scroll(0, taget_obj.offsetTop);
+}
+LoadCommets(1);
+</script>
+<!-- //评论内容区结束 -->
+
+ 			</div>  
+ 
+                                   
+        </div>  
+        <!-- end  of  content -->
+
+        <div class="col-md-3">  
+ 
+			<div class="sub-title">推荐文章</div>
+			<ul class="sidearticle_c clearfix">                     
+				<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0730/3243.html" target="_blank">SortableTableView文档翻译：一个可排序的表格控件</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/1120/3705.html" target="_blank"> RecyclerView添加Header的正确方式</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0201/2394.html" target="_blank">深入理解共享元素变换（Shared Element Transition）-上</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2016/0121/3898.html" target="_blank">Android 用Canvas 画几何图形，画出小黄人</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0823/3353.html" target="_blank">Glide 一个专注于平滑滚动的图片加载和缓存库</a></li>
+<li><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0825/3364.html" target="_blank">RecyclerView 列表控件中简单实现时间线</a></li>
+
+			</ul>				 
+		            
+
+			<div class="sub-title">赞助商</div>
+			 
+                                                               
+            <div style="height: 255px;"></div><div id="floatbox" style="top: 0px; position: fixed; width: 263px;">  
+				<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/fuckblok(4).php" language="javascript"></script><script async="" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/adsbygoogle.js.下载"></script>
+<!-- 250x250 -->
+<ins class="adsbygoogle" style="display:inline-block;width:250px;height:250px" data-ad-client="ca-pub-8583773779396897" data-ad-slot="3660827512" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:250px;background-color:transparent"><iframe width="250" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>	
+         	</div>
+            
+        </div>        
+    
+        <div style="clear:both;"></div>
+	</div> 	
+</div> 
+<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/jcodecraeer.js.下载"></script>
+<!-- 返回顶部 -->
+<div id="gotop" style="display: block;"></div>
+
+<script type="text/javascript">
+	backTop=function (btnId){
+		var btn=document.getElementById(btnId);
+		var d=document.documentElement;
+		var b=document.body;
+		window.onscroll=set;
+		btn.onclick=function (){
+			btn.style.display="none";
+			window.onscroll=null;
+			this.timer=setInterval(function(){
+				d.scrollTop-=Math.ceil((d.scrollTop+b.scrollTop)*0.1);
+				b.scrollTop-=Math.ceil((d.scrollTop+b.scrollTop)*0.1);
+				if((d.scrollTop+b.scrollTop)==0) clearInterval(btn.timer,window.onscroll=set);
+			},10);
+		};
+		function set(){
+			btn.style.display=(d.scrollTop+b.scrollTop>100)?'block':"none";
+		}
+	};
+	backTop('gotop');
+	
+	(new SidebarFollow()).init({
+		element: jQuery('#floatbox'),
+		distanceToTop: 0
+	});	
+	
+</script>
+
+
+<!-- 返回顶部END -->
+<style>
+#gotop {
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAANAgMAAACP9jv8AAAACVBMVEX///////8AAACO9MPsAAAAAXRSTlMAQObYZgAAAGhJREFUeF49zsEJwCAMBdBvoRfvWaJTOEIPZp+O4lEyZcn/RIl+SMJDAG2gTlfc7+k8H8Pm6cRiuFfjip3RphXUV4ghJIaQjVZQoCfkLDI7C7kgiAuRDK+YvJwLQnBPhovRw7ER5of3DyPbFp8RB9axAAAAAElFTkSuQmCC") no-repeat scroll 18px 21px #000000;
+    bottom: 200px;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    opacity: 0.5;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in 0s, opacity 0.3s ease-out 0s;
+     right: 10px;
+    position: fixed;
+    top: auto;
+    width: 60px;
+    z-index: 999;
+}
+</style>
+<div class="footer">
+	<div class="container">	
+		<div class="row clearfix">
+			<div class="col-md-12">
+				<div class="copyright z">
+					<p>Copyright  2011 - 2016 jcodecraeer.com All Rights Reversed.</p>
+					<p>蜀ICP备12021840号-1</p>
+					<p>本站文章用于学习交流</p>
+				</div>
+				<div class="footer-nav y">	
+					<ul class="clearfix">
+						<li><a href="http://weibo.com/u/2711441293" target="_blank">新浪微博</a></li>
+						<li>qq群一161644793</li>
+						<li>qq群二98711210</li> 
+					</ul>
+					<ul class="clearfix">
+						<li><a href="http://www.jcodecraeer.com/sitemap/" target="_blank">网站地图</a></li>	
+						<li>				
+						<script type="text/javascript">
+						var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+						document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2f2ac530df20294f718580cea710780e' type='text/javascript'%3E%3C/script%3E"));
+						</script><script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/h.js.下载" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=2f2ac530df20294f718580cea710780e" target="_blank">网站统计</a> 
+						</li>	 
+					</ul>			
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<script src="./关于Android strings.xml－你应该了解的几个原则 - 泡在网上的日子_files/prettify.js.下载"></script>
+
+
+</body></html>

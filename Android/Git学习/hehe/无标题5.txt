@@ -1,0 +1,2092 @@
+﻿
+:494 android.content.ContextWrapper.startService:494 net.sunniwell.upgrade.receiver.SWAuthoritiedAUpgradeReceiver.onReceive:-1 android.app.ActivityThread.handleReceiver:2419 
+08-29 11:28:21.422 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2ce6d9a8 u0 net.sunniwell.upgrade/.ui.service.bootcompleted.SWStartService}
+08-29 11:28:21.439 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech: curren bootcompleted
+:494 net.sunniwell.upgrade.action.impl.SWUpgradeTaskManager.handleNextTask:-1 net.sunniwell.upgrade.action.impl.SWUpgradeTaskManager.handleMessage:-1 android.os.Handler.dispatchMessage:102 
+08-29 11:28:21.445 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2ce0c0e8 u0 net.sunniwell.upgrade/.ui.service.SWUsbUpgradeService}
+ld explicitly specify a context class loader. For example: Thread.setContextClassLoader(getClass().getClassLoader());
+08-29 11:28:21.447 D/SWUpgradeTaskManager(30431): resetParam:-1: upgradech: current taskmap.size()=1
+08-29 11:28:21.447 D/SWUpgradeTaskManager(30431): resetParam:-1: upgradech: current taskmap.size()=0
+08-29 11:28:21.447 D/SWUpgradeTaskManager(30431): resetParam:-1: upgradech: resetparam
+08-29 11:28:21.448 D/a       (30431): onReceive:-1: upgradech:ui:param is empty
+08-29 11:28:21.448 D/a       (30431): onReceive:-1: upgradech:ui: eth changed
+08-29 11:28:21.448 D/SWUpgradeTaskManager(30431): resetParam:-1: upgradech: prop changed
+08-29 11:28:21.448 D/ASWMediaDevice(30395): <init>:72: create deviceId 'ldmc://6' count=6
+08-29 11:28:21.449 D/a       (30431): onReceive:-1: upgradech:ui: state=10
+08-29 11:28:21.450 D/SWUpgradeApplication(30431): resetParam:-1: upgracech: there is no callback here to remove
+08-29 11:28:21.450 D/SWUpgradeTaskManager(30431): getNextTask:-1: upgradech: getNextTask 
+08-29 11:28:21.450 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech: prop changed
+08-29 11:28:21.451 D/a       (30431): b:-1: upgradech: mod:manual
+08-29 11:28:21.452 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech:sorry ,there is no task in the uriList
+08-29 11:28:21.452 D/a       (30431): b:-1: upgradech: type : 1
+08-29 11:28:21.455 D/SWAndroidRouter(30395): <init>:73: create SWAndroidRouter
+08-29 11:28:21.455 D/SWAndroidRouter(30395): enable:98: entry writeLock...
+08-29 11:28:21.456 D/a       (30431): a:-1: upgradech:ethernetEnabled=true
+08-29 11:28:21.457 I/EthernetService( 1984): get EthernetState: 1
+08-29 11:28:21.457 D/a       (30431): a:-1: upgradech:EthernetState=1
+08-29 11:28:21.458 D/NetUtils( 1984): the ethernet interface eth0 is Running
+08-29 11:28:21.459 D/a       (30431): a:-1: upgradech:LinkStatus=true
+08-29 11:28:21.459 D/NetUtils( 1984): the ethernet interface eth0 is Running
+08-29 11:28:21.460 D/a       (30431): a:-1: upgradech:EthernetMode=manual
+08-29 11:28:21.460 D/SWDLNAMediaControl(30395): <init>:151: SWMediaLog:   mProjectName = 8V9_IRAN
+08-29 11:28:21.461 D/a       (30431): a:-1: upgradech: eth is connected 
+08-29 11:28:21.466 I/SWMediaCenterManager(30395): openDLNA:316: create SWDLNAMediaControl success
+08-29 11:28:21.467 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:21.470 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:21.472 I/SWDLNAMediaControl(30395): run:506: heartbeat start    list.size:0
+08-29 11:28:21.474 D/SWDLNAMediaControl(30395): onStart:235: onStart
+ssage:292 
+08-29 11:28:21.476 D/SWDLNAMediaControl(30395): onStart:239: onStart
+08-29 11:28:21.481 D/SWAPKSQLiteOpenHelper(30445): onOpen:-1: check 'iptv' state true
+08-29 11:28:21.485 D/SWAPKSQLiteOpenHelper(30445): setParameter:-1: primary key 'iptv.browser.version' no need to update.
+08-29 11:28:21.487 D/SWAPKSQLiteOpenHelper(30445): setParameter:-1: primary key 'iptv.ijava_para_path' no need to update.
+08-29 11:28:21.491 D/SWIPTVApplication(30445): onCreate:-1: iptv on create.
+08-29 11:28:21.493 D/dalvikvm(30445): DexOpt: couldn't find field Landroid/content/pm/PackageInfo;.splitNames
+08-29 11:28:21.493 W/dalvikvm(30445): VFY: unable to resolve instance field 21
+08-29 11:28:21.494 D/dalvikvm(30445): VFY: replacing opcode 0x54 at 0x0011
+08-29 11:28:21.496 D/dalvikvm(30445): DexOpt: couldn't find field Landroid/content/pm/PackageInfo;.splitNames
+08-29 11:28:21.496 I/dalvikvm(30445): DexOpt: unable to optimize instance field ref 0x0015 at 0x16 in Lorg/chromium/base/library_loader/LibraryLoader;.getLibraryApkPath
+08-29 11:28:21.496 D/dalvikvm(30445): DexOpt: couldn't find field Landroid/content/pm/PackageInfo;.splitNames
+08-29 11:28:21.496 I/dalvikvm(30445): DexOpt: unable to optimize instance field ref 0x0015 at 0x1b in Lorg/chromium/base/library_loader/LibraryLoader;.getLibraryApkPath
+08-29 11:28:21.496 D/dalvikvm(30445): DexOpt: couldn't find field Landroid/content/pm/ApplicationInfo;.splitSourceDirs
+08-29 11:28:21.496 I/dalvikvm(30445): DexOpt: unable to optimize instance field ref 0x0010 at 0x25 in Lorg/chromium/base/library_loader/LibraryLoader;.getLibraryApkPath
+08-29 11:28:21.505 D/WifiService( 1984): setWifiEnabled: true pid=1984, uid=1000
+08-29 11:28:21.511 D/Stbmonitor(30415): getSingleInstance:-1: stbmonitor: SWAPPManager is null
+08-29 11:28:21.511 D/STBMONITOR (Stbmonitor_jni.c:36)(30415): native_setup 
+08-29 11:28:21.511 D/StbMonitrorService(30415): b:-1: -----------registScreenOffReciver---------
+08-29 11:28:21.513 D/StbMonitrorService(30415): onStart:-1: stbmonitor:-------onStart------------Isenable_monitor=true
+08-29 11:28:21.513 D/StbMonitrorService(30415): onStart:-1: stbmonitor:-------onStart-----start initSTBMonitor--------Isenable_monitor=true
+08-29 11:28:21.513 D/STBMONITOR (swmonitor.c:49)(30415): sw_monitor_init 
+08-29 11:28:21.513 D/STBMONITOR (swmonitor.c:49)(30415): Jul  7 2017__19:46:01
+08-29 11:28:21.514 D/OS (system/base/swos/swthrd.c:236)(30415): sw_thrd_open Thread-<tStbmonitorServer : 0 : 49910f08> opened
+08-29 11:28:21.514 D/OS (system/base/swos/swthrd.c:646)(30415): sema_thread_handler Thread-<0x49910f08, pid:30415, tid:30478, name:tStbmonitorServer> handler
+08-29 11:28:21.514 D/OS (system/base/swos/swthrd.c:236)(30415): sw_thrd_open Thread-<tCheckConnect : 1 : 499111b8> opened
+08-29 11:28:21.514 D/OS (system/base/swos/swthrd.c:646)(30415): sema_thread_handler Thread-<0x499111b8, pid:30415, tid:30479, name:tCheckConnect> handler
+08-29 11:28:21.514 D/StbMonitrorService(30415): onStart:-1: stbmonitor:-------onStart-----start initSTBMonitor Ok--------Isenable_monitor=true
+08-29 11:28:21.559 D/a       (30431): onReceive:-1: upgradech:ui: CONNECT_SUCCESSED
+:494 net.sunniwell.upgrade.receiver.a.onReceive:-1 android.app.LoadedApk$ReceiverDispatcher$Args.run:768 android.os.Handler.handleCallback:733 
+08-29 11:28:21.565 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2cdf7768 u0 net.sunniwell.upgrade/.ui.service.SWBootCompletedUpgradeService}
+08-29 11:28:21.566 D/a       (30431): onReceive:-1: upgradech:ui: onreceive: action: android.net.wifi.STATE_CHANGE
+08-29 11:28:21.566 D/a       (30431): onReceive:-1: upgradech:ui: onreceive getStringExtra: action: android.net.wifi.STATE_CHANGE
+08-29 11:28:21.572 D/a       (30431): onReceive:-1: upgradech:ui:param is empty
+08-29 11:28:21.572 D/a       (30431): onReceive:-1: upgradech: action: wifi changed 
+08-29 11:28:21.574 D/a       (30431): onReceive:-1: upgradech:wifi state=DISCONNECTED
+08-29 11:28:21.576 D/SWUsbUpgradeService(30431): onStartCommand:-1: upgradech:ui:  media mounted path.
+08-29 11:28:21.576 D/SWUsbUpgradeService(30431): onStartCommand:-1: upgradech:ui: parentFile  exists
+08-29 11:28:21.579 D/SWUsbUpgradeService(30431): onStartCommand:-1: upgradech:ui: files.size()=:5
+08-29 11:28:21.580 D/SWSQLiteOpenHelper(30395): checkTables:247: recreate base tables base
+08-29 11:28:21.582 D/SWUsbUpgradeService(30431): a:-1: upgradech: receiver : STBinfo: HUAWEIEC6108V9-01 currentVersion: 81711700117
+08-29 11:28:21.585 E/ViewRootImpl(30415): 201409092 enable acc for view=
+08-29 11:28:21.615 D/dalvikvm(30431): GC_CONCURRENT freed 625K, 19% free 2917K/3572K, paused 2ms+4ms, total 56ms
+08-29 11:28:21.639 D/dalvikvm(30296): GC_FOR_ALLOC freed 61K, 2% free 14105K/14344K, paused 25ms, total 26ms
+08-29 11:28:21.662 D/BitCache(30296): @@@@@@===createReflectedImage
+08-29 11:28:21.683 D/WifiController( 1984): WifiController msg { when=-21ms what=155656 target=com.android.internal.util.StateMachine$SmHandler } deferred for 15ms
+08-29 11:28:21.698 D/dalvikvm(30296): GC_FOR_ALLOC freed 2803K, 18% free 14105K/17148K, paused 32ms, total 33ms
+08-29 11:28:21.700 D/SWNetworkHandler(30266): run:110: sleep 500ms.
+08-29 11:28:21.701 D/ThreadPool(30266): run:65: Thread(ThreadPool #1) exit
+08-29 11:28:21.707 D/b       (30431): a:-1: usbupgrade:version=81711700116 Device=HUAWEIEC6108V9-01
+08-29 11:28:21.707 D/SWUsbUpgradeService(30431): a:-1: usbupgrade:version(81711700031) is not patch
+08-29 11:28:21.710 D/WifiController( 1984): DEFERRED_TOGGLE handled
+08-29 11:28:21.710 D/WifiStateMachine( 1984): sunniwell setSupplicantRunning enable:true
+08-29 11:28:21.724 D/dalvikvm(30395): GC_CONCURRENT freed 610K, 18% free 3089K/3728K, paused 5ms+3ms, total 32ms
+08-29 11:28:21.736 D/b       (30431): a:-1: usbupgrade:version=81711700117 Device=HUAWEIEC6108V9-01
+08-29 11:28:21.736 D/SWUsbUpgradeService(30431): a:-1: usbupgrade:version(81711700117) is same
+08-29 11:28:21.832 D/dalvikvm(30431): GC_CONCURRENT freed 294K, 9% free 3408K/3744K, paused 2ms+3ms, total 25ms
+08-29 11:28:21.832 D/dalvikvm(30431): WAIT_FOR_CONCURRENT_GC blocked 8ms
+08-29 11:28:21.839 D/dalvikvm(30296): GC_FOR_ALLOC freed <1K, 2% free 16907K/17148K, paused 18ms, total 18ms
+08-29 11:28:21.844 D/b       (30431): a:-1: usbupgrade:version=81711700110 Device=HUAWEIEC6108V9-01
+08-29 11:28:21.855 D/BitCache(30296): @@@@@@===createReflectedImage
+08-29 11:28:21.930 D/b       (30431): a:-1: usbupgrade:version=81711700116 Device=HUAWEIEC6108V9-01
+08-29 11:28:21.938 D/SWStorageMediaControl(30395): addPath:123: add path success.
+08-29 11:28:21.938 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:21.938 D/StorageDeviceManager(30395): getStoragePartitionInfo:108: device name is 'emulated',we getStoragePartitionInfos this disk...
+08-29 11:28:21.942 D/SWTaskManager(30395): <init>:40: create task manager '/mnt/sdb/sdb1'
+08-29 11:28:21.943 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:21.945 D/dalvikvm(30296): GC_FOR_ALLOC freed 2802K, 15% free 18151K/21200K, paused 19ms, total 19ms
+08-29 11:28:21.947 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_0' current size '1' threadPool size 1 dead thread size 0
+08-29 11:28:21.948 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_0' 210
+08-29 11:28:21.973 D/CategoryOperate(30296): ------------->getAllResolveInfo() begin
+08-29 11:28:21.978 D/Home2   (30296): startDebug:385: isAutoStart==false
+08-29 11:28:21.985 D/HOME    (30296): --- onStart
+08-29 11:28:21.985 D/HOME    (30296): flage:-1
+08-29 11:28:22.002 D/HOME    (30296): launcher focus:false
+08-29 11:28:22.002 D/HOME    (30296): myapp focus:false
+08-29 11:28:22.002 D/HOME    (30296): --- onResume
+08-29 11:28:22.004 D/com.huawei.launcher.Home2(30296): startBar(): startBar------------------------------------
+:494 com.huawei.launcher.Home2.startBar:688 com.huawei.launcher.Home2.onResume:569 android.app.Instrumentation.callActivityOnResume:1192 
+startService:494 com.huawei.launcher.Home2.startBar:688 com.huawei.launcher.Home2.onResume:569 
+st:365 android.app.ActivityThread.performResumeActivity:2785 android.app.ActivityThread.handleResumeActivity:2823 android.app.ActivityThread.handleLaunchActivity:2250 
+08-29 11:28:22.010 D/dalvikvm(30431): GC_CONCURRENT freed 456K, 12% free 3888K/4400K, paused 3ms+8ms, total 33ms
+08-29 11:28:22.011 D/dalvikvm(30431): WAIT_FOR_CONCURRENT_GC blocked 15ms
+08-29 11:28:22.014 E/ViewRootImpl(30296): 201409092 enable acc for view=com.huawei.launcher/com.huawei.launcher.Home2
+08-29 11:28:22.018 D/com.huawei.launcher.StatusReciver(30296): onReceive(): action = android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:22.019 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:22.020 I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:22.022 I/WifiReceiver(30296): wifi action === android.net.wifi.RSSI_CHANGED
+08-29 11:28:22.022 D/SWNetworkBroadcastReceiver( 3056): onReceive:-1: intent='android.net.wifi.WIFI_STATE_CHANGED'
+08-29 11:28:22.023 I/WifiReceiver(30296): wifi action === android.net.ethernet.ETHERNET_STATE_CHANGE
+08-29 11:28:22.023 D/com.huawei.launcher.StatusReciver(30296): handleEthStatus(): action==handleEthStatus
+08-29 11:28:22.024 D/com.huawei.launcher.StatusReciver(30296): handleEthStatus(): action==netState:10
+08-29 11:28:22.024 D/com.huawei.launcher.StatusReciver(30296): handleEthStatus(): action==EthernetManager.EVENT_CONNECT_SUCCESSED
+08-29 11:28:22.025 D/com.huawei.launcher.StatusReciver(30296): sendMsgToStatusbar(): actionn==handleEthStatus
+08-29 11:28:22.030 I/WifiReceiver(30296): message===10    pppoeState===-1
+08-29 11:28:22.030 I/WifiReceiver(30296): wifi action === android.net.wifi.STATE_CHANGE
+08-29 11:28:22.035 I/HoloClock(30296): onAttachedToWindow
+08-29 11:28:22.059 D/b       (30431): a:-1: usbupgrade:version=81711700117 Device=HUAWEIEC6108V9-01
+08-29 11:28:22.059 D/SWUsbUpgradeService(30431): a:-1: usbupgrade:version(81711700117) is same
+08-29 11:28:22.060 D/SWUsbUpgradeService(30431): a:-1: upgradech:  start usb upgrade widow, show the select window
+08-29 11:28:22.061 D/SWUsbUpgradeService(30431): a:-1: upgradech: isLauncherReady: 1
+08-29 11:28:22.061 D/SWUsbUpgradeService(30431): onStart:-1: upgradech:ui: usbservice onstart
+08-29 11:28:22.061 D/SWUsbUpgradeService(30431): onStart:-1: upgradech: regist mMediaReceiver
+08-29 11:28:22.062 D/SWUsbUpgradeService(30431): onStart:-1: upgradech; new  mediaReceiver
+08-29 11:28:22.063 D/SWUsbUpgradeService(30431): onStart:-1: upgradech: screen receiver is nou null 
+:494 net.sunniwell.upgrade.ui.service.SWBootCompletedUpgradeService.onCreate:-1 android.app.ActivityThread.handleCreateService:2572 android.app.ActivityThread.access$1800:135 
+08-29 11:28:22.067 D/CategoryOperate(30296): ------------->getAllResolveInfo() end
+08-29 11:28:22.068 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2cde4108 u0 net.sunniwell.upgrade/.ui.service.SWUpgradeIntervalCheckService}
+08-29 11:28:22.069 D/SWBootCompletedUpgradeService(30431): onStartCommand:-1: upgradech:ui:  bootupgradeservice onstartcommend
+08-29 11:28:22.070 D/SWBootCompletedUpgradeService(30431): onStartCommand:-1: upgradech:srouce : ethChanged
+08-29 11:28:22.077 D/b       (30431): b:-1: upgradech: reportFinishUpgrade
+08-29 11:28:22.082 D/d       (30431): run:-1: Thread(name=ThreadPool#1,tid=204) run
+08-29 11:28:22.089 D/CategorySqlHelper(30296): getAllAppData:541: close datebase.
+ion=6]]
+08-29 11:28:22.089 I/CategoryOperate(30296): currentPackageName-----------------------------$com.huawei.launcher
+08-29 11:28:22.089 D/CategoryOper[ 5981.087564] get_chl_grp:illegal channel (169)
+ate(30296): ----[ 5981.092894] get_chl_grp:illegal channel (169)
+--------->sync s[ 5981.098643] get_low_mid_hi_index:illegal channel(169)
+ystem to db begi[ 5981.105163] get_chl_grp:illegal channel (169)
+n
+08-29 11:28:2[ 5981.110885] get_chl_grp:illegal channel (169)
+2.089 D/Category[ 5981.116570] get_low_mid_hi_index:illegal channel(169)
+Operate(30296): ---------->item 0
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.base.apkinstall, className=net.sunniwell.base.apkinstall.SWScanActivity
+08-29 11:28:22.090 I/CategoryOperate(30296): unchoose apk-----------------------------$net.sunniwell.base.apkinstall
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->item 1
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->packageName=com.android.browser, className=com.android.browser.BrowserActivity
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->item 2
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->packageName=com.Pad.tvapp, className=com.Pad.tvapp.MainActivity
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->item 3
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->packageName=com.android.providers.downloads.ui, className=com.android.providers.downloads.ui.DownloadList
+08-29 11:28:22.090 I/CategoryOperate(30296): unchoose apk-----------------------------$com.android.providers.downloads.ui
+08-29 11:28:22.090 D/Category[ 5981.214948] get_chl_grp:illegal channel (173)
+Operate(30296): [ 5981.220398] get_chl_grp:illegal channel (173)
+---------->item [ 5981.226213] get_low_mid_hi_index:illegal channel(173)
+4
+08-29 11:28:2[ 5981.232692] get_chl_grp:illegal channel (173)
+2.090 D/Category[ 5981.238329] get_chl_grp:illegal channel (173)
+Operate(30296): [ 5981.244095] get_low_mid_hi_index:illegal channel(173)
+---------->packageName=com.discretix.drmassist, className=com.discretix.drmassist.SplashScreen
+08-29 11:28:22.090 I/CategoryOperate(30296): unchoose apk-----------------------------$com.discretix.drmassist
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->item 5
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->packageName=com.google.android.googlequicksearchbox, className=com.google.android.googlequicksearchbox.SearchActivity
+08-29 11:28:22.090 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.googlequicksearchbox
+08-29 11:28:22.090 D/CategoryOperate(30296): ---------->item 6
+08-29 11:28:22.091 D/CategoryOperate(30296): ---------->packageName=com.google.android.gms, className=com.google.android.gms.app.settings.GoogleSettingsActivity
+08-29 11:28:22.091 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.gms
+08-29 11:28:22.091 D/CategoryOperate(30296): ---------->item 7
+08-29 11:28:22.091 D/CategoryOperate(30296): ---------->packageName=com.google.android.talk, className=com.google.android.talk.SigningInActivity
+08-29 11:28:22.091 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.talk
+08-29 11:28:22.091 D/CategoryOperate(30296): ---------->item 8
+08-29 11:28:22.092 D/CategoryOperate(30296): ---------->packageName=com.huawei[ 5981.368470] 80211> Connect bssid 30:fc:68:bf:f7:89
+.launcher, className=com.huawei.launcher.Home2
+08-29 11:28:22.092 I/CategoryOperate(30296): unchoose apk---------------[ 5981.384162] SYNC - MlmeJoinReqAction(BSS #0)
+--------------$com.huawei.launcher
+08-29 11:28:22.092 D/CategoryOperate(30296): ---------->item 9
+08-29 11:28:22.092 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.iptv, className=net.sunniwell.iptv.activity.SWIPTVActivity
+08-29 11:28:22.092 D/CategoryOperate(30296): ---------->item 10
+08-29 11:28:22.092 D/Category[ 5981.417610] SYNC - Switch to ch 1, Wait BEACON from 30:fc:68:bf:f7:89
+Operate(30296): ---------->packageName=com.hisilicon.miracast, className=com.hisilicon.miracast.activity.WelcomeActivity
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->item 11
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.mediacenter.view, className=net.sunniwell.mediacenter.view.main.MainActivity
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->item 12
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->packageName=com.android.vending, cla[ 5981.467517] PeerBeaconAtJoinAction():receive desired BEACON,Channel=1
+ssName=com.andro[ 5981.475234] PeerBeaconAtJoinAction():AP HT-CtrlChannel=1, CentralChannel=>3
+id.vending.Asset[ 5981.483551] PeerBeaconAtJoinAction(): Set CentralChannel=3
+[ 5981.490495] AdjustChannelRelatedValue(): Input BW=1, rf_channel=3, vht_bw=1, Channel=1, vht_cent_ch=3!
+
+08-29 11:28:22.093 I/CategoryOperate(30296): unchoose apk-----------------------------$com.android.vending
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->item 13
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.settings, className=net.sunniwell.settings.SWActivity
+08-29 11:28:22.093 D/CategoryOperate(3029[ 5981.530812] mt76x2_reinit_agc_gain:original agc_vga0 = 0x5c, agc_vga1 = 0x5c
+6): ---------->i[ 5981.538731] mt76x2_reinit_agc_gain:updated agc_vga0 = 0x5c, agc_vga1 = 0x5c
+tem 14
+08-29 11:28:22.093 D/CategoryOperate(302[ 5981.550070] mt76x2_reinit_hi_lna_gain:original hi_lna0 = 0x27, hi_lna1 = 0x27
+96): ---------->[ 5981.558421] mt76x2_reinit_hi_lna_gain:updated hi_lna0 = 0x27, hi_lna1 = 0x27
+packageName=com.google.android.googlequicksearchbox, className=com.google.android.googlequicksearchbox.VoiceSearchActivity
+08-29 11:28:[ 5981.577531] original vga value(chain0) = 5c
+22.093 I/Categor[ 5981.583080] original vga value(chain1) = 5c
+yOperate(30296): unchoos[ 5981.589251] mt76x2_calibration(channel = 3)
+e apk-----------------------------$com.g[ 5981.597303] mt76x2_calibration_data_ad2chip: calibration_data_inited == 0
+oogle.android.googlequicksearchbox
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->item 15
+08-29 11:28:22.093 D/CategoryOperate(30296): ---------->packageName=com.mtni.myirancell, cl[ 5981.620239] AUTH - Send AUTH request seq#1 (Alg=0)...
+assName=com.comviva.webaxn.ui.WebAxnActivity
+08-29 11:28:22.093 D/CategoryOperate(30296): ------------->batchUpdateAppData begin
+08-29 11:28:22.093 D/CategoryOperate(30296): ------------->batchUpdateAppData end
+08-29 11:28:22.093 D/CategoryOperate(30296[ 5981.647733] AUTH - Receive AUTH_RSP seq#2 to me (Alg=0, Status=0)
+): -------------[ 5981.655119] CNTL - AUTH OK
+>batchAddAppData begin
+08-29 11:28:22.093 D/CategoryOperate(30296): -----------[ 5981.664722] MlmeAssocReqAction ASSOC - Send ASSOC request...
+-->batchAddAppData end
+08-29 11:28:22.093 D/CategoryOperate(30296): ------------->sync system t[ 5981.679225] PeerAssocRspAction():ASSOC - receive ASSOC_RSP to me (status=0)
+o db end
+08-29 [ 5981.687305] PeerAssocRspAction():MacTable [255].AMsduSize = 0. ClientStatusFlags = 0x30
+11:28:22.093 D/C[ 5981.696738] !!!Infra LINK UP !!!
+ategoryOperate(3[ 5981.701187] !!! LINK UP !!! (BssType=1, AID=2, ssid=TP-LINK_F789, Channel=1, CentralChannel = 3)
+0296): ------------->sync db to system begin
+08-29 11:28:22.093 D/CategoryOperate(30296): ------------->sync db to system end
+08-29 11:28:22.102 D/SWAPKSQLiteOpenHelper(30431): onOpen:-1: check 'upgrade' st[ 5981.728448] EstablishFrameBundle, OwnMac:00:11:6f:d3:17:33
+ate true
+08-29 [ 5981.734961] COEX: CTS2Self Trigger#:0
+11:28:22.104 D/OpenGLRenderer(30296): Enabling debug mode 0
+08-29 11:28[ 5981.745301] COEX: PS1 Trigger#:1
+:22.107 D/onLayout(30296): mLeftPoint.x:[ 5981.751683] COEX: CFE Trigger#:3
+0;mLeftPoint.y:34
+08-29 11:28:22.107 D/onLayout(30296): mCenterPoint.x:[ 5981.761300] COEX: PS0 Trigger#:4
+220;mCenterPoint.y:0
+08-29 11:28:22.107 D/onLayout(30296): mRightPoint.[ 5981.770932] CoexLinkUpHandler, type:1, BW:1, ch:1, ctrl_ch:3, link stat:2
+x:596;mRightPoin[ 5981.778703] CoexLinkUpHandler, BSSID:30:fc:68:bf:f7:89, Hash:1
+t.y:34
+08-29 11:28:22.109 D/CategorySqlHelper(30296): getAllAppData:541: close datebase.
+08-29 11:28:22.110 D/LauncherView(30296): onLayout---
+08-29 11:28:22.110 W/SurfaceView(30296): screen right or bottom value is invalid
+08-29 11:28:22.110 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:22.111 D/AppsGridView(30296): getAllApp cost time : 147
+08-29 11:28:22.111 D/AppsGridView(30296): loadIcon size 1: 7
+08-29 11:28:22.111 D/AppsGridView(30296): loadIcon size 2: 5
+08-29 11:28:22.112 D/b       (30431): run:-1: upgradech: newVersion=0 oldVersion=0
+08-29 11:28:22.112 D/loadReplaceIcon(30296): iconName = icon_browser
+08-29 11:28:22.112 D/loadReplaceIcon(30296): iconId = 2130837564
+08-29 11:28:22.112 D/b       (30431): run:-1: upgradech:   The NewVersion is null...
+08-29 11:28:22.126 D/SWUpgradeIntervalCheckService(30431): onCreate:-1: upgradech:ui: checkinterval : 18000000
+08-29 11:28:22.151 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:22.159 D/loadReplaceIcon(30296): iconName = icon_mediacenter
+08-29 11:28:22.159 D/loadReplaceIcon(30296): iconId = 2130837566
+08-29 11:28:22.159 D/com.huawei.iptv.stb.myapps.view.LauncherView(30296): onFocusChanged(): onFocusChanged isFocus:true,preFocRect:null
+08-29 11:28:22.170 D/LauncherView(30296): surfaceCreated
+08-29 11:28:22.171 D/LauncherView(30296): new DrawThread
+08-29 11:28:22.172 D/com.huawei.iptv.stb.myapps.view.LauncherView$DrawThread(30296): handleMessage(): DrawThread DRAW_MSG isFocused:true
+08-29 11:28:22.172 D/LauncherView(30296): draw1 start
+08-29 11:28:22.173 D/com.huawei.iptv.stb.myapps.view.LauncherView$1(30296): run(): refresh()
+08-29 11:28:22.174 D/com.huawei.iptv.stb.myapps.view.LauncherView$1(30296): run(): refresh()
+08-29 11:28:22.184 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:22.189 D/LAUNCHER(30296): msg.what  = 101  msg.arg1 = 100
+08-29 11:28:22.197 D/LAUNCHER(30296): msg.what  = 101  msg.arg1 = 100
+08-29 11:28:22.209 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_1' 211
+08-29 11:28:22.209 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_1' current size '2' threadPool size 2 dead thread size 0
+08-29 11:28:22.211 W/SWBasedataScanner(30395): doRun:57: ignore path
+08-29 11:28:22.213 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_2' current size '3' threadPool size 3 dead thread size 0
+08-29 11:28:22.214 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_2' 212
+08-29 11:28:22.218 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_3' current size '4' threadPool size 4 dead thread size 0
+08-29 11:28:22.218 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_3' 213
+08-29 11:28:22.222 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_4' current size '5' threadPool size 5 dead thread size 0
+08-29 11:28:22.222 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_4' 214
+08-29 11:28:22.223 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_5' 215
+08-29 11:28:22.223 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_5' current size '6' threadPool size 6 dead thread size 0
+08-29 11:28:22.224 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_6' 216
+08-29 11:28:22.224 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_6' current size '7' threadPool size 7 dead thread size 0
+08-29 11:28:22.224 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_7' 217
+08-29 11:28:22.224 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_7' current size '8' threadPool size 8 dead thread size 0
+08-29 11:28:22.226 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_8' current size '9' threadPool size 9 dead thread size 0
+08-29 11:28:22.228 D/dalvikvm(30296): GC_FOR_ALLOC freed 1860K, 13% free 18623K/21200K, paused 24ms, total 24ms
+08-29 11:28:22.229 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_8' 218
+08-29 11:28:22.229 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_9' current size '10' threadPool size 10 dead thread size 0
+08-29 11:28:22.232 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_9' 219
+08-29 11:28:22.235 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_10' current s[ 5982.161741] 80211> CFG80211_OpsRekeyData
+ize '11' threadPool size 11 dead thread size 0
+08-29 11:28:22.238 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_10' 220
+08-29 11:28:22.238 I/dalvikvm-heap(30296): Grow heap (frag case) to 21.725MB for 3686416-byte allocation
+08-29 11:28:22.239 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_11' current size '12' threadPool size 12 dead thread size 0
+08-29 11:28:22.239 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_12' current size '13' threadPool size 13 dead thread size 0
+08-29 11:28:22.241 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_12' 222
+08-29 11:28:22.241 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_13' 223
+08-29 11:28:22.241 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_13' current size '14' threadPool size 14 dead thread size 0
+08-29 11:28:22.242 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_14' 224
+08-29 11:28:22.242 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_14' current size '15' threadPool size 15 dead thread size 0
+08-29 11:28:22.246 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_15' 225
+08-29 11:28:22.246 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_15' current size '16' threadPool size 16 dead thread size 0
+08-29 11:28:22.247 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_16' 226
+08-29 11:28:22.247 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_16' current size '17' threadPool size 17 dead thread size 0
+08-29 11:28:22.248 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_17' 227
+08-29 11:28:22.248 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_17' current size '18' threadPool size 18 dead thread size 0
+08-29 11:28:22.250 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_18' current size '19' threadPool size 19 dead thread size 0
+08-29 11:28:22.251 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_18' 228
+08-29 11:28:22.252 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_19' current size '20' threadPool size 20 dead thread size 0
+08-29 11:28:22.253 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_19' 229
+08-29 11:28:22.253 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_20' current size '21' threadPool size 21 dead thread size 0
+08-29 11:28:22.254 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_20' 230
+08-29 11:28:22.257 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_11' 221
+08-29 11:28:22.268 D/dalvikvm(30296): GC_FOR_ALLOC freed <1K, 11% free 22223K/24804K, paused 29ms, total 29ms
+08-29 11:28:22.273 D/LAUNCHER(30296): msg.what  = 101  msg.arg1 = 100
+08-29 11:28:22.283 D/loadReplaceIcon(30296): iconName = icon_setting
+08-29 11:28:22.284 D/loadReplaceIcon(30296): iconId = 2130837568
+08-29 11:28:22.306 I/swshowmsg( 1456): [sw_check_userdata_proc:135]clearDataOperation:0
+08-29 11:28:22.324 D/Tethering( 1984): MasterInitialState.processMessage what=3
+08-29 11:28:22.335 D/CaptivePortalTracker( 1984): NoActiveNetworkSt[ 5982.441275] init: sys_prop: permission denied uid:1014  name:net.default.status
+ate{ when=-11ms what=1 o[ 5982.450390] init: sys_prop: permission denied uid:1014  name:net.default.auth
+: false target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:22.335 D/CaptivePortalTracker( 1984): NoActiveNetworkState not a wifi connectivity change, ignore
+08-29 11:28:22.354 D/loadReplaceIcon(30296): iconName = icon_iptv
+08-29 11:28:22.354 D/loadReplaceIcon(30296): iconId = 2130837565
+08-29 11:28:22.393 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:22.421 D/AppsGridView(30296): loadIcon cost time 1: 309
+08-29 11:28:22.424 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:22.425 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:22.444 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:22.467 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:22.503 D/NtpEngine( 2373): start:145: ntp:start
+08-29 11:28:22.524 D/MasterSlaveNtpTaskImpl( 2373): start:133: ntp:start
+08-29 11:28:22.524 D/MasterSlaveNtpTaskImpl( 2373): run:72: ntp:ntpThread started
+08-29 11:28:22.557 D/LauncherView(30296): draw1 end
+08-29 11:28:22.557 D/com.huawei.iptv.stb.myapps.view.LauncherView$DrawThread(30296): handleMessage(): DrawThread DRAW_MSG isFocused:true
+08-29 11:28:22.557 D/LauncherView(30296): draw1 start
+08-29 11:28:22.631 D/HOME    (30296): onWindowFocusChanged
+08-29 11:28:22.631 D/com.huawei.iptv.stb.myapps.view.LauncherView$1(30296): run(): refresh()
+08-29 11:28:22.638 I/ActivityManager( 1984): Displayed com.huawei.launcher/.Home2: +1s690ms
+08-29 11:28:22.660 D/LauncherView(30296): onLayout---
+08-29 11:28:22.660 W/SurfaceView(30296): screen right or bottom value is invalid
+d.os.Handler.dispatchMessage:102 
+rvice$CheckHandler.handleMessage:341 
+08-29 11:28:22.665 W/System.err( 2425): android.content.ActivityNotFoundException: No Activity found to handle Intent { act=net.sunniwell.action.SW_PRODUCT flg=0x10000000 (has extras) }
+08-29 11:28:22.665 W/System.err( 2425): 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+08-29 11:28:22.665 I/ActivityManager( 1984): START u0 {act=net.sunniwell.action.SW_PRODUCT flg=0x10000000 (has extras)} from pid 2425
+08-29 11:28:22.666 W/System.err( 2425): 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+08-29 11:28:22.666 W/System.err( 2425): 	at android.app.ContextImpl.startActivity(ContextImpl.java:1138)
+08-29 11:28:22.666 W/System.err( 2425): 	at android.app.ContextImpl.startActivity(ContextImpl.java:1120)
+08-29 11:28:22.666 W/System.err( 2425): 	at android.content.ContextWrapper.startActivity(ContextWrapper.java:311)
+08-29 11:28:22.667 W/System.err( 2425): 	at net.sunniwell.service.stb.producttest.ProductTestService$CheckHandler.startProductApp(ProductTestService.java:407)
+08-29 11:28:22.667 W/System.err( 2425): 	at net.sunniwell.service.stb.producttest.ProductTestService$CheckHandler.handleMessage(ProductTestService.java:341)
+08-29 11:28:22.667 W/System.err( 2425): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+08-29 11:28:22.668 W/System.err( 2425): 	at android.os.Looper.loop(Looper.java:136)
+08-29 11:28:22.668 W/System.err( 2425): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+08-29 11:28:22.723 D/Tethering( 1984): MasterInitialState.processMessage what=3
+ing: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:22.724 D/CaptivePortalTracker( 1984): NoActiveNetworkState not a wifi connectivity change, ignore
+08-29 11:28:22.727 D/LauncherView(30296): draw1 end
+08-29 11:28:22.727 D/com.huawei.iptv.stb.myapps.view.LauncherView$DrawThread(30296): handleMessage(): DrawThread DRAW_MSG isFocused:true
+08-29 11:28:22.727 D/LauncherView(30296): draw1 start
+Notification:450 android.net.EthernetDataTracker.access$1400:59 android.net.EthernetDataTracker$1.run:337 java.lang.Thread.run:841 
+08-29 11:28:22.834 W/InputMethodManager(30296): Ignoring onBind: cur seq=731, given seq=729
+08-29 11:28:22.920 D/AppsGridView(30296): loadIcon cost time 2: 499
+08-29 11:28:22.921 D/com.huawei.iptv.stb.myapps.view.AnimGridView(30296): initViewWidthData(): focusPosition 1:2
+08-29 11:28:22.939 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:22.941 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_NATDetected
+08-29 11:28:22.941 D/k       ( 2411): b:-1: tms:get acs_stun_NATDetected
+08-29 11:28:22.954 I/k       ( 2411): b:-1: tms:get name=acs_stun_NATDetected
+08-29 11:28:22.954 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_NATDetected
+08-29 11:28:22.954 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_stun_NATDetected
+08-29 11:28:22.954 I/k       ( 2411): a:-1: tms:set acs_stun_NATDetected
+08-29 11:28:22.960 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs_stun_NATDetected' no need to update.
+08-29 11:28:22.960 D/CWMP (swtr069/src/cwmp_sqm_nat.c:1224)( 2411): handle_udp_data 1224 acs_stun_NATDetected
+08-29[ 5983.013882] Rcv Wcid(1) AddBAReq
+ 11:28:22.960 F/[ 5983.018006] Start Seq = 00000002
+SWLIBC:3250( 2411): 16 memcpy buffer error 0x4aabbb24 256 0x4a9169c4 -4 0
+08-29 11:28:22.974 D/LauncherView(30296): draw1 end
+08-29 11:28:22.986 D/com.huawei.iptv.stb.myapps.view.AnimGridView(30296): initViewWidthData(): focusPosition 2:2
+08-29 11:28:22.987 D/com.huawei.iptv.stb.myapps.view.AnimGridView(30296): setFocusBounds(): focusPosition =2
+08-29 11:28:22.992 D/BitCache(30296): @@@@@@===getBitmapInCache
+08-29 11:28:23.010 D/dalvikvm(30296): GC_FOR_ALLOC freed 1127K, 6% free 23558K/24992K, paused 19ms, total 19ms
+08-29 11:28:23.038 I/dalvikvm-heap(30296): Grow heap (frag case) to 30.939MB for 8294416-byte allocation
+08-29 11:28:23.064 D/dalvikvm(30296): GC_FOR_ALLOC freed 39K, 5% free 31619K/33096K, paused 26ms, total 26ms
+08-29 11:28:23.091 D/dalvikvm(30296): GC_CONCURRENT freed 6K, 5% free 31612K/33096K, paused 4ms+4ms, total 27ms
+08-29 11:28:23.148 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_21' current size '22' threadPool size 22 dead thread size 0
+08-29 11:28:23.148 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_21' 231
+08-29 11:28:23.255 D/dalvikvm(30395): GC_CONCURRENT freed 690K, 19% free 3135K/3852K, paused 3ms+4ms, total 29ms
+08-29 11:28:23.306 I/swshowmsg( 1456): [sw_check_userdata_proc:135]clearDataOperation:0
+08-29 11:28:23.473 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0
+08-29 11:28:23.473 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0/queues/rx-0
+08-29 11:28:23.474 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0/queues/tx-0
+08-29 11:28:23.475 D/EthernetDataTracker( 1984): checkInterfaceName is false
+08-29 11:28:23.475 I/G3StateTracker( 1984): interfaceAdded(p2p0)
+08-29 11:28:23.475 D/EthernetDataTracker( 1984): Interface p2p0 link down
+08-29 11:28:23.475 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link down
+08-29 11:28:23.482 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0
+08-29 11:28:23.483 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0/queues/rx-0
+08-29 11:28:23.483 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0/queues/tx-0
+08-29 11:28:23.483 D/EthernetDataTracker( 1984): checkInterfaceName is false
+08-29 11:28:23.484 I/G3StateTracker( 1984): interfaceAdded(uap0)
+08-29 11:28:23.486 D/EthernetDataTracker( 1984): Interface uap0 link down
+08-29 11:28:23.486 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged uap0 link down
+08-29 11:28:23.590 I/k       ( 2411): b:-1: tms:get name=lan_mask
+08-29 11:28:23.590 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_mask
+08-29 11:28:23.591 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.591 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.594 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:23.594 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:23.595 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:23.595 D/NetUtils( 1984): the ethernet interface eth0 is Running
+08-29 11:28:23.595 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:23.596 D/SWStatusbar( 2503): checkNetStatus:432: =====linkUp==true
+08-29 11:28:23.596 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:23.596 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:23.596 D/Tethering( 1984): sendTetherStateChangedBroadcast 1, 0, 0
+08-29 11:28:23.596 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:101: Analyzing network interface: lo
+08-29 11:28:23.597 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:23.600 W/SWAndroidNetworkAddressFactory(30395): isUsableNetworkInterface:155: Skipping network interface (named '*virtual*'): lo
+08-29 11:28:23.600 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.601 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.602 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.602 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.603 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:110: Ignoring non-usable network interface: lo
+08-29 11:28:23.603 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:23.603 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.604 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.604 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.606 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:101: Analyzing network interface: eth0
+08-29 11:28:23.613 D/SWAndroidNetworkAddressFactory(30395): isUsableNetworkInterface:175: FilterNetWork:false
+08-29 11:28:23.615 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.615 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:104: Discovered usable network interface: eth0
+08-29 11:28:23.618 D/SWStatusbar( 2503): isAccesaIntent:255: ==================eth0============
+08-29 11:28:23.618 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.619 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.619 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.619 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:23.619 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:101: Analyzing network interface: wlan0
+08-29 11:28:23.619 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:23.620 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:23.620 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:23.621 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_url
+08-29 11:28:23.621 D/k       ( 2411): b:-1: tms:get acs_url
+08-29 11:28:23.622 D/SWStatusbar( 2503): checkNetStatus:434: ==========isAccess_internet============true
+08-29 11:28:23.623 D/SWStatusbar( 2503): checkNetStatus:437: ======checkNetStatus====IP exists=
+08-29 11:28:23.627 I/Choreographer( 2503): Skipped 137 frames!  The application may be doing too much work on its main thread.
+08-29 11:28:23.633 W/SWAndroidNetworkAddressFactory(30395): isUsableNetworkInterface:130: Skipping network interface without bound IP addresses: wlan0
+08-29 11:28:23.636 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:110: Ignoring non-usable network interface: wlan0
+08-29 11:28:23.637 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:101: Analyzing network interface: teql0
+08-29 11:28:23.638 D/dalvikvm( 2786): GC_CONCURRENT freed 887K, 22% free 3281K/4196K, paused 7ms+4ms, total 45ms
+08-29 11:28:23.639 W/SWAndroidNetworkAddressFactory(30395): isUsableNetworkInterface:124: Skipping network interface (down): teql0
+08-29 11:28:23.641 I/SWAndroidNetworkAddressFactory(30395): discoverNetworkInterfaces:110: Ignoring non-usable network interface: teql0
+08-29 11:28:23.645 D/SWStatusbar( 2503): onStartCommand:376: ======isShow==1
+08-29 11:28:23.645 I/k       ( 2411): b:-1: tms:get name=acs_url
+08-29 11:28:23.646 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_url
+08-29 11:28:23.646 D/NetUtils( 1984): the ethernet interface eth0 is Running
+08-29 11:28:23.646 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.646 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.647 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:23.647 D/SWStatusbar( 2503): checkNetStatus:432: =====linkUp==true
+08-29 11:28:23.649 D/SWStatusbar( 2503): isAccesaIntent:255: ==================eth0============
+08-29 11:28:23.651 I/wpa_supplicant(30396): rfkill: Cannot open RFKILL control device
+08-29 11:28:23.652 D/SWStatusbar( 2503): checkNetStatus:434: ==========isAccess_internet============true
+08-29 11:28:23.652 D/SWStatusbar( 2503): checkNetStatus:437: ======checkNetStatus====IP exists=
+08-29 11:28:23.652 I/MulticastReceiver(30395): Creating wildcard socket (for receiving multicast datagrams) on port: 1900
+08-29 11:28:23.652 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.652 I/MulticastReceiver(30395): Joining multicast group: /239.255.255.250:1900 on network interface: eth0
+08-29 11:28:23.660 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:23.661 D/SWStatusbar( 2503): addNotification:496: ... addNotification ...
+08-29 11:28:23.661 D/SWStatusbar( 2503): addNotification:503: notification text = The Wired network connected
+0 kind=[null])
+08-29 11:28:23.664 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.666 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.666 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.666 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.667 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:23.667 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:23.667 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:23.667 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:23.670 D/EthernetDataTracker( 1984): Interface p2p0 link up
+08-29 11:28:23.670 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link up
+08-29 11:28:23.670 D/EthernetDataTracker( 1984): Interface p2p0 link up
+08-29 11:28:23.670 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link up
+08-29 11:28:23.672 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = app_version
+08-29 11:28:23.672 D/k       ( 2411): b:-1: tms:get app_version
+08-29 11:28:23.672 I/k       ( 2411): b:-1: tms:get name=app_version
+08-29 11:28:23.673 I/Tms     ( 2411): getParameterFormNative:-1: tms:get app_version
+08-29 11:28:23.673 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:23.673 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:23.673 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.673 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.673 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:23.673 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.673 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.673 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:23.674 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.674 I/wpa_supplicant(30396): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:23.674 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:23.674 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:23.674 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:23.674 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:23.675 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:23.675 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:23.675 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:23.675 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:23.676 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.676 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.681 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.682 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:23.686 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.687 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.688 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.688 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.688 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_gateway
+08-29 11:28:23.688 D/k       ( 2411): b:-1: tms:get lan_gateway
+08-29 11:28:23.688 D/j       ( 2411): b:-1: stbmonitor: ifname: eth0
+08-29 11:28:23.689 I/k       ( 2411): b:-1: tms:get name=lan_gateway
+08-29 11:28:23.689 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_gateway
+08-29 11:28:23.689 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.690 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.693 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.694 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:23.702 W/System.err(30395): log4j:WARN No appenders could be found for logger (org.eclipse.jetty.util.log).
+08-29 11:28:23.702 W/System.err(30395): log4j:WARN Please initialize the log4j system properly.
+08-29 11:28:23.703 W/System.err(30395): log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+08-29 11:28:23.705 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.709 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.709 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.710 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.710 D/a       ( 3056): onReceive:-1: action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.711 I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.711 D/WifiConfigStore( 1984): Loading config and enabling all networks
+08-29 11:28:23.713 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.713 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_dns
+08-29 11:28:23.713 D/k       ( 2411): b:-1: tms:get lan_dns
+08-29 11:28:23.714 D/LAUNCHER(30296): msg.what  = 102  msg.arg1 = 0
+08-29 11:28:23.714 I/HOME    (30296): wifiLevel ==  0
+08-29 11:28:23.715 I/k       ( 2411): b:-1: tms:get name=lan_dns
+08-29 11:28:23.716 I/StreamServer(30395): Setting executor service on servlet container adapter
+08-29 11:28:23.716 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_dns
+08-29 11:28:23.717 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.717 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.718 I/StreamServer(30395): Adding connector: 192.168.1.105/192.168.1.105:45190
+08-29 11:28:23.720 I/wpa_supplicant(30396): nl80211: wpa_driver_nl80211_event_receive->nl_recvmsgs failed: -11
+08-29 11:28:23.721 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:23.721 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.721 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:23.722 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:23.724 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:23.725 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:23.726 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2cc30b18 u0 com.android.providers.downloads/.DownloadService}
+08-29 11:28:23.729 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.731 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.731 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.731 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.731 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_mask
+08-29 11:28:23.731 D/k       ( 2411): b:-1: tms:get lan_mask
+08-29 11:28:23.732 I/k       ( 2411): b:-1: tms:get name=lan_mask
+08-29 11:28:23.732 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_mask
+08-29 11:28:23.734 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.734 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.738 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.739 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+nn.CONNECTIVITY_CHANGE
+08-29 11:28:23.744 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.745 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.745 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.746 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.746 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:23.749 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:23.749 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:23.749 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:23.750 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_url
+08-29 11:28:23.755 D/k       ( 2411): b:-1: tms:get acs_url
+08-29 11:28:23.762 D/a       ( 3056): onReceive:-1: action==android.net.wifi.CONFIGURED_NETWORKS_CHANGE
+08-29 11:28:23.764 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2cba3a50 u0 com.google.android.gsf/.checkin.CheckinService}
+08-29 11:28:23.785 E/TelephonyManager( 2645): cts.appProcess.processName:com.google.process.gapps
+08-29 11:28:23.791 W/Settings( 3001): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-29 11:28:23.791 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_22' current size '23' threadPool size 23 dead thread size 0
+08-29 11:28:23.792 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_22' 233
+08-29 11:28:23.792 I/k       ( 2411): b:-1: tms:get name=acs_url
+08-29 11:28:23.792 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_url
+08-29 11:28:23.792 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:23.792 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:23.798 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_23' current size '24' threadPool size 24 dead thread size 0
+08-29 11:28:23.798 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.798 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:23.798 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_23' 234
+08-29 11:28:23.798 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:23.805 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:23.805 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:23.805 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:23.805 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:23.805 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:23.806 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:23.806 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:23.807 D/WifiStateMachine( 1984): swsunniwell getstate: DISCONNECTED state: DISCONNECTED
+08-29 11:28:23.810 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_24' current size '25' threadPool size 25 dead thread size 0
+08-29 11:28:23.819 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_NATDetected
+08-29 11:28:23.819 D/k       ( 2411): b:-1: tms:get acs_stun_NATDetected
+08-29 11:28:23.821 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_25' 236
+08-29 11:28:23.821 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_24' 235
+08-29 11:28:23.822 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_25' current size '26' threadPool size 26 dead thread size 0
+08-29 11:28:23.822 D/WifiP2pService( 1984): P2pDisabledState{ when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:23.823 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:23.823 D/DHCP    ( 1448): ifc_close
+08-29 11:28:23.824 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_26' current size '27' threadPool size 27 dead thread size 0
+nn.CONNECTIVITY_CHANGE
+08-29 11:28:23.826 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_26' 237
+08-29 11:28:23.827 D/CommandListener( 1448): Setting iface cfg
+08-29 11:28:23.827 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:23.827 D/DHCP    ( 1448): ifc_set_addr(p2p0, xx) = 0
+08-29 11:28:23.827 D/CommandListener( 1448): Trying to bring up p2p0
+08-29 11:28:23.827 D/DHCP    ( 1448): ifc_up(p2p0) = 0
+08-29 11:28:23.827 D/DHCP    ( 1448): ifc_close
+08-29 11:28:23.829 D/WifiMonitor( 1984): startMonitoring(p2p0) with mConnected = true
+08-29 11:28:23.829 D/WifiP2pService( 1984): P2pEnablingState
+08-29 11:28:23.830 I/k       ( 2411): b:-1: tms:get name=acs_stun_NATDetected
+08-29 11:28:23.830 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_NATDetected
+08-29 11:28:23.830 D/WifiP2pService( 1984): P2pEnablingState{ when=0 what=147457 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:23.830 D/WifiP2pService( 1984): P2p socket connection successful
+08-29 11:28:23.830 D/WifiP2pService( 1984): P2pEnabledState
+08-29 11:28:23.830 D/WifiP2pService( 1984): sending p2p connection changed broadcast
+08-29 11:28:23.831 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = tr069_protocol
+08-29 11:28:23.831 D/k       ( 2411): b:-1: tms:get tr069_protocol
+08-29 11:28:23.832 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_27' current size '28' threadPool size 28 dead thread size 0
+08-29 11:28:23.832 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+08-29 11:28:23.836 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_27' 238
+08-29 11:28:23.845 D/WifiP2pService( 1984): DeviceAddress: 02:11:6f:d3:17:33
+08-29 11:28:23.848 E/WifiStateMachine( 1984): Unexpected BatchedScanResults :OK
+08-29 11:28:23.849 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_28' current size '29' threadPool size 29 dead thread size 0
+08-29 11:28:23.850 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_28' 239
+08-29 11:28:23.851 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_29' current size '30' threadPool size 30 dead thread size 0
+08-29 11:28:23.852 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_29' 240
+08-29 11:28:23.856 I/wpa_supplicant(30396): net.wifiKey.encrypt true 
+08-29 11:28:23.856 I/wpa_supplicant(30396): net.wifiKey.encrypt true 
+08-29 11:28:23.856 I/wpa_supplicant(30396): sw_encrypt write_psk
+08-29 11:28:23.857 D/WifiP2pService( 1984): sending p2p persistent groups changed broadcast
+08-29 11:28:23.858 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_30' current size '31' threadPool size 31 dead thread size 0
+08-29 11:28:23.858 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2cce3590 u0 com.google.android.gsf/.checkin.CheckinService}
+08-29 11:28:23.862 D/WifiP2pService( 1984): InactiveState
+08-29 11:28:23.862 D/WifiP2pService( 1984): InactiveState{ when=-12ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:23.862 D/WifiP2pService( 1984): P2pEnabledState{ when=-12ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:23.864 D/WifiP2pService( 1984): P2pDisablingState
+08-29 11:28:23.864 D/WifiP2pService( 1984): P2pDisablingState{ when=-2ms what=147458 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:23.865 D/WifiP2pService( 1984): p2p socket connection lost
+08-29 11:28:23.867 D/CommandListener( 1448): Clearing all IP addresses on wlan0
+08-29 11:28:23.867 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:23.867 D/DHCP    ( 1448): ifc_close
+08-29 11:28:23.868 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_30' 241
+08-29 11:28:23.870 D/WifiP2pService( 1984): P2pDisabledState
+08-29 11:28:23.872 D/WifiStateMachine( 1984): swsunniwell getstate: DISCONNECTED state: DISCONNECTED
+08-29 11:28:23.872 D/com.huawei.launcher.StatusReciver(30296): onReceive(): action = android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.873 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.876 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.STATE_CHANGE
+08-29 11:28:23.876 D/SWStatusbar( 2503): handleWifiStatus:201: WifiStatus is DISCONNECTED.
+08-29 11:28:23.876 D/WifiStateTracker( 1984): Do not change WIFI_P2P info!!!
+08-29 11:28:23.877 D/a       (30431): onReceive:-1: upgradech:ui: onreceive: action: android.net.wifi.STATE_CHANGE
+08-29 11:28:23.877 D/a       ( 3056): onReceive:-1: action==android.net.wifi.STATE_CHANGE
+08-29 11:28:23.878 D/a       (30431): onReceive:-1: upgradech:ui: onreceive getStringExtra: action: android.net.wifi.STATE_CHANGE
+08-29 11:28:23.879 E/a       ( 3056): registerWifiScanResult:-1: registerWifiScanResult failed, case onEvent is null
+08-29 11:28:23.879 D/a       ( 3056): onReceive:-1: NETWORK_STATE_CHANGED_ACTION
+08-29 11:28:23.882 D/a       ( 3056): onReceive:-1: action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.882 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.883 D/com.huawei.launcher.StatusReciver(30296): sendMsgToStatusbar(): actionn==handleEthStatus
+08-29 11:28:23.885 D/dalvikvm( 2680): GC_EXPLICIT freed 187K, 13% free 3009K/3436K, paused 2ms+12ms, total 52ms
+08-29 11:28:23.887 D/a       (30431): onReceive:-1: upgradech:ui:param is empty
+08-29 11:28:23.888 D/a       (30431): onReceive:-1: upgradech: action: wifi changed 
+08-29 11:28:23.889 D/a       (30431): onReceive:-1: upgradech:wifi state=DISCONNECTED
+08-29 11:28:23.890 E/TelephonyManager( 2645): cts.appProcess.processName:com.google.process.gapps
+08-29 11:28:23.902 I/WifiReceiver(30296): wifi action === android.net.wifi.STATE_CHANGE
+08-29 11:28:23.903 D/EthernetDataTracker( 1984): Interface p2p0 link up
+08-29 11:28:23.904 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link up
+08-29 11:28:23.904 I/wpa_supplicant(30396): p2p0: CTRL-EVENT-TERMINATING 
+08-29 11:28:23.906 I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.908 D/SWNetworkBroadcastReceiver( 3056): onReceive:-1: intent='android.net.wifi.WIFI_STATE_CHANGED'
+08-29 11:28:23.908 D/LAUNCHER(30296): msg.what  = 102  msg.arg1 = 0
+08-29 11:28:23.908 I/HOME    (30296): wifiLevel ==  0
+08-29 11:28:23.909 D/EthernetDataTracker( 1984): Interface p2p0 link down
+08-29 11:28:23.909 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link down
+08-29 11:28:23.916 I/k       ( 2411): b:-1: tms:get name=tr069_protocol
+08-29 11:28:23.916 I/Tms     ( 2411): getParameterFormNative:-1: tms:get tr069_protocol
+08-29 11:28:23.916 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:23.916 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:23.923 D/dalvikvm(30395): GC_CONCURRENT freed 668K, 18% free 3324K/4016K, paused 5ms+26ms, total 97ms
+08-29 11:28:23.926 D/SWStatusbar( 2503): updateNotification:539: ... updateNotification ...
+=0x0 kind=[null])
+08-29 11:28:23.929 D/LAUNCHER(30296): msg.what  = 101  msg.arg1 = 100
+08-29 11:28:23.932 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:23.932 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:23.933 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_commandkey
+08-29 11:28:23.933 D/k       ( 2411): b:-1: tms:get acs_commandkey
+08-29 11:28:23.944 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:23.944 I/k       ( 2411): b:-1: tms:get name=acs_commandkey
+08-29 11:28:23.944 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:23.944 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_commandkey
+08-29 11:28:23.944 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_commandkey
+08-29 11:28:23.944 I/k       ( 2411): a:-1: tms:set acs_commandkey
+08-29 11:28:23.949 D/SWNtpNativeReceiver( 2373): onReceive:22: ntp: action=android.net.wifi.STATE_CHANGE
+08-29 11:28:23.950 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs.commandkey' no need to update.
+08-29 11:28:23.950 D/SWNtpNativeReceiver( 2373): onReceive:73: upgrade:wifi state=DISCONNECTED
+08-29 11:28:23.952 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:23.952 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:23.952 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:23.952 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:23.954 D/SWNativeReciver( 2411): onReceive:-1: tms: action=android.net.wifi.STATE_CHANGE
+08-29 11:28:23.955 D/SWNativeReciver( 2411): onReceive:-1: upgrade:wifi state=DISCONNECTED
+08-29 11:28:23.958 D/com.huawei.launcher.StatusReciver(30296): onReceive(): action = android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.958 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:23.959 I/CWMP (swtr069/src/cwmp_http.c:1484)( 2411): cwmp_http_recv 1484 401=[Receive]:
+08-29 11:28:23.959 I/CWMP (swtr069/src/cwmp_http.c:1484)( 2411): ***
+08-29 11:28:23.961 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_username
+08-29 11:28:23.962 D/k       ( 2411): b:-1: tms:get acs_username
+08-29 11:28:23.962 D/SWNetworkBroadcastReceiver( 3056): onReceive:-1: intent='android.net.wifi.WIFI_STATE_CHANGED'
+08-29 11:28:23.979 I/k       ( 2411): b:-1: tms:get name=acs_username
+08-29 11:28:23.979 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_username
+08-29 11:28:23.979 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_password
+08-29 11:28:23.979 D/k       ( 2411): b:-1: tms:get acs_password
+08-29 11:28:23.990 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_31' current size '32' threadPool size 32 dead thread size 0
+08-29 11:28:23.991 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_31' 242
+08-29 11:28:24.020 D/GCM     ( 2645): Connected
+08-29 11:28:24.030 D/LAUNCHER(30296): msg.what  = 104  msg.arg1 = 1
+08-29 11:28:24.080 D/GCM     ( 2645): Message class hks
+08-29 11:28:24.083 D/a       (30431): a:-1: upgradech: reportUpgradeState : 0
+08-29 11:28:24.083 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_32' current size '33' threadPool size 33 dead thread size 0
+08-29 11:28:24.083 D/SWBootCompletedUpgradeService(30431): run:-1: upgradech:ui: handler task delayde is  started
+08-29 11:28:24.083 D/SWUpgradeManager(30431): addCallback:-1: upgradech: SWupgradeManger addcallback
+08-29 11:28:24.083 D/SWUpgradeIBinderImpl(30431): addCallback:-1: upgradech: SWupgradeIbinder addcallback
+08-29 11:28:24.083 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_32' 243
+08-29 11:28:24.083 D/SWUpgradeApplication(30431): addCallback:-1: upgradech: swupgradeapplication addcallback: server
+08-29 11:28:24.083 D/SWUpgradeIBinderImpl(30431): start:-1: upgradech: upgradetype: serversource:ethChangedforceUpgrade:trueisForeground:true
+08-29 11:28:24.083 I/JettyServletContainer(30395): Registering UPnP servlet under context path: /upnp
+08-29 11:28:24.083 D/e       (30431): a:-1: upgradech: servers is null 
+st:370 net.sunniwell.upgrade.b.a.a:-1 net.sunniwell.upgrade.ui.service.k.run:-1 android.os.Handler.handleCallback:733 
+08-29 11:28:24.092 D/dalvikvm( 2411): GC_CONCURRENT freed 752K, 34% free 3072K/4600K, paused 3ms+11ms, total 42ms
+08-29 11:28:24.092 D/SWCustomReceiver( 2411): onReceive:-1: receive upgrade state: 0
+08-29 11:28:24.092 D/Tms     ( 2411): notifyEventToTms:-1: tms: notifyEventToTms,what=8192,event=0
+08-29 11:28:24.102 I/DatagramIO(30395): Creating bound socket (for datagram input/output) on: 192.168.1.105/192.168.1.105
+08-29 11:28:24.103 I/JettyServletContainer(30395): Starting Jetty server... 
+08-29 11:28:24.113 I/SWStreamClientImpl(30395): Starting Jetty HttpClient...
+08-29 11:28:24.113 D/e       (30431): a:-1: upgradech: set forceupgrade: true
+08-29 11:28:24.113 D/e       (30431): a:-1: upgradech: set isForeground: true
+08-29 11:28:24.121 D/SWUpgradeTaskManager(30431): addtask:-1: upgradech: task is add to the map and started immediately.
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): handleMessage:-1: upgradech:  swupgradeTaskmanger  new task added
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): getNextTask:-1: upgradech: getNextTask 
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): getNextTask:-1: upgradech: mTaskMap is not null  + map.size() :1
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): getNextTask:-1: upgradech: get task form mTaskMap  type:server
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech: current Upgrade type:server
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech: current Upgrade package type;:zip
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech: current Upgrade source: ;:ethChanged
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): handleNextTask:-1: upgradech: prop changed
+08-29 11:28:24.122 D/SWUpgradeTaskManager(30431): startIniFileParse:-1: upgradech: startIniFileParse  time = 0
+08-29 11:28:24.122 D/a       (30431): a:-1: upgradech: serverAddress is endwith ini  or jsp http://10.10.10.17:33600/UPGRADE/jsp/upgrade.jsp
+08-29 11:28:24.122 D/a       (30431): a:-1: upgradech : setQueryParam start
+08-29 11:28:24.122 D/a    [ 5986.059879] init: sys_prop: permission denied uid:1014  name:net.default.status
+   (30431): a:-1: upgrad[ 5986.069674] init: sys_prop: permission denied uid:1014  name:net.default.auth
+ech: setQueryParam done
+08-29 11:28:24.122 D/a       (30431): a:-1: upgrade: upgradeServerUrl
+08-29 11:28:24.122 D/SWAndroidRouter(30395): enable:112: leving writeLock...
+08-29 11:28:24.131 I/SWUpnpServiceImpl(30395): <<< UPnP service started successfully
+08-29 11:28:24.135 I/SWAndroidRouter(30395): displayIntentInfo:376: Connectivity change detected...
+08-29 11:28:24.135 I/SWAndroidRouter(30395): displayIntentInfo:377: EXTRA_NO_CONNECTIVITY: true
+08-29 11:28:24.136 I/SWAndroidRouter(30395): displayIntentInfo:378: EXTRA_REASON: null
+08-29 11:28:24.136 I/SWAndroidRouter(30395): displayIntentInfo:379: EXTRA_IS_FAILOVER: false
+08-29 11:28:24.138 I/SWAndroidRouter(30395): onReceive:325: No actual network change... ignoring event!
+08-29 11:28:24.140 I/SWAndroidRouter(30395): displayIntentInfo:376: Connectivity change detected...
+08-29 11:28:24.141 I/SWAndroidRouter(30395): displayIntentInfo:377: EXTRA_NO_CONNECTIVITY: true
+08-29 11:28:24.141 I/SWAndroidRouter(30395): displayIntentInfo:378: EXTRA_REASON: null
+08-29 11:28:24.142 I/SWAndroidRouter(30395): displayIntentInfo:379: EXTRA_IS_FAILOVER: false
+08-29 11:28:24.143 W/dalvikvm(30395): dvmFindClassByName rejecting 'org/eclipse/jetty/http/mime_en'
+08-29 11:28:24.143 W/dalvikvm(30395): dvmFindClassByName rejecting 'org/eclipse/jetty/http/mime'
+08-29 11:28:24.146 I/SWAndroidRouter(30395): onReceive:325: No actual network change... ignoring event!
+08-29 11:28:24.147 I/SWAndroidRouter(30395): displayIntentInfo:376: Connectivity change detected...
+08-29 11:28:24.147 I/SWAndroidRouter(30395): displayIntentInfo:377: EXTRA_NO_CONNECTIVITY: false
+08-29 11:28:24.148 I/SWAndroidRouter(30395): displayIntentInfo:378: EXTRA_REASON: null
+08-29 11:28:24.148 I/SWAndroidRouter(30395): displayIntentInfo:379: EXTRA_IS_FAILOVER: false
+08-29 11:28:24.152 I/SWAndroidRouter(30395): onReceive:325: No actual network change... ignoring event!
+08-29 11:28:24.156 I/SWAndroidRouter(30395): displayIntentInfo:376: Connectivity change detected...
+08-29 11:28:24.157 I/SWAndroidRouter(30395): displayIntentInfo:377: EXTRA_NO_CONNECTIVITY: false
+08-29 11:28:24.157 I/SWAndroidRouter(30395): displayIntentInfo:378: EXTRA_REASON: null
+08-29 11:28:24.157 I/SWAndroidRouter(30395): displayIntentInfo:379: EXTRA_IS_FAILOVER: false
+08-29 11:28:24.163 I/SWAndroidRouter(30395): onReceive:325: No actual network change... ignoring event!
+08-29 11:28:24.164 I/SWAndroidRouter(30395): displayIntentInfo:376: Connectivity change detected...
+08-29 11:28:24.164 I/SWAndroidRouter(30395): displayIntentInfo:377: EXTRA_NO_CONNECTIVITY: false
+08-29 11:28:24.165 I/SWAndroidRouter(30395): displayIntentInfo:378: EXTRA_REASON: null
+08-29 11:28:24.165 I/SWAndroidRouter(30395): displayIntentInfo:379: EXTRA_IS_FAILOVER: false
+eHWVersion=IPTV+STB+V100R003C30LIRM11&HardwareVersion=EC6108V9-01,timeOutRetryCount==1
+08-29 11:28:24.168 D/a       (30431): run:-1: upgradech: request ini file start current count 0
+08-29 11:28:24.170 D/a       (30431): run:-1: upgradech:mServerAddress==2000
+08-29 11:28:24.170 W/System  (30431): Ignoring header Cookies because its value was null.
+08-29 11:28:24.177 I/SWAndroidRouter(30395): onReceive:325: No actual network change... ignoring event!
+08-29 11:28:24.178 I/SWAndroidRouter(30395): displayIntentInfo:376: Connectivity change detected...
+08-29 11:28:24.182 I/SWAndroidRouter(30395): displayIntentInfo:377: EXTRA_NO_CONNECTIVITY: false
+08-29 11:28:24.182 I/SWAndroidRouter(30395): displayIntentInfo:378: EXTRA_REASON: null
+08-29 11:28:24.183 I/SWAndroidRouter(30395): displayIntentInfo:379: EXTRA_IS_FAILOVER: false
+08-29 11:28:24.187 I/SWAndroidRouter(30395): onReceive:325: No actual network change... ignoring event!
+08-29 11:28:24.188 D/SWDLNAMediaControl(30395): onServiceConnected:203: service connected
+08-29 11:28:24.192 D/SWDLNAMediaServer$2(30395): onServiceConnected:155: service connected
+08-29 11:28:24.193 D/SWDLNAMediaRenderer$1(30395): onServiceConnected:123: service connected
+08-29 11:28:24.204 D/SWActionEvent(30395): registerEventReceiver:-1: registerEvent net.sunniwell.mediacenter.device.SWDLNAMediaServer$1@2cac1b00
+08-29 11:28:24.216 D/dalvikvm(30395): GC_CONCURRENT freed 739K, 19% free 3494K/4264K, paused 3ms+5ms, total 38ms
+08-29 11:28:24.218 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_33' current size '34' threadPool size 34 dead thread size 0
+08-29 11:28:24.222 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_33' 249
+08-29 11:28:24.241 E/SWDLNAMediaRenderer(30395): getProtocols:210: cannot parse 'http-get:*:
+08-29 11:28:24.242 E/SWDLNAMediaServer(30395): getProtocols:274: cannot parse http-get:*:
+08-29 11:28:24.242 E/SWDLNAMediaServer(30395): getProtocols:274: cannot parse video/x-la-asf:*
+08-29 11:28:24.243 E/SWDLNAMediaRenderer(30395): getProtocols:210: cannot parse 'video/x-la-asf:*
+08-29 11:28:24.248 D/SWDLNAMediaControl(30395): mSearch:354: mSearch    mSearch[ 5986.523791] init: sys_prop: permission denied uid:1014  name:net.default.status
+ start
+08-29 11:28:24.2[ 5986.532782] init: sys_prop: permission denied uid:1014  name:net.default.auth
+53 D/ConnectivityService( 1984): handleInetConditionHoldEnd: net=9, condition=100, published condition=100
+08-29 11:28:24.264 D/SWDLNAMediaControl(30395): onReceive:79: Router    onReceive isAvailable 'true'[ 5986.558448] 80211> CFG80211_OpsDisconnect ==> ReasonCode: 3, iftype: 2
+
+08-29 11:28:24[ 5986.566013] CFG80211DRV_OpsLeave - Bssid=30:fc:68:bf:f7:89
+.264 D/SWDLNAMed[ 5986.572867] AUTH - Send DE-AUTH request (Reason=3) to [30:fc:68:bf:f7:89] at channel [3],  Ap_Ch[1]
+iaControl(30395)[ 5986.583308] !!! LINK DOWN !!!
+: onReceive:81: [ 5986.587592] LinkDown: Bssid=[30:fc:68:bf:f7:89]
+Router    onRece[ 5986.593524] RTMP_TimerListRelease: release timer obj f15705d0!
+ive isConnected [ 5986.600707] RTMP_TimerListRelease: release timer obj f1571a0c!
+'true'
+08-29 11[ 5986.607895] RTMP_TimerListRelease: release timer obj f1571a3c!
+:28:24.265 D/SWDLNAMediaControl(30395): onReceive:84: mCurrentNetworkType: 0
+08-29 11:28:24.267 D/SWDLNAMediaControl(30395): onReceive:91: mIsFilterNetWork:false
+08-29 11:28:[ 5986.629103] COEXLinkDown, BSSID:30:fc:68:bf:f7:89]
+24.268 D/SWDLNAMediaCont[ 5986.635906] cfg80211: Calling CRDA to update world regulatory domain
+rol(30395): handleMessage:284: Router    try to remove all device...
+08-29 11:28:24.268 D/SWDLNAMediaControl(30395): handleMessage:287: Router    remove finish
+08-29 11:28:24.270 I/k       ( 2411): b:-1: tms:get name=acs_password
+08-29 11:28:24.270 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_password
+08-29 11:28:24.271 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:24.271 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:24.274 D/SWDLNAMediaControl(30395): onReceive:143: mCurrentNetworkType: 9
+08-29 11:28:24.281 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:24.281 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:24.281 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:24.281 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:24.293 W/dalvikvm(30395): dvmFindClassByName rejecting 'org/eclipse/jetty/http/encoding_en'
+08-29 11:28:24.293 W/dalvikvm(30395): dvmFindClassByName rejecting 'org/eclipse/jetty/http/encoding'
+08-29 11:28:24.303 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:24.304 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:24.304 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:24.304 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:24.306 I/swshowmsg( 1456): [sw_check_userdata_proc:135]clearDataOperation:0
+08-29 11:28:24.308 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:24.308 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:24.308 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:24.308 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:24.315 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:24.315 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:24.323 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_password
+08-29 11:28:24.323 D/k       ( 2411): b:-1: tms:get acs_password
+08-29 11:28:24.367 I/wpa_supplicant(30396): wlan0: CTRL-EVENT-TERMINATING 
+08-29 11:28:24.368 D/EthernetDataTracker( 1984): Interface wlan0 link down
+08-29 11:28:24.368 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link down
+08-29 11:28:24.368 D/Tethering( 1984): InitialState.processMessage what=4
+08-29 11:28:24.369 D/EthernetDataTracker( 1984): Interface wlan0 link down
+08-29 11:28:24.369 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link down
+08-29 11:28:24.370 D/Tethering( 1984): sendTetherStateChangedBroadcast 0, 0, 0
+08-29 11:28:24.370 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:24.383 D/dalvikvm(30395): GC_CONCURRENT freed 718K, 17% free 3764K/4516K, paused 4ms+13ms, total 50ms
+08-29 11:28:24.384 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 21ms
+08-29 11:28:24.384 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 6ms
+08-29 11:28:24.384 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 6ms
+08-29 11:28:24.385 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 7ms
+08-29 11:28:24.385 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 7ms
+08-29 11:28:24.392 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:24.395 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_34' current size '35' threadPool size 35 dead thread size 0
+08-29 11:28:24.401 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_34' 259
+08-29 11:28:24.471 W/Settings( 3001): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-29 11:28:24.511 D/dalvikvm(30395): GC_CONCURRENT freed 983K, 21% free 3860K/4876K, paused 3ms+4ms, total 34ms
+08-29 11:28:24.511 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 5ms
+08-29 11:28:24.511 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 19ms
+08-29 11:28:24.511 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 19ms
+08-29 11:28:24.548 D/SWTaskManager(30395): run:139: run thread '/mnt/sdb/sdb1_35' 260
+08-29 11:28:24.548 D/SWTaskManager(30395): createThread:265: create thread '/mnt/sdb/sdb1_35' current size '36' threadPool size 36 dead thread size 0
+08-29 11:28:24.553 I/k       ( 2411): b:-1: tms:get name=acs_password
+08-29 11:28:24.553 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_password
+08-29 11:28:24.555 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:24.555 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:24.555 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:24.555 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:24.564 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): cwmp_http_recv 1383 [Receive]:
+08-29 11:28:24.564 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): ****
+08-29 11:28:24.564 I/CWMP (swtr069/src/cwmp_http.c:1486)( 2411): cwmp_http_recv 1486 ***
+08-29 11:28:24.565 D/CWMP (swtr069/src/swcwmp.c:217)( 2411): sw_cwmp_on_package 217 eventcode------------------>4
+08-29 11:28:24.565 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:24.565 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:24.565 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:24.565 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:24.571 I/CWMP (swtr069/src/cwmp_http.c:1342)( 2411): cwmp_http_recv 1342 [Receive]:content size is NULL
+08-29 11:28:24.571 I/CWMP (swtr069/src/cwmp_http.c:1342)( 2411): *
+08-29 11:28:24.572 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = cpe_firstusedate
+08-29 11:28:24.572 D/k       ( 2411): b:-1: tms:get cpe_firstusedate
+08-29 11:28:24.575 I/org.jaudiotagger.audio(30395): Reading file:path/mnt/sdb/sdb1/yinye/@#��%%~!@##$.mp3:abs:/mnt/sdb/sdb1/yinye/@#��%%~!@##$.mp3
+08-29 11:28:24.579 I/k       ( 2411): b:-1: tms:get name=cpe_firstusedate
+08-29 11:28:24.579 I/Tms     ( 2411): getParameterFormNative:-1: tms:get cpe_firstusedate
+08-29 11:28:24.579 D/CWMP (swtr069/src/cwmp_http.c:478)( 2411): cwmp_http_message_pop 478 pop Ok ===============
+08-29 11:28:24.579 D/CWMP (swtr069/src/cwmp_http.c:532)( 2411): cwmp_http_message_queue_proc 532 event = 15, param = 0
+:494 net.sunniwell.base.tms.auditlog.SWAuditLogService.a:-1 net.sunniwell.base.tms.Tms.recordLogFormNative:-1 dalvik.system.NativeStart.run:-2 
+08-29 11:28:24.676 D/PowerManagerService( 1984): stopedbysleep flags cleared
+08-29 11:28:24.695 D/NetlinkEvent( 1448): Unexpected netlink message. type=0x11
+08-29 11:28:24.731 D/NetlinkEvent( 1448): Unexpected netlink message. type=0x11
+08-29 11:28:24.753 D/NetlinkEvent( 1448): Unexpected netlink message. type=0x11
+08-29 11:28:24.841 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = apk_list3
+08-29 11:28:24.841 D/k       ( 2411): b:-1: tms:get apk_list3
+08-29 11:28:24.841 I/AOService( 1460): hdmi_observer  remove@/class/ieee80211
+providers.settings:4.4.2-10001025;
+08-29 11:28:24.841 I/k       ( 2411): b:-1: tms:get name=apk_list3
+08-29 11:28:24.842 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_list3
+08-29 11:28:24.842 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = apk_list4
+08-29 11:28:24.842 D/k       ( 2411): b:-1: tms:get apk_list4
+roid.providers.downloads:4.4.2-10001025;com.android.musicfx:1.4;
+08-29 11:28:24.843 I/k       ( 2411): b:-1: tms:get name=apk_list4
+08-29 11:28:24.843 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_list4
+08-29 11:28:24.843 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = StartPic_Result
+08-29 11:28:24.843 D/k       ( 2411): b:-1: tms:get StartPic_Result
+08-29 11:28:24.850 I/k       ( 2411): b:-1: tms:get name=StartPic_Result
+08-29 11:28:24.850 I/Tms     ( 2411): getParameterFormNative:-1: tms:get StartPic_Result
+08-29 11:28:24.851 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = mac
+08-29 11:28:24.851 D/k       ( 2411): b:-1: tms:get mac
+08-29 11:28:24.852 I/k       ( 2411): b:-1: tms:get name=mac
+08-29 11:28:24.852 I/Tms     ( 2411): getParameterFormNative:-1: tms:get mac
+08-29 11:28:24.853 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:24.853 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:24.855 I/AOService( 1460): hdmi_observer  remove@/module/cfg80211
+08-29 11:28:24.857 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.858 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:24.862 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.863 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:24.864 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:24.866 D/dalvikvm(30395): GC_CONCURRENT freed 904K, 19% free 4154K/5092K, paused 3ms+6ms, total 64ms
+08-29 11:28:24.866 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 24ms
+08-29 11:28:24.867 I/id3     (30395): Reading body forTENC:35
+08-29 11:28:24.867 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:24.867 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.867 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:24.867 I/datatype(30395): Read SizeTerminatedString:www.jinxinzi.com size:34
+08-29 11:28:24.869 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 26ms
+08-29 11:28:24.870 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 24ms
+08-29 11:28:24.870 I/id3     (30395): Reading body forWXXX:18
+08-29 11:28:24.870 I/datatype(30395): Read NumberFixedlength:0
+08-29 11:28:24.872 I/datatype(30395): Read NullTerminatedString: size inc terminator:1
+08-29 11:28:24.872 I/datatype(30395): Read SizeTerminatedString:www.jinxinzi.com size:16
+08-29 11:28:24.873 I/id3     (30395): Reading body forTCOP:67
+08-29 11:28:24.873 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.873 I/datatype(30395): Read SizeTerminatedString:����� ���������� ���ѽ����� www.jinxinzi.com size:66
+08-29 11:28:24.874 I/id3     (30395): Reading body forTOPE:67
+08-29 11:28:24.874 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.875 I/datatype(30395): Read SizeTerminatedString:����� ���������� ���ѽ����� www.jinxinzi.com size:66
+08-29 11:28:24.876 I/id3     (30395): Reading body forTCOM:67
+08-29 11:28:24.876 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.876 I/datatype(30395): Read SizeTerminatedString:����� ���������� ���ѽ����� www.jinxinzi.com size:66
+08-29 11:28:24.877 I/id3     (30395): Reading body forTIT2:13
+08-29 11:28:24.877 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.877 I/datatype(30395): Read SizeTerminatedString:�¹������ size:12
+08-29 11:28:24.879 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.881 I/id3     (30395): Reading body forTALB:59
+08-29 11:28:24.881 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.886 I/datatype(30395): Read SizeTerminatedString:���������� ���ѽ����� www.jinxinzi.com size:58
+08-29 11:28:24.887 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:24.890 I/id3     (30395): Reading body forTYER:11
+08-29 11:28:24.890 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.891 I/datatype(30395): Read SizeTerminatedString:2007 size:10
+08-29 11:28:24.893 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.895 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:24.895 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:24.896 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:24.896 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_mask
+08-29 11:28:24.896 D/k       ( 2411): b:-1: tms:get lan_mask
+08-29 11:28:24.896 I/k       ( 2411): b:-1: tms:get name=lan_mask
+08-29 11:28:24.896 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_mask
+08-29 11:28:24.897 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:24.897 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:24.898 D/dalvikvm( 1984): GC_CONCURRENT freed 1353K, 21% free 6606K/8348K, paused 3ms+10ms, total 85ms
+08-29 11:28:24.906 D/dalvikvm( 2411): GC_CONCURRENT freed 1006K, 34% free 3064K/4600K, paused 2ms+3ms, total 42ms
+08-29 11:28:24.907 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.909 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:24.913 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.914 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:24.914 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:24.915 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:24.915 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:24.915 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:24.915 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:24.915 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:24.916 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_url
+08-29 11:28:24.916 D/k       ( 2411): b:-1: tms:get acs_url
+08-29 11:28:24.925 I/k       ( 2411): b:-1: tms:get name=acs_url
+08-29 11:28:24.925 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_url
+08-29 11:28:24.925 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:24.925 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:24.928 I/id3     (30395): Reading body forCOMM:64
+08-29 11:28:24.928 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.928 I/datatype(30395): Reading from array from offset:1
+08-29 11:28:24.929 I/datatype(30395): Read StringFixedLength:chi
+08-29 11:28:24.929 I/datatype(30395): Read NullTerminatedString: size inc terminator:2
+08-29 11:28:24.929 I/datatype(30395): Read SizeTerminatedString:���������� ���ѽ����� www.jinxinzi.com size:58
+08-29 11:28:24.930 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.930 I/id3     (30395): Reading body forTCON:17
+08-29 11:28:24.930 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.930 I/datatype(30395): Read SizeTerminatedString:(131)���� size:16
+08-29 11:28:24.931 I/id3     (30395): Reading body forTPE1:9
+08-29 11:28:24.931 I/datatype(30395): Read NumberFixedlength:1
+08-29 11:28:24.932 I/datatype(30395): Read SizeTerminatedString:����� size:8
+08-29 11:28:24.932 I/id3     (30395): @#��%%~!@##$.mp3:Loaded Frames,there are:12
+08-29 11:28:24.932 I/id3     (30395): Creating tag from a tag of a different version
+08-29 11:28:24.932 I/id3     (30395): Copying primitives
+08-29 11:28:24.933 I/id3     (30395): Copying Primitives
+08-29 11:28:24.935 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:24.938 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:24.939 I/id3     (30395): V3:Orig id is:TYER:New id is:TDRC
+08-29 11:28:24.942 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:24.942 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:24.942 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:24.942 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:24.942 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:24.942 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:24.943 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:24.947 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = app_version
+08-29 11:28:24.947 D/k       ( 2411): b:-1: tms:get app_version
+08-29 11:28:24.947 I/k       ( 2411): b:-1: tms:get name=app_version
+08-29 11:28:24.948 I/Tms     ( 2411): getParameterFormNative:-1: tms:get app_version
+08-29 11:28:24.948 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:24.948 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:24.948 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:24.948 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:24.949 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:24.949 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:24.949 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:24.949 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:24.950 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:24.950 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:24.950 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:24.950 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:24.951 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_NATDetected
+08-29 11:28:24.951 D/k       ( 2411): b:-1: tms:get acs_stun_NATDetected
+08-29 11:28:24.963 I/k       ( 2411): b:-1: tms:get name=acs_stun_NATDetected
+08-29 11:28:24.963 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_NATDetected
+08-29 11:28:24.964 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_UDPConnectionRequestAddress
+08-29 11:28:24.964 D/k       ( 2411): b:-1: tms:get acs_UDPConnectionRequestAddress
+08-29 11:28:24.971 I/k       ( 2411): b:-1: tms:get name=acs_UDPConnectionRequestAddress
+08-29 11:28:24.971 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_UDPConnectionRequestAddress
+08-29 11:28:24.971 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = tr069_protocol
+08-29 11:28:24.971 D/k       ( 2411): b:-1: tms:get tr069_protocol
+08-29 11:28:24.979 I/k       ( 2411): b:-1: tms:get name=tr069_protocol
+08-29 11:28:24.980 I/Tms     ( 2411): getParameterFormNative:-1: tms:get tr069_protocol
+08-29 11:28:24.980 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:24.980 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:24.987 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:24.987 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:24.987 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_commandkey
+08-29 11:28:24.987 D/k       ( 2411): b:-1: tms:get acs_commandkey
+08-29 11:28:24.995 I/k       ( 2411): b:-1: tms:get name=acs_commandkey
+08-29 11:28:24.995 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_commandkey
+08-29 11:28:24.995 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_commandkey
+08-29 11:28:24.995 I/k       ( 2411): a:-1: tms:set acs_commandkey
+08-29 11:28:25.000 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs.commandkey' no need to update.
+08-29 11:28:25.001 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:25.001 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:25.001 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:25.001 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:25.006 I/CWMP (swtr069/src/cwmp_http.c:1484)( 2411): cwmp_http_recv 1484 401=[Receive]:
+08-29 11:28:25.006 I/CWMP (swtr069/src/cwmp_http.c:1484)( 2411): ***
+08-29 11:28:25.007 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_username
+08-29 11:28:25.007 D/k       ( 2411): b:-1: tms:get acs_username
+08-29 11:28:25.016 I/k       ( 2411): b:-1: tms:get name=acs_username
+08-29 11:28:25.016 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_username
+08-29 11:28:25.016 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_password
+08-29 11:28:25.016 D/k       ( 2411): b:-1: tms:get acs_password
+08-29 11:28:25.019 I/org.jaudiotagger.audio(30395): Reading file:path/mnt/sdb/sdb1/shipin/��� - ʹ�����_new.ogg:abs:/mnt/sdb/sdb1/shipin/��� - ʹ�����_new.ogg
+08-29 11:28:25.077 D/dalvikvm(30395): GC_CONCURRENT freed 1024K, 20% free 4335K/5396K, paused 5ms+6ms, total 49ms
+08-29 11:28:25.078 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 14ms
+08-29 11:28:25.079 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 14ms
+08-29 11:28:25.079 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 14ms
+08-29 11:28:25.079 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 16ms
+08-29 11:28:25.153 I/org.jaudiotagger.audio(30395): Reading file:path/mnt/sdb/sdb1/yinye/aac-katy perry-e.t..mka:abs:/mnt/sdb/sdb1/yinye/aac-katy perry-e.t..mka
+08-29 11:28:25.170 I/SWDLNAMediaRenderer(30395): doConnect:227: registry device success
+08-29 11:28:25.235 I/k       ( 2411): b:-1: tms:get name=acs_password
+08-29 11:28:25.235 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_password
+08-29 11:28:25.235 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:25.235 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:25.248 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:25.248 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:25.248 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:25.248 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:25.255 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:25.255 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:25.255 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:25.255 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:25.255 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:25.261 D/SWDLNAMediaServer$1(30395): onReceive:73: recv 'net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:25.265 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:25.265 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:25.265 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:25.265 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:25.273 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:25.273 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:25.273 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_password
+08-29 11:28:25.273 D/k       ( 2411): b:-1: tms:get acs_password
+rate:320 trackLength:01:22 mpeg frameheader: frame length:320 version:[ 5988.727026] init: sys_prop: permission denied uid:1000  name:isHandlePowerKey
+MPEG-1 layer:Layer 1 channelMode:Dual noOfSamples:384 samplingRate:48000 isPadding:false isProtected:fal[ 5988.743342] init: sys_prop: permission denied uid:1000  name:isHandleSettingKey
+se isPrivate:true isCopyrighted:false isOriginal:false isVariableBitRatefalse header as binary:11111111 11110011 11000110 01111101
+08-29 11:28:25.294 W/org.jaudiotagger.audio(30395):  /mnt/sd[ 5988.767080] init: sys_prop: permission denied uid:1000  name:isHandleHomeKey
+b/sdb1/yinye/aac-katy perry-e.t..mka:Checking further because the ID3 Tag ends at 0x0 but the mp3 audio doesnt start until 0xe33b
+08-29 11:28:25.306 I/swshowmsg( 1456): [sw_ch[ 5988.789172] init: sys_prop: permission denied uid:1000  name:isHandleSystemKey
+eck_userdata_proc:135]clearDataOperation:0
+08-29 11:28:25.358 D/WifiHW  ( 1984): uevent path:/sys/bus/usb/devices/./uevent
+08-29 11:28:25.358 D/WifiHW  ( 1984): uevent path:/sys/bus/usb/devices/../uevent
+08-29 11:28:25.35[ 5988.816099] init: sys_prop: permission denied uid:1000  name:isLockedAllKeys
+8 D/WifiHW  ( 1984): uevent path:/sys/bus/usb/devices/1-1/uevent
+08-29 11:28:25.358 D/WifiHW  ( 1984): uevent path:/sys/bus/usb/devices/1-2/uevent
+08-29 11:28:25.358 D/WifiHW  ( 1984): pid:vid : 0e8d:7632
+08-29 11:28:25.358 D/WifiHW  ( 1984): find device id = 21, and mode = 0
+08-29 11:28:25.358 D/WifiHW  ( 1984): wifi mode:0 and device_id:21
+08-29 11:28:25.367 I/AOService( 1460): hdmi_observer  add@/module/cfg80211
+08-29 11:28:25.370 I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.370 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.370 D/a       ( 3056): onReceive:-1: action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.372 D/com.huawei.launcher.StatusReciver(30296): onReceive(): action = android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.373 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.577 I/org.jaudiotagger.audio(30395): /mnt/sdb/sdb1/yinye/aac-katy perry-e.t..mka: Confirmed audio starts at 0xe33b whether searching from start or from end of ID3 tag
+08-29 11:28:25.577 I/org.jaudiotagger.audio(30395): No ids3v11 tag found
+08-29 11:28:25.577 I/org.jaudiotagger.audio(30395): No id3v1 tag found
+08-29 11:28:25.578 I/org.jaudiotagger.audio(30395): Attempting to read id3v2tags
+08-29 11:28:25.578 I/id3     (30395): ByteBuffer pos:0:limit58171:cap58171
+08-29 11:28:25.578 I/org.jaudiotagger.audio(30395): No id3v24 tag found
+08-29 11:28:25.578 I/id3     (30395): ByteBuffer pos:0:limit58171:cap58171
+08-29 11:28:25.578 I/org.jaudiotagger.audio(30395): No id3v23 tag found
+08-29 11:28:25.578 I/id3     (30395): ByteBuffer pos:0:limit58171:cap58171
+08-29 11:28:25.579 I/org.jaudiotagger.audio(30395): No id3v22 tag found
+08-29 11:28:25.579 E/SWMetadataScannerAudio(30395): parseMp3:195: cann't decode null
+08-29 11:28:25.581 I/k       ( 2411): b:-1: tms:get name=cpe_firstusedate
+08-29 11:28:25.581 I/Tms     ( 2411): getParameterFormNative:-1: tms:get cpe_firstusedate
+08-29 11:28:25.582 D/CWMP (swtr069/src/cwmp_http.c:478)( 2411): cwmp_http_message_pop 478 pop Ok ===============
+08-29 11:28:25.614 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/ieee80211/phy0
+08-29 11:28:25.622 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/ieee80211/phy0/rfkill12
+08-29 11:28:25.626 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:25.627 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/wlan0
+08-29 11:28:25.628 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/wlan0/queues/rx-0
+08-29 11:28:25.628 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/wlan0/queues/tx-0
+08-29 11:28:25.630 I/AOService( 1460): hdmi_observer  add@/bus/usb/drivers/rt2870
+08-29 11:28:25.631 D/SWDLNAMediaServer$1(30395): onReceive:73: recv 'net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:25.632 D/EthernetDataTracker( 1984): checkInterfaceName is false
+08-29 11:28:25.632 I/G3StateTracker( 1984): interfaceAdded(wlan0)
+08-29 11:28:25.633 D/EthernetDataTracker( 1984): Interface wlan0 link down
+08-29 11:28:25.633 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link down
+08-29 11:28:25.634 D/Tethering( 1984): sendTetherStateChangedBroadcast 0, 0, 0
+08-29 11:28:25.634 D/Tethe[ 5989.126359] binder: undelivered transaction 4957467
+ring( 1984): Ini[ 5989.132530] binder: undelivered transaction 4957470
+tialState.proces[ 5989.138802] binder: undelivered transaction 4957471
+sMessage what=4
+08-29 11:28:25.634 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:25.635 D/Tethering( 1984): sendTetherStateChangedBroadcast 0, 0, 0
+08-29 11:28:25.650 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:25.650 D/DHCP    ( 1448): ifc_close
+08-29 11:28:25.654 D/CommandListener( 1448): Setting iface cfg
+08-29 11:28:25.654 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:25.654 D/DHCP    ( 1448): ifc_set_addr(wlan0, xx) = 0
+08-29 11:28:25.654 D/CommandListener( 1448): Trying to bring down wlan0
+08-29 11:28:25.654 D/DHCP    ( 1448): ifc_down(wlan0) = 0
+08-29 11:28:25.654 D/DHCP    ( 1448): ifc_close
+08-29 11:28:25.656 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:25.656 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:25.669 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = tmsreg
+08-29 11:28:25.669 D/k       ( 2411): b:-1: tms:get tmsreg
+08-29 11:28:25.677 I/k       ( 2411): b:-1: tms:get name=tmsreg
+08-29 11:28:25.677 I/Tms     ( 2411): getParameterFormNative:-1: tms:get tmsreg
+08-29 11:28:25.677 D/CWMP (swtr069/src/cwmp_sqm_nat.c:102)( 2411): cwmp_nat_sleep 102 acs_stun_ boot
+08-29 11:28:25.678 D/Tms     ( 2411): handleMessage:-1: tms: finish notifyEventToTms,what=4097,event=0,pName=,pValue=
+08-29 11:28:25.678 D/Tms     ( 2411): handleMessage:-1: tms: run notifyEventToTms,what=4113,event=0,pName=,pValue=
+08-29 11:28:25.678 D/CWMP (swctctms.c:71)( 2411): sw_ctctms_notifyevent 71 -------ctctms_notifyevent type = 1011 event = 0-------
+08-29 11:28:25.678 D/CWMP (swctctms.c:74)( 2411): sw_ctctms_notifyevent 74 -------ctctms_notifyevent wpara 0  lpara = 0 name =  value = ****-------
+08-29 11:28:25.679 D/Tms     ( 2411): handleMessage:-1: tms: finish notifyEventToTms,what=4113,event=0,pName=,pValue=
+08-29 11:28:25.679 D/WifiHW  ( 1984): in wifi_start_supplicant
+08-29 11:28:25.680 E/WifiHW  ( 1984): ====>>close sockets and cleanup
+08-29 11:28:25.680 D/WifiHW  ( 1984): supplicant_prop_name:init.svc.76x2_supplicant, supplicant_name:76x2_supplicant
+08-29 11:28:25.681 D/Tms     ( 2411): handleMessage:-1: tms: run notifyEventToTms,what=8192,event=0,pName=,pValue=
+08-29 11:28:25.681 D/CWMP (swctctms.c:71)( 2411): sw_ctctms_notifyevent 71 -------ctctms_notifyevent type = 2000 event = 0-------
+08-29 11:28:25.681 D/CWMP (swctctms.c:74)( 2411): sw_ctctms_notifyevent 74 -------ctctms_notifyevent wpara 0  lpara = 0 name =  value = ****-------
+08-29 11:28:25.681 D/Tms     ( 2411): handleMessage:-1: tms: finish notifyEventToTms,what=8192,event=0,pName=,pValue=
+08-29 11:28:25.684 D/WifiHW  ( 1984): ...... running status.....
+08-29 11:28:25.688 D/WifiMonitor( 1984): startMonitoring(wlan0) with mConnected = false
+08-29 11:28:25.688 I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.689 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:25.689 D/LAUNCHER(30296): msg.what  = 101  msg.arg1 = 100
+08-29 11:28:25.690 E/WifiHW  ( 1984): Unable to open connection to supplicant on "@android:wpa_wlan0": No such file or directory
+08-29 11:28:25.696 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:25.715 I/wpa_supplicant(30670): Successfully initialized wpa_supplicant
+08-29 11:28:25.715 I/wpa_supplicant(30670): wpa_config_read_network  pos:ssid 
+08-29 11:28:25.715 I/wpa_supplicant(30670): wpa_config_read_network  pos:psk 
+08-29 11:28:25.715 I/wpa_supplicant(30670): net.wifiKey.encrypt true 
+08-29 11:28:25.782 D/CWMP (swtr069/src/cwmp_http.c:532)( 2411): cwmp_http_message_queue_proc 532 event = 1, param = 0
+08-29 11:28:25.782 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_url
+08-29 11:28:25.782 D/k       ( 2411): b:-1: tms:get acs_url
+08-29 11:28:25.791 I/k       ( 2411): b:-1: tms:get name=acs_url
+08-29 11:28:25.791 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_url
+08-29 11:28:25.791 D/CWMP (swtr069/src/cwmp_http.c:663)( 2411): cwmp_http_read_acsurl 663 m_url.port = 37021, m_url.ip = *.*.*.*
+08-29 11:28:25.791 D/COMMON (/home/zhanghongyang/middleware_code/base/swapi/src/common/swhttp/swhttpclient.c:131)( 2411): sw_httpclient_connect 0x4a95952c,timeout=5000
+08-29 11:28:25.791 I/COMMON (/home/zhanghongyang/middleware_code/base/swapi/src/common/swhttp/swhttpclient.c:1018)( 2411): sw_httpclient_set_err_code sw_httpclient_set_err_code 0
+08-29 11:28:25.792 D/CWMP (swtr069/src/cwmp_http.c:1639)( 2411): cwmp_cpe_http_connect 1639 ++++++++++sw_httpclient_connect OK+++++++++++
+08-29 11:28:25.792 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_commandkey
+08-29 11:28:25.792 D/k       ( 2411): b:-1: tms:get acs_commandkey
+08-29 11:28:25.799 I/k       ( 2411): b:-1: tms:get name=acs_commandkey
+08-29 11:28:25.799 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_commandkey
+08-29 11:28:25.799 D/CWMP (swtr069/src/cwmp_db.c:1177)( 2411): Device_DeviceInfo_SerialNumber 1177 act_type = 0, readable = 1
+08-29 11:28:25.799 D/CWMP (swtr069/src/cwmp_db.c:1180)( 2411): Device_DeviceInfo_SerialNumber 1180 
+08-29 11:28:25.799 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = stbid
+:494 net.sunniwell.base.tms.auditlog.SWAuditLogService.a:-1 net.sunniwell.base.tms.Tms.recordLogFormNative:-1 dalvik.system.NativeStart.run:-2 
+08-29 11:28:25.859 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.860 E/dalvikvm(30395): Could not find class 'javax.swing.tree.DefaultMutableTreeNode', referenced from method org.jaudiotagger.audio.mp4.Mp4TagWriter.write
+08-29 11:28:25.860 W/dalvikvm(30395): VFY: unable to resolve check-cast 1461 (Ljavax/swing/tree/DefaultMutableTreeNode;) in Lorg/jaudiotagger/audio/mp4/Mp4TagWriter;
+08-29 11:28:25.860 D/dalvikvm(30395): VFY: replacing opcode 0x1f at 0x009e
+08-29 11:28:25.861 I/k       ( 2411): b:-1: tms:get name=MReboot
+08-29 11:28:25.861 I/Tms     ( 2411): getParameterFormNative:-1: tms:get MReboot
+08-29 11:28:25.862 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = MTRANSFERCOMPLETE
+08-29 11:28:25.862 D/k       ( 2411): b:-1: tms:get MTRANSFERCOMPLETE
+08-29 11:28:25.862 I/wpa_supplicant(30670): rfkill: Cannot open RFKILL control device
+08-29 11:28:25.862 I/org.jaudiotagger.audio(30395): Reading file:path/mnt/sdb/sdb1/yinye/aac����֮��.m4a:abs:/mnt/sdb/sdb1/yinye/aac����֮��.m4a
+08-29 11:28:25.863 I/generic (30395): File /mnt/sdb/sdb1/yinye/aac����֮��.m4a being read
+08-29 11:28:25.888 D/dalvikvm( 2680): GC_EXPLICIT freed 179K, 13% free 3008K/3436K, paused 2ms+3ms, total 25ms
+08-29 11:28:25.896 I/k       ( 2411): b:-1: tms:get name=MTRANSFERCOMPLETE
+08-29 11:28:25.896 I/Tms     ( 2411): getParameterFormNative:-1: tms:get MTRANSFERCOMPLETE
+08-29 11:28:25.897 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = apk_total_num
+08-29 11:28:25.897 D/k       ( 2411): b:-1: tms:get apk_total_num
+08-29 11:28:25.904 D/dalvikvm(30395): GC_FOR_ALLOC freed 915K, 22% free 4452K/5704K, paused 39ms, total 39ms
+08-29 11:28:25.921 I/atom    (30395): Encoding infos content:
+08-29 11:28:25.921 I/atom    (30395): 	SAMPLING : 44100
+08-29 11:28:25.921 I/atom    (30395): 	PROFILE : LOW_COMPLEXITY
+08-29 11:28:25.921 I/atom    (30395): 	CHANNB : -14
+08-29 11:28:25.921 I/atom    (30395): 	VBR : true
+08-29 11:28:25.921 I/atom    (30395): 	INFOS : 
+08-29 11:28:25.921 I/atom    (30395): 	BITRATE : 63
+08-29 11:28:25.921 I/atom    (30395): 	KIND : MPEG4_AUDIO
+08-29 11:28:25.921 I/atom    (30395): 	BRAND : mp42
+08-29 11:28:25.921 I/atom    (30395): 	LENGTH : 235.0
+08-29 11:28:25.921 I/atom    (30395): 	TYPE : AAC
+08-29 11:28:25.923 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultTreeModel;)
+08-29 11:28:25.923 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultTreeModel;)
+08-29 11:28:25.923 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+fNode
+08-29 11:28:25.925 W/dalvikvm(30395): VFY: unable to resolve virtual method 8417: Ljavax/swing/tree/DefaultMutableTreeNode;.getUserObject ()Ljava/lang/Object;
+08-29 11:28:25.925 D/dalvikvm(30395): VFY: replacing opcode 0x74 at 0x0000
+08-29 11:28:25.932 E/dalvikvm(30395): Could not find class 'javax.swing.tree.DefaultMutableTreeNode', referenced from method org.jaudiotagger.audio.mp4.Mp4AtomTree.buildTree
+08-29 11:28:25.932 W/dalvikvm(30395): VFY: unable to resolve new-instance 1461 (Ljavax/swing/tree/DefaultMutableTreeNode;) in Lorg/jaudiotagger/audio/mp4/Mp4AtomTree;
+08-29 11:28:25.932 D/dalvikvm(30395): VFY: replacing opcode 0x22 at 0x000a
+08-29 11:28:25.932 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.933 I/dalvikvm(30395): Could not find method javax.swing.tree.DefaultMutableTreeNode.getUserObject, referenced from method org.jaudiotagger.audio.mp4.Mp4AtomTree.getBoxHeader
+08-29 11:28:25.933 W/dalvikvm(30395): VFY: unable to resolve virtual method 8417: Ljavax/swing/tree/DefaultMutableTreeNode;.getUserObject ()Ljava/lang/Object;
+08-29 11:28:25.933 D/dalvikvm(30395): VFY: replacing opcode 0x6e at 0x0004
+08-29 11:28:25.933 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultTreeModel;)
+08-29 11:28:25.934 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.934 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.935 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.935 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.936 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.936 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.937 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+08-29 11:28:25.937 W/dalvikvm(30395): VFY: unable to find class referenced in signature (Ljavax/swing/tree/DefaultMutableTreeNode;)
+mTree
+08-29 11:28:25.938 W/dalvikvm(30395): VFY: unable to resolve virtual method 8419: Ljavax/swing/tree/DefaultMutableTreeNode;.preorderEnumeration ()Ljava/util/Enumeration;
+08-29 11:28:25.938 D/dalvikvm(30395): VFY: replacing opcode 0x6e at 0x0002
+08-29 11:28:25.938 D/dalvikvm(30395): DexOpt: unable to opt direct call 0x20db at 0xaf in Lorg/jaudiotagger/audio/mp4/Mp4AtomTree;.buildChildrenOfNode
+08-29 11:28:25.939 D/dalvikvm(30395): DexOpt: unable to opt direct call 0x20da at 0x0c in Lorg/jaudiotagger/audio/mp4/Mp4AtomTree;.buildTree
+08-29 11:28:25.939 D/dalvikvm(30395): DexOpt: unable to opt direct call 0x20e8 at 0x15 in Lorg/jaudiotagger/audio/mp4/Mp4AtomTree;.buildTree
+08-29 11:28:25.939 D/dalvikvm(30395): DexOpt: unable to opt direct call 0x20db at 0x49 in Lorg/jaudiotagger/audio/mp4/Mp4AtomTree;.buildTree
+08-29 11:28:25.939 D/dalvikvm(30395): DexOpt: unable to opt direct call 0x20db at 0xc5 in Lorg/jaudiotagger/audio/mp4/Mp4AtomTree;.buildTree
+08-29 11:28:25.945 E/SWMetadataScannerAudio(30395): parseM4a:264: cann't decode '/mnt/sdb/sdb1/yinye/aac����֮��.m4a' Unable to determine start of audio in file
+08-29 11:28:26.018 D/dalvikvm( 2411): GC_CONCURRENT freed 361K, 23% free 3562K/4600K, paused 3ms+13ms, total 47ms
+08-29 11:28:26.063 D/SWUsbUpgradeService(30431): handleMessage:-1: upgradech: wait launcher ended 
+08-29 11:28:26.070 D/SWUsbUpgradeService(30431): a:-1: upgradech: current is stc 
+08-29 11:28:26.074 D/SWUsbUpgradeService(30431): a:-1: upgracech:ui: result = 0
+08-29 11:28:26.074 D/c       ( 2411): b:-1: tms:-------apk_total_num=65
+08-29 11:28:26.075 I/k       ( 2411): b:-1: tms:get name=apk_total_num
+08-29 11:28:26.075 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_total_num
+08-29 11:28:26.076 I/k       ( 2411): b:-1: tms:get name=apk_list1
+08-29 11:28:26.076 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_list1
+08-29 11:28:26.076 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = apk_list2
+08-29 11:28:26.076 D/k       ( 2411): b:-1: tms:get apk_list2
+android.externalstorage:4.4.2-10001025;
+08-29 11:28:26.077 I/k       ( 2411): b:-1: tms:get name=apk_list2
+08-29 11:28:26.077 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_list2
+08-29 11:28:26.077 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = apk_list3
+08-29 11:28:26.077 D/k       ( 2411): b:-1: tms:get apk_list3
+providers.settings:4.4.2-10001025;
+08-29 11:28:26.077 I/k       ( 2411): b:-1: tms:get name=apk_list3
+08-29 11:28:26.078 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_list3
+08-29 11:28:26.078 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = apk_list4
+08-29 11:28:26.078 D/k       ( 2411): b:-1: tms:get apk_list4
+roid.providers.downloads:4.4.2-10001025;com.android.musicfx:1.4;
+08-29 11:28:26.078 I/k       ( 2411): b:-1: tms:get name=apk_list4
+08-29 11:28:26.078 I/Tms     ( 2411): getParameterFormNative:-1: tms:get apk_list4
+08-29 11:28:26.079 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = StartPic_Result
+08-29 11:28:26.079 D/k       ( 2411): b:-1: tms:get StartPic_Result
+08-29 11:28:26.084 I/k       ( 2411): b:-1: tms:get name=StartPic_Result
+08-29 11:28:26.084 I/Tms     ( 2411): getParameterFormNative:-1: tms:get StartPic_Result
+08-29 11:28:26.085 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = mac
+08-29 11:28:26.085 D/k       ( 2411): b:-1: tms:get mac
+08-29 11:28:26.085 I/k       ( 2411): b:-1: tms:get name=mac
+08-29 11:28:26.085 I/Tms     ( 2411): getParameterFormNative:-1: tms:get mac
+08-29 11:28:26.086 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:26.086 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:26.087 D/SWUsbUpgradeService(30431): a:-1: upgradech: lock, sys.isHandleSystemKey = 0
+08-29 11:28:26.088 D/d       (30431): b:-1: upgradech: SWWindowView show
+08-29 11:28:26.103 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:26.104 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:26.107 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:26.112 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:26.112 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:26.112 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:26.112 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:26.113 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:26.121 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:26.123 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:26.126 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:26.127 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:26.128 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:26.128 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:26.128 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_mask
+08-29 11:28:26.128 D/k       ( 2411): b:-1: tms:get lan_mask
+08-29 11:28:26.138 D/dalvikvm(30431): GC_FOR_ALLOC freed 853K, 20% free 3768K/4680K, paused 47ms, total 47ms
+08-29 11:28:26.140 I/dalvikvm-heap(30431): Grow heap (frag case) to 4.343MB for 672016-byte allocation
+08-29 11:28:26.172 D/dalvikvm(30431): GC_FOR_ALLOC freed 783K, 32% free 3641K/5340K, paused 29ms, total 29ms
+08-29 11:28:26.173 D/ASWMediaDevice(30395): sendEvent:581: sendEvent net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:26.177 D/SWDLNAMediaServer$1(30395): onReceive:73: recv 'net.sunniwell.event.MEDIACENTER_DEVICE
+08-29 11:28:26.191 D/a       (30431): run:-1: upgradech:SocketTimeoutException timeOutRetryCount = 1
+08-29 11:28:26.191 W/System.err(30431): java.net.SocketTimeoutException: failed to connect to /10.10.10.17 (port 33600) after 2000ms
+08-29 11:28:26.192 W/System.err(30431): 	at libcore.io.IoBridge.connectErrno(IoBridge.java:159)
+08-29 11:28:26.192 W/System.err(30431): 	at libcore.io.IoBridge.connect(IoBridge.java:112)
+08-29 11:28:26.192 W/System.err(30431): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+08-29 11:28:26.193 W/System.err(30431): 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+08-29 11:28:26.193 W/System.err(30431): 	at java.net.Socket.connect(Socket.java:843)
+08-29 11:28:26.193 W/System.err(30431): 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:152)
+08-29 11:28:26.193 W/System.err(30431): 	at com.android.okhttp.Connection.connect(Connection.java:101)
+08-29 11:28:26.193 W/System.err(30431): 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+08-29 11:28:26.193 W/System.err(30431): 	at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+08-29 11:28:26.193 W/System.err(30431): 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+08-29 11:28:26.193 W/System.err(30431): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+08-29 11:28:26.194 W/System.err(30431): 	at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:89)
+08-29 11:28:26.194 W/System.err(30431): 	at net.sunniwell.upgrade.e.e.run(Unknown Source)
+08-29 11:28:26.194 D/a       (30431): run:-1: upgradech: connect upgrade server, maybe someting error happened.
+eHWVersion=IPTV+STB+V100R003C30LIRM11&HardwareVersion=EC6108V9-01,timeOutRetryCount==2
+08-29 11:28:26.194 D/a       (30431): run:-1: upgradech: request ini file start current count 0
+08-29 11:28:26.195 D/a       (30431): run:-1: upgradech:mServerAddress==4000
+08-29 11:28:26.195 W/System  (30431): Ignoring header Cookies because its value was null.
+08-29 11:28:26.263 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_username
+08-29 11:28:26.263 D/k       ( 2411): b:-1: tms:get acs_stun_username
+08-29 11:28:26.275 I/k       ( 2411): b:-1: tms:get name=acs_stun_username
+08-29 11:28:26.276 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_username
+08-29 11:28:26.277 D/CWMP (swtr069/src/cwmp_sqm_nat.c:949)( 2411): cwmp_nat_client_proc 949 recvBuf =  
+08-29 11:28:26.277 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:26.277 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:26.281 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:26.282 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:26.290 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:26.292 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:26.292 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:26.292 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:26.292 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:26.292 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:26.297 D/dalvikvm(30431): GC_FOR_ALLOC freed 48K, 32% free 3655K/5340K, paused 24ms, total 24ms
+08-29 11:28:26.298 I/dalvikvm-heap(30431): Grow heap (frag case) to 3.862MB for 281896-byte allocation
+08-29 11:28:26.306 I/swshowmsg( 1456): [sw_check_userdata_proc:135]clearDataOperation:0
+08-29 11:28:26.316 D/dalvikvm(30431): GC_FOR_ALLOC freed <1K, 31% free 3931K/5616K, paused 17ms, total 17ms
+08-29 11:28:26.462 E/ViewRootImpl(30431): 201409092 enable acc for view=
+08-29 11:28:26.467 D/SWStatusbar( 2503): topAppWindowChanged:64: ... topAppWindowChanged ...
+08-29 11:28:26.562 W/InputMethodManagerService( 1984): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@2cd8f418 (uid=1000 pid=30296)
+08-29 11:28:26.626 W/InputMethodManager(30431): Ignoring onBind: cur seq=734, given seq=733
+08-29 11:28:26.629 D/HOME    (30296): onWindowFocusChanged
+08-29 11:28:26.959 D/CategoryOperate(30296): ------------->getAllResolveInfo() begin
+08-29 11:28:26.995 D/CategoryOperate(30296): ------------->getAllResolveInfo() end
+08-29 11:28:27.004 D/CategorySqlHelper(30296): getAllAppData:541: close datebase.
+ion=6]]
+08-29 11:28:27.005 I/CategoryOperate(30296): currentPackageName-----------------------------$com.huawei.launcher
+08-29 11:28:27.005 D/CategoryOperate(30296): ------------->sync system to db begin
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->item 0
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.base.apkinstall, className=net.sunniwell.base.apkinstall.SWScanActivity
+08-29 11:28:27.005 I/CategoryOperate(30296): unchoose apk-----------------------------$net.sunniwell.base.apkinstall
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->item 1
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->packageName=com.android.browser, className=com.android.browser.BrowserActivity
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->item 2
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->packageName=com.Pad.tvapp, className=com.Pad.tvapp.MainActivity
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->item 3
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->packageName=com.android.providers.downloads.ui, className=com.android.providers.downloads.ui.DownloadList
+08-29 11:28:27.005 I/CategoryOperate(30296): unchoose apk-----------------------------$com.android.providers.downloads.ui
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->item 4
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->packageName=com.discretix.drmassist, className=com.discretix.drmassist.SplashScreen
+08-29 11:28:27.005 I/CategoryOperate(30296): unchoose apk-----------------------------$com.discretix.drmassist
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->item 5
+08-29 11:28:27.005 D/CategoryOperate(30296): ---------->packageName=com.google.android.googlequicksearchbox, className=com.google.android.googlequicksearchbox.SearchActivity
+08-29 11:28:27.006 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.googlequicksearchbox
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 6
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=com.google.android.gms, className=com.google.android.gms.app.settings.GoogleSettingsActivity
+08-29 11:28:27.006 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.gms
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 7
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=com.google.android.talk, className=com.google.android.talk.SigningInActivity
+08-29 11:28:27.006 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.talk
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 8
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=com.huawei.launcher, className=com.huawei.launcher.Home2
+08-29 11:28:27.006 I/CategoryOperate(30296): unchoose apk-----------------------------$com.huawei.launcher
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 9
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.iptv, className=net.sunniwell.iptv.activity.SWIPTVActivity
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 10
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=com.hisilicon.miracast, className=com.hisilicon.miracast.activity.WelcomeActivity
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 11
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.mediacenter.view, className=net.sunniwell.mediacenter.view.main.MainActivity
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 12
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=com.android.vending, className=com.android.vending.AssetBrowserActivity
+08-29 11:28:27.006 I/CategoryOperate(30296): unchoose apk-----------------------------$com.android.vending
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->item 13
+08-29 11:28:27.006 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.settings, className=net.sunniwell.settings.SWActivity
+08-29 11:28:27.007 D/CategoryOperate(30296): ---------->item 14
+08-29 11:28:27.007 D/CategoryOperate(30296): ---------->packageName=com.google.android.googlequicksearchbox, className=com.google.android.googlequicksearchbox.VoiceSearchActivity
+08-29 11:28:27.007 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.googlequicksearchbox
+08-29 11:28:27.007 D/CategoryOperate(30296): ---------->item 15
+08-29 11:28:27.007 D/CategoryOperate(30296): ---------->packageName=com.mtni.myirancell, className=com.comviva.webaxn.ui.WebAxnActivity
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->batchUpdateAppData begin
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->batchUpdateAppData end
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->batchAddAppData begin
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->batchAddAppData end
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->sync system to db end
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->sync db to system begin
+08-29 11:28:27.007 D/CategoryOperate(30296): ------------->sync db to system end
+08-29 11:28:27.028 D/CategoryOperate(30296): ------------->getAllResolveInfo() begin
+08-29 11:28:27.037 D/CategoryOperate(30296): ------------->getAllResolveInfo() end
+08-29 11:28:27.046 D/CategorySqlHelper(30296): getAllAppData:541: close datebase.
+ion=6]]
+08-29 11:28:27.047 I/CategoryOperate(30296): currentPackageName-----------------------------$com.huawei.launcher
+08-29 11:28:27.047 D/CategoryOperate(30296): ------------->sync system to db begin
+08-29 11:28:27.047 D/CategoryOperate(30296): ---------->item 0
+08-29 11:28:27.047 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.base.apkinstall, className=net.sunniwell.base.apkinstall.SWScanActivity
+08-29 11:28:27.047 I/CategoryOperate(30296): unchoose apk-----------------------------$net.sunniwell.base.apkinstall
+08-29 11:28:27.047 D/CategoryOperate(30296): ---------->item 1
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->packageName=com.android.browser, className=com.android.browser.BrowserActivity
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->item 2
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->packageName=com.Pad.tvapp, className=com.Pad.tvapp.MainActivity
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->item 3
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->packageName=com.android.providers.downloads.ui, className=com.android.providers.downloads.ui.DownloadList
+08-29 11:28:27.048 I/CategoryOperate(30296): unchoose apk-----------------------------$com.android.providers.downloads.ui
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->item 4
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->packageName=com.discretix.drmassist, className=com.discretix.drmassist.SplashScreen
+08-29 11:28:27.048 I/CategoryOperate(30296): unchoose apk-----------------------------$com.discretix.drmassist
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->item 5
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->packageName=com.google.android.googlequicksearchbox, className=com.google.android.googlequicksearchbox.SearchActivity
+08-29 11:28:27.048 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.googlequicksearchbox
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->item 6
+08-29 11:28:27.048 D/CategoryOperate(30296): ---------->packageName=com.google.android.gms, className=com.google.android.gms.app.settings.GoogleSettingsActivity
+08-29 11:28:27.049 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.gms
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->item 7
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->packageName=com.google.android.talk, className=com.google.android.talk.SigningInActivity
+08-29 11:28:27.049 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.talk
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->item 8
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->packageName=com.huawei.launcher, className=com.huawei.launcher.Home2
+08-29 11:28:27.049 I/CategoryOperate(30296): unchoose apk-----------------------------$com.huawei.launcher
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->item 9
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.iptv, className=net.sunniwell.iptv.activity.SWIPTVActivity
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->item 10
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->packageName=com.hisilicon.miracast, className=com.hisilicon.miracast.activity.WelcomeActivity
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->item 11
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.mediacenter.view, className=net.sunniwell.mediacenter.view.main.MainActivity
+08-29 11:28:27.049 D/CategoryOperate(30296): ---------->item 12
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->packageName=com.android.vending, className=com.android.vending.AssetBrowserActivity
+08-29 11:28:27.050 I/CategoryOperate(30296): unchoose apk-----------------------------$com.android.vending
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->item 13
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->packageName=net.sunniwell.settings, className=net.sunniwell.settings.SWActivity
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->item 14
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->packageName=com.google.android.googlequicksearchbox, className=com.google.android.googlequicksearchbox.VoiceSearchActivity
+08-29 11:28:27.050 I/CategoryOperate(30296): unchoose apk-----------------------------$com.google.android.googlequicksearchbox
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->item 15
+08-29 11:28:27.050 D/CategoryOperate(30296): ---------->packageName=com.mtni.myirancell, className=com.comviva.webaxn.ui.WebAxnActivity
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->batchUpdateAppData begin
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->batchUpdateAppData end
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->batchAddAppData begin
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->batchAddAppData end
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->sync system to db end
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->sync db to system begin
+08-29 11:28:27.050 D/CategoryOperate(30296): ------------->sync db to system end
+08-29 11:28:27.061 D/CategorySqlHelper(30296): getAllAppData:541: close datebase.
+08-29 11:28:27.061 D/AppsGridView(30296): getAllApp cost time : 103
+08-29 11:28:27.061 D/AppsGridView(30296): loadIcon size 1: 7
+08-29 11:28:27.061 D/AppsGridView(30296): loadIcon size 2: 7
+08-29 11:28:27.061 D/loadReplaceIcon(30296): iconName = icon_mediacenter
+08-29 11:28:27.061 D/loadReplaceIcon(30296): iconId = 2130837566
+08-29 11:28:27.089 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0
+08-29 11:28:27.090 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0/queues/rx-0
+08-29 11:28:27.091 D/EthernetDataTracker( 1984): checkInterfaceName is false
+08-29 11:28:27.091 I/G3StateTracker( 1984): interfaceAdded(p2p0)
+08-29 11:28:27.092 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0/queues/tx-0
+08-29 11:28:27.094 D/EthernetDataTracker( 1984): Interface p2p0 link down
+08-29 11:28:27.094 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link down
+08-29 11:28:27.100 D/loadReplaceIcon(30296): iconName = icon_setting
+08-29 11:28:27.100 D/loadReplaceIcon(30296): iconId = 2130837568
+08-29 11:28:27.100 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0
+08-29 11:28:27.101 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0/queues/rx-0
+08-29 11:28:27.101 I/AOService( 1460): hdmi_observer  add@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0/queues/tx-0
+08-29 11:28:27.101 D/EthernetDataTracker( 1984): checkInterfaceName is false
+08-29 11:28:27.101 I/G3StateTracker( 1984): interfaceAdded(uap0)
+08-29 11:28:27.103 D/EthernetDataTracker( 1984): Interface uap0 link down
+08-29 11:28:27.103 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged uap0 link down
+08-29 11:28:27.114 D/dalvikvm(30395): GC_CONCURRENT freed 1165K, 21% free 4593K/5792K, paused 6ms+10ms, total 60ms
+08-29 11:28:27.114 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 16ms
+08-29 11:28:27.114 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 25ms
+08-29 11:28:27.115 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 27ms
+08-29 11:28:27.121 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 32ms
+08-29 11:28:27.121 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 32ms
+08-29 11:28:27.141 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 52ms
+08-29 11:28:27.192 D/AppsGridView(30296): loadIcon cost time 1: 130
+08-29 11:28:27.192 D/AppsGridView(30296): loadIcon cost time 2: 0
+08-29 11:28:27.193 D/com.huawei.iptv.stb.myapps.view.AnimGridView(30296): initViewWidthData(): focusPosition 1:2
+08-29 11:28:27.195 D/com.huawei.iptv.stb.myapps.view.AnimGridView(30296): initViewWidthData(): focusPosition 2:2
+08-29 11:28:27.196 D/com.huawei.iptv.stb.myapps.view.AnimGridView(30296): setFocusBounds(): focusPosition =2
+08-29 11:28:27.208 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:27.208 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:27.210 D/Tethering( 1984): sendTetherStateChangedBroadcast 1, 0, 0
+08-29 11:28:27.212 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:27.216 I/k       ( 2411): b:-1: tms:get name=lan_mask
+08-29 11:28:27.216 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_mask
+08-29 11:28:27.216 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-2[ 5992.519979] CFG_SCAN: close the scan cmd in device close phase
+9 11:28:27.217 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:27.218 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:27.219 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:27.219 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+0[ 5992.553735] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+8-29 11:28:27.219 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.219 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.219 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.219[ 5992.585674] andes_suspend_CR_setting: 0ms for waiting UDMA EP4 Tx empty
+ I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29[ 5992.598720] andes_suspend_CR_setting: 0ms for waiting UDMA EP5 Tx empty
+ 11:28:27.219 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.221 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:27.221 D/G3StateTracker( 1984): 3g[ 5992.623922] andes_suspend_CR_setting: 0ms for waiting UDMA EP6 Tx empty
+ interfaceLinkStateChanged wlan0 link up
+08-29 11:28:27.223 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29[ 5992.639822] andes_suspend_CR_setting: 0ms for waiting UDMA EP7 Tx empty
+ 11:28:27.223 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:27.223 D/Tms     ( 2411): getParameterFo[ 5992.657721] andes_suspend_CR_setting: 0ms for waiting UDMA EP8 Tx empty
+rmNative:-1: tms:get pname = acs_UDPConnectionRequestAddress
+08-29 11:28:27.224 D/k       ( 2411): b:-1: tms:get acs_UD[ 5992.674599] andes_suspend_CR_setting: 0ms for waiting UDMA EP9 Tx empty
+PConnectionRequestAddress
+08-29 11:28:27.226 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:27.227 D/j       ( 2411): a:-1:[ 5992.693684] andes_suspend_CR_setting: 0ms for waiting UDMA Tx empty
+ tms:isEthnetConnect=true
+08-29 11:28:27.244 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:27.246 D/j       ( 2411[ 5992.711791] andes_suspend_CR_setting: 0ms for waiting FCE Tx1 empty
+): a:-1: tms:Ethernet mode is:static
+08-29 11:28:27.246 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:27.24[ 5992.729270] andes_suspend_CR_setting: 0ms for waiting FCE Tx2 empty
+6 I/Tms     ( 24[ 5992.736875] andes_suspend_CR_setting: Disable MAC Tx
+11): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:27.246 D/Tms     ( 2411): getParameterFormNative:-1: tms:get[ 5992.752932] andes_suspend_CR_setting: 0ms for waiting MAC Tx idle
+[ 5992.760424] andes_suspend_CR_setting: Disable MAC Rx
+
+08-29 11:28:27.247 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:27.247 [ 5992.772258] andes_suspend_CR_setting: 0ms for waiting MAC Rx idle
+I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:27.247 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+0[ 5992.789485] andes_suspend_CR_setting: 0ms for waiting PBF Rx empty
+8-29 11:28:27.247 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:27.248 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_url
+08-29 1[ 5992.809654] andes_suspend_CR_setting: 0ms for waiting FCE Rx1 queue empty
+1:28:27.248 D/k       ( 2411): b:-1: tms:get acs_url
+08-29 11:28:27.252 I/k    [ 5992.823691] andes_suspend_CR_setting: 0ms for waiting UDMA EP2 Rx queue empty
+   ( 2411): b:-1: tms:get name=acs_UDPConnectionRequestAddress
+08-29 11:28:27.252 I/Tms     ( 2411): getParamet[ 5992.840682] andes_suspend_CR_setting: 0ms for waiting UDMA EP3 Rx empty
+erFormNative:-1: tms:get acs_UDPConnectionRequestAddress
+08-29 11:28:27.252 D/Tms     ( 2411): setParam[ 5992.855761] andes_suspend_CR_setting: 0ms for waiting UDMA EP4 Rx queue empty
+eterFormNative:-1: tms:set acs_U[ 5992.865584] andes_suspend_CR_setting: 0ms for waiting UDMA EP5 Rx queue empty
+DPConnectionRequestAddress
+08-29 11:28:[ 5992.876412] tx_kickout_fail_count = 0
+27.253 I/k      [ 5992.881350] tx_timeout_fail_count = 0
+ ( 2411): a:-1: [ 5992.886441] rx_receive_fail_count = 0
+tms:set acs_UDPC[ 5992.891450] alloc_cmd_msg = 647
+onnectionRequest[ 5992.895974] free_cmd_msg = 647
+Address
+08-29 11:28:27.260 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs.UDPConnectionRequestAddress' no need to update.
+08-29 11:28:27.280 I/wpa_supplicant(30670): rfkill: Cannot open RFKILL control device
+08-29 11:28:27.293 I/k       ( 2411): b:-1: tms:get name=acs_url
+08-29 11:28:27.294 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_url
+08-29 11:28:27.294 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:27.294 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:27.303 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:27.304 [ 5992.955009] RTMP_TimerListRelease: release timer obj f152b7fc!
+D/j       ( 2411[ 5992.961789] RTMP_TimerListRelease: release timer obj f152b82c!
+): a:-1: tms:isE[ 5992.969057] RTMP_TimerListRelease: release timer obj f152b85c!
+thnetConnect=tru[ 5992.976234] RTMP_TimerListRelease: release timer obj f152b7cc!
+e
+08-29 11:28:2[ 5992.983446] RTMP_TimerListRelease: release timer obj f152b73c!
+7.307 I/swshowms[ 5992.990750] RTMP_TimerListRelease: release timer obj f152b76c!
+g( 1456): [sw_ch[ 5992.997878] RTMP_TimerListRelease: release timer obj f14a755c!
+eck_userdata_pro[ 5993.005134] RTMP_TimerListRelease: release timer obj f14964cc!
+c:135]clearDataO[ 5993.012319] RTMP_TimerListRelease: release timer obj f1496500!
+peration:0
+08-2[ 5993.019541] RTMP_TimerListRelease: release timer obj f14a75fc!
+9 11:28:27.307 D[ 5993.026839] RTMP_TimerListRelease: release timer obj f14a74fc!
+/EthernetDataTra[ 5993.033982] RTMP_TimerListRelease: release timer obj f14a75cc!
+cker( 1984): Int[ 5993.041186] RTMP_TimerListRelease: release timer obj f152b79c!
+erface p2p0 link[ 5993.048495] RTMP_TimerListRelease: release timer obj f1494778!
+ up
+08-29 11:28[ 5993.055657] RTMP_TimerListRelease: release timer obj f1494748!
+:27.307 D/G3Stat[ 5993.062858] RTMP_TimerListRelease: release timer obj f14947a8!
+eTracker( 1984):[ 5993.070110] RTMP_TimerListRelease: release timer obj f1494718!
+ 3g interfaceLin[ 5993.077278] RTMP_TimerListRelease: release timer obj f164e0f8!
+kStateChanged p2[ 5993.084500] RTMP_TimerListRelease: release timer obj f164e128!
+p0 link up
+08-2[ 5993.091798] RTMP_TimerListRelease: release timer obj f164e158!
+9 11:28:27.307 D[ 5993.098924] RTMP_TimerListRelease: release timer obj f163a4ec!
+/EthernetDataTra[ 5993.106183] RTMP_TimerListRelease: release timer obj f1642038!
+cker( 1984): Interface p2p0 link up
+08-29 11:28:27.307 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link up
+08-29 11:28:27.308 I/dalvikvm(30395): Jit: resizing JitTable from 4096 to 8192
+08-29 11:28:27.310 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:27.312 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.312 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.312 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.313 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.313 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.313 I/wpa_supplicant(30670): nl80211: send_and_recv->nl_recvmsgs failed: -67
+08-29 11:28:27.316 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:27.316 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:27.317 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:27.317 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:27.317 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:27.319 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:27.320 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:27.323 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = app_version
+08-29 11:28:27.323 D/k       ( 2411): b:-1: tms:get app_version
+08-29 11:28:27.324 I/k       ( 2411): b:-1: tms:get name=app_version
+08-29 11:28:27.324 I/Tms     ( 2411): getParameterFormNative:-1: tms:get app_version
+08-29 11:28:27.324 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:27.324 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:27.325 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:27.325 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:27.325 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:27.325 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:27.325 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:27.325 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:27.326 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = hardware_version
+08-29 11:28:27.326 D/k       ( 2411): b:-1: tms:get hardware_version
+08-29 11:28:27.326 I/k       ( 2411): b:-1: tms:get name=hardware_version
+08-29 11:28:27.326 I/Tms     ( 2411): getParameterFormNative:-1: tms:get hardware_version
+08-29 11:28:27.327 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = tr069_protocol
+08-29 11:28:27.327 D/k       ( 2411): b:-1: tms:get tr069_protocol
+08-29 11:28:27.335 I/k       ( 2411): b:-1: tms:get name=tr069_protocol
+08-29 11:28:27.336 I/Tms     ( 2411): getParameterFormNative:-1: tms:get tr069_protocol
+08-29 11:28:27.336 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:27.336 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:27.344 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:27.344 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:27.344 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_commandkey
+08-29 11:28:27.344 D/k       ( 2411): b:-1: tms:get acs_commandkey
+08-[ 5993.416294] usbcore: deregistering interface driver rt2870
+29 11:28:27.354 [ 5993.422924] rtusb_disconnect: unregister usbnet usb-hiusb-ehci-2
+I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:27.356 D/LAUNCHER(30296): msg.what  = 102  msg.arg1 = 0
+08-29 11:28:27.356 I/HOME    (30296): wifiLevel ==  0
+08-29 11:28:27.356 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.WIFI_STATE_CHANGED
+0[ 5993.455331] vfree net device ops <- f00a1000
+8-29 11:28:27.357 D/a       ( 3056): onReceive:-1: action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:27.357 D/a       ( 3056): onReceive:-1: action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:27.361 I/k       ( 2411): b:-1: tms:get name=acs_commandkey
+08-29 11:28:27.361 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_commandkey
+08-29 11:28:27.361 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_commandkey
+08-29 11:28:27.361 I[ 5993.499838] vfree net device ops <- f009f000
+/k       ( 2411): a:-1: tms:set acs_commandkey
+08-29 11:28:27.364 I/wpa_supplicant(30670): nl80211: wpa_driver_nl80211_event_receive->nl_recvmsgs failed: -11
+08-29 11:28:27.365 D/WifiConfigStore( 1984): Loading config and enabling all networks
+08-29 11:28:27.369 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:27.369 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:27.[ 5993.541544] vfree net device ops <- f0002000
+369 D/WifiHW  ( 1984): wifi command = SET_NETWORK wep_key "********"
+08-29 11:28:27.370 D/WifiHW  ( 1984): wifi command = SET_NETWORK w[ 5993.557699] 80211> unregister/free wireless device
+ep_key "********"
+08-29 11:28:27.377 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs.commandkey' no need to update.
+=0xffffffff
+.net.wifi.WIFI_STATE_CHA[ 5993.594351]  RTUSB disconnect successfully
+NGED
+08-29 11:28:27.379 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:27.379 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:27.379 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:27.379 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:27.379 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:27.384 D/a       ( 3056): onReceive:-1: action==android.net.wifi.CONFIGURED_NETWORKS_CHANGE
+08-29 11:28:27.387 I/CWMP (swtr069/src/cwmp_http.c:1484)( 2411): cwmp_http_recv 1484 401=[Receive]:
+08-29 11:28:27.387 I/CWMP (swtr069/src/cwmp_http.c:1484)( 2411): ***
+08-29 11:28:27.387 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_username
+08-29 11:28:27.388 D/k       ( 2411): b:-1: tms:get acs_username
+08-29 11:28:27.391 D/com.huawei.launcher.StatusReciver(30296): sendMsgToStatusbar(): actionn==handleEthStatus
+08-29 11:28:27.394 W/Settings( 3001): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-29 11:28:27.399 D/SWStatusbar( 2503): updateNotification:539: ... updateNotification ...
+08-29 11:28:27.399 D/WifiStateMachine( 1984): swsunniwell getstate: DISCONNECTED state: DISCONNECTED
+=0x0 kind=[null])
+08-29 11:28:27.399 D/SWNetworkBroadcastReceiver( 3056): onReceive:-1: intent='android.net.wifi.WIFI_STATE_CHANGED'
+08-29 11:28:27.406 I/k       ( 2411): b:-1: tms:get name=acs_username
+08-29 11:28:27.407 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_username
+08-29 11:28:27.407 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_password
+08-29 11:28:27.407 D/k       ( 2411): b:-1: tms:get acs_password
+08-29 11:28:27.411 D/dalvikvm(30395): GC_CONCURRENT freed 1322K, 23% free 4624K/5980K, paused 6ms+8ms, total 86ms
+08-29 11:28:27.411 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 52ms
+08-29 11:28:27.411 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 44ms
+08-29 11:28:27.[ 5993.795609] inputblock: enable block
+411 D/WifiP2pService( 1984): P2pDisabledState{ when=0 what=131203 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:27.413 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 52ms
+08-29 11:28:27.413 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 54ms
+08-29 11:28:27.414 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 54ms
+08-29 11:28:27.416 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 55ms
+08-29 11:28:27.416 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 55ms
+08-29 11:28:27.417 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:27.417 D/DHCP    ( 1448): ifc_close
+08-29 11:28:27.418 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 53ms
+08-29 11:28:27.424 D/CommandListener( 1448): Setting iface cfg
+08-29 11:28:27.424 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:27.424 D/DHCP    ( 1448): ifc_set_addr(p2p0, xx) = 0
+08-29 11:28:27.424 D/CommandListener( 1448): Trying to bring up p2p0
+08-29 11:28:27.424 D/DHCP    ( 1448): ifc_up(p2p0) = 0
+08-29 11:28:27.424 D/DHCP    ( 1448): ifc_close
+08-29 11:28:27.436 D/WifiMonitor( 1984): startMonitoring(p2p0) with mConnected = true
+08-29 11:28:27.436 D/WifiP2pService( 1984): P2pEnablingState
+08-29 11:28:27.436 D/WifiP2pService( 1984): P2pEnablingState{ when=0 what=147457 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:27.436 D/WifiP2pService( 1984): P2p socket connection successful
+08-29 11:28:27.436 D/WifiP2pService( 1984): P2pEnabledState
+08-29 11:28:27.437 D/WifiP2pService( 1984): sending p2p connection changed broadcast
+08-29 11:28:27.438 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+08-29 11:28:27.467 E/WifiStateMachine( 1984): Unexpected BatchedScanResults :OK
+08-29 11:28:27.477 D/com.huawei.launcher.StatusReciver(30296): onReceive(): action = android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:27.477 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:27.484 D/com.huawei.launcher.StatusReciver(30296): sendMsgToStatusbar(): actionn==handleEthStatus
+08-29 11:28:27.490 D/SWStatusbar( 2503): updateNotification:539: ... updateNotification ...
+=0x0 kind=[null])
+08-29 11:28:27.494 D/SWNetworkBroadcastReceiver( 3056): onReceive:-1: intent='android.net.wifi.WIFI_STATE_CHANGED'
+08-29 11:28:27.500 D/WifiP2pService( 1984): DeviceAddress: 02:11:6f:d3:17:33
+08-29 11:28:27.506 I/wpa_supplicant(30670): net.wifiKey.encrypt true 
+08-29 11:28:27.506 I/wpa_supplicant(30670): net.wifiKey.encrypt true 
+08-29 11:28:27.506 I/wpa_supplicant(30670): sw_encrypt write_psk
+08-29 11:28:27.508 D/WifiP2pService( 1984): sending p2p persistent groups changed broadcast
+08-29 11:28:27.508 D/WifiP2pService( 1984): InactiveState
+08-29 11:28:27.508 D/WifiP2pService( 1984): InactiveState{ when=-39ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:27.508 D/WifiP2pService( 1984): P2pEnabledState{ when=-39ms what=131204 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:27.509 D/WifiP2pService( 1984): P2pDisablingState
+08-29 11:28:27.510 D/WifiP2pService( 1984): P2pDisablingState{ when=-1ms what=147458 target=com.android.internal.util.StateMachine$SmHandler }
+08-29 11:28:27.510 D/WifiP2pService( 1984): p2p socket connection lost
+08-29 11:28:27.510 D/WifiP2pService( 1984): P2pDisabledState
+08-29 11:28:27.511 D/CommandListener( 1448): Clearing all IP addresses on wlan0
+08-29 11:28:27.511 D/DHCP    ( 1448): ifc_init_returning 0
+08-29 11:28:27.511 D/DHCP    ( 1448): ifc_close
+08-29 11:28:27.515 D/WifiStateMachine( 1984): swsunniwell getstate: DISCONNECTED state: DISCONNECTED
+08-29 11:28:27.517 D/WifiStateTracker( 1984): Do not change WIFI_P2P info!!!
+08-29 11:28:27.521 I/WifiReceiver(30296): wifi action === android.net.wifi.STATE_CHANGE
+08-29 11:28:27.522 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.STATE_CHANGE
+08-29 11:28:27.523 D/a       ( 3056): onReceive:-1: action==android.net.wifi.STATE_CHANGE
+08-29 11:28:27.523 D/a       (30431): onReceive:-1: upgradech:ui: onreceive: action: android.net.wifi.STATE_CHANGE
+08-29 11:28:27.523 D/SWStatusbar( 2503): handleWifiStatus:201: WifiStatus is DISCONNECTED.
+08-29 11:28:27.524 D/a       (30431): onReceive:-1: upgradech:ui: onreceive getStringExtra: action: android.net.wifi.STATE_CHANGE
+08-29 11:28:27.524 E/a       ( 3056): registerWifiScanResult:-1: registerWifiScanResult failed, case onEvent is null
+08-29 11:28:27.524 D/a       ( 3056): onReceive:-1: NETWORK_STATE_CHANGED_ACTION
+08-29 11:28:27.525 W/System.err( 2373): java.net.SocketTimeoutException
+08-29 11:28:27.525 W/System.err( 2373): 	at libcore.io.IoBridge.maybeThrowAfterRecvfrom(IoBridge.java:551)
+08-29 11:28:27.526 W/System.err( 2373): 	at libcore.io.IoBridge.recvfrom(IoBridge.java:509)
+08-29 11:28:27.526 W/System.err( 2373): 	at java.net.PlainDatagramSocketImpl.doRecv(PlainDatagramSocketImpl.java:161)
+08-29 11:28:27.526 W/System.err( 2373): 	at java.net.PlainDatagramSocketImpl.receive(PlainDatagramSocketImpl.java:169)
+08-29 11:28:27.526 W/System.err( 2373): 	at java.net.DatagramSocket.receive(DatagramSocket.java:250)
+08-29 11:28:27.526 W/System.err( 2373): 	at net.sunniwell.base.ntp.util.NtpUtils.getDateTime(NtpUtils.java:39)
+08-29 11:28:27.526 W/System.err( 2373): 	at net.sunniwell.base.ntp.system.MasterSlaveNtpTaskImpl.doSyncTime(MasterSlaveNtpTaskImpl.java:29)
+08-29 11:28:27.526 W/System.err( 2373): 	at net.sunniwell.base.ntp.system.NtpTask.run(NtpTask.java:80)
+08-29 11:28:27.526 W/System.err( 2373): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+08-29 11:28:27.527 W/System.err( 2373): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+08-29 11:28:27.527 W/System.err( 2373): 	at java.lang.Thread.run(Thread.java:841)
+08-29 11:28:27.527 W/System.err( 2373): Caused by: libcore.io.ErrnoException: recvfrom failed: EAGAIN (Try again)
+08-29 11:28:27.527 W/System.err( 2373): 	at libcore.io.Posix.recvfromBytes(Native Method)
+08-29 11:28:27.527 W/System.err( 2373): 	at libcore.io.Posix.recvfrom(Posix.java:141)
+08-29 11:28:27.527 W/System.err( 2373): 	at libcore.io.BlockGuardOs.recvfrom(BlockGuardOs.java:164)
+08-29 11:28:27.527 W/System.err( 2373): 	at libcore.io.IoBridge.recvfrom(IoBridge.java:506)
+08-29 11:28:27.528 W/System.err( 2373): 	... 9 more
+08-29 11:28:27.529 D/a       (30431): onReceive:-1: upgradech:ui:param is empty
+08-29 11:28:27.529 D/a       (30431): onReceive:-1: upgradech: action: wifi changed 
+08-29 11:28:27.530 D/a       (30431): onReceive:-1: upgradech:wifi state=DISCONNECTED
+08-29 11:28:27.531 D/MasterSlaveNtpTaskImpl( 2373): doSuccess:38: ntp:doSuccess 1503977313000
+08-29 11:28:27.531 D/NtpEngine( 2373): onSuccess:126: ntp:onSuccess 1503977313000
+08-29 11:28:27.532 D/NtpListenerImpl( 2373): onSuccess:41: ntp:time=Tue Aug 29 11:28:33 GMT+08:00 2017
+08-29 11:28:27.532 D/        ( 2373): Setting time of day to sec=1503977313
+08-29 11:28:33.000 D/NtpListenerImpl( 2373): onSuccess:43: ntp:setCurrentTimeMillis=true
+08-29 11:28:33.000 D/SWNtpNativeReceiver( 2373): onReceive:22: ntp: action=android.net.wifi.STATE_CHANGE
+08-29 11:28:33.001 D/SWNtpNativeReceiver( 2373): onReceive:73: upgrade:wifi state=DISCONNECTED
+08-29 11:28:33.002 D/HiRMService( 2399): mNetReceiver onReceive --android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:33.004 D/a       ( 3056): onReceive:-1: action==android.net.wifi.WIFI_STATE_CHANGED
+st:370 net.sunniwell.base.ntp.NtpListenerImpl.sendBroadCast:113 net.sunniwell.base.ntp.NtpListenerImpl.onSuccess:45 net.sunniwell.base.ntp.NtpEngine.onSuccess:128 
+08-29 11:28:33.007 D/SWNativeReciver( 2411): onReceive:-1: tms: action=android.net.wifi.STATE_CHANGE
+08-29 11:28:33.008 D/NtpListenerImpl( 2373): showInfo:117: ntp:notification Successfully synced time from NTP server.
+08-29 11:28:33.009 D/SWNativeReciver( 2411): onReceive:-1: upgrade:wifi state=DISCONNECTED
+08-29 11:28:33.009 I/WifiReceiver(30296): wifi action === android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:33.015 D/LAUNCHER(30296): msg.what  = 102  msg.arg1 = 0
+08-29 11:28:33.015 I/HOME    (30296): wifiLevel ==  0
+08-29 11:28:33.015 D/MasterSlaveNtpTaskImpl( 2373): run:89: ntp:sleep 7200000
+08-29 11:28:33.028 I/wpa_supplicant(30670): p2p0: CTRL-EVENT-TERMINATING 
+08-29 11:28:33.028 D/EthernetDataTracker( 1984): Interface p2p0 link up
+08-29 11:28:33.028 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link up
+08-29 11:28:33.029 D/EthernetDataTracker( 1984): Interface p2p0 link down
+08-29 11:28:33.029 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged p2p0 link down
+08-29 11:28:33.029 I/HoloClock(30296): BroadcastReceiver:onRecevie!!
+08-29 11:28:33.034 D/com.huawei.launcher.StatusReciver(30296): onReceive(): action = android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:33.035 D/com.huawei.launcher.StatusReciver(30296): handleStatus(): action==android.net.wifi.WIFI_STATE_CHANGED
+08-29 11:28:33.035 D/dalvikvm(30395): GC_FOR_ALLOC freed 956K, 24% free 4584K/6024K, paused 68ms, total 68ms
+08-29 11:28:33.054 I/generic (30395): File /mnt/sdb/sdb1/yinye/background1.wav being read
+08-29 11:28:33.057 D/EthernetDataTracker( 1984): Interface wlan0 link up
+08-29 11:28:33.057 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link up
+08-29 11:28:33.081 D/LAUNCHER(30296): msg.what  = 101  msg.arg1 = 100
+08-29 11:28:33.082 D/SWNetworkBroadcastReceiver( 3056): onReceive:-1: intent='android.net.wifi.WIFI_STATE_CHANGED'
+08-29 11:28:33.093 I/ActivityManager( 1984): Waited long enough for: ServiceRecord{2ceef330 u0 com.google.android.gsf/.checkin.CheckinService}
+08-29 11:28:33.094 D/SWStatusbar( 2503): addNotification:496: ... addNotification ...
+08-29 11:28:33.095 D/SWStatusbar( 2503): addNotification:503: notification text = Successfully synced time from NTP server.
+=0x0 kind=[null])
+08-29 11:28:33.147 D/dalvikvm( 2411): GC_CONCURRENT freed 1431K, 34% free 3070K/4600K, paused 10ms+2ms, total 151ms
+08-29 11:28:33.159 E/TelephonyManager( 2645): cts.appProcess.processName:com.google.process.gapps
+08-29 11:28:33.209 D/dalvikvm( 2645): GC_CONCURRENT freed 860K, 27% free 3501K/4796K, paused 19ms+15ms, total 76ms
+08-29 11:28:33.313 I/k       ( 2411): b:-1: tms:get name=acs_password
+08-29 11:28:33.313 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_password
+08-29 11:28:33.314 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:33.314 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:33.330 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:33.330 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:33.330 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:33.330 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:33.335 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:33.335 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:33.335 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:33.335 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:33.344 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:33.344 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:33.344 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:33.344 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:33.351 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:33.351 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:33.351 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_password
+08-29 11:28:33.351 D/k       ( 2411): b:-1: tms:get acs_password
+08-29 11:28:33.361 D/dalvikvm(30395): GC_CONCURRENT freed 1275K, 23% free 4667K/6024K, paused 5ms+10ms, total 98ms
+08-29 11:28:33.361 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 50ms
+08-29 11:28:33.361 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 49ms
+08-29 11:28:33.361 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 42ms
+08-29 11:28:33.361 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 33ms
+08-29 11:28:33.361 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 47ms
+08-29 11:28:33.361 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 53ms
+08-29 11:28:33.368 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 26ms
+08-29 11:28:33.368 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 47ms
+08-29 11:28:33.369 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 60ms
+08-29 11:28:33.370 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 49ms
+08-29 11:28:33.370 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 38ms
+08-29 11:28:33.370 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 50ms
+08-29 11:28:33.373 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 43ms
+08-29 11:28:33.373 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 43ms
+08-29 11:28:33.378 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 67ms
+08-29 11:28:33.379 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 68ms
+08-29 11:28:33.379 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 59ms
+08-29 11:28:33.420 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 90ms
+08-29 11:28:33.558 D/dalvikvm(30395): GC_CONCURRENT freed 1399K, 24% free 4646K/6080K, paused 8ms+7ms, total 64ms
+08-29 11:28:33.558 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 45ms
+08-29 11:28:33.558 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 43ms
+08-29 11:28:33.558 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 40ms
+08-29 11:28:33.558 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 40ms
+08-29 11:28:33.558 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 41ms
+08-29 11:28:33.566 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 37ms
+08-29 11:28:33.566 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 52ms
+08-29 11:28:33.566 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 52ms
+08-29 11:28:33.573 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 56ms
+08-29 11:28:33.583 D/EthernetDataTracker( 1984): Interface wlan0 link down
+08-29 11:28:33.583 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link down
+08-29 11:28:33.584 D/Tethering( 1984): InitialState.processMessage what=4
+08-29 11:28:33.584 D/EthernetDataTracker( 1984): Interface wlan0 link down
+08-29 11:28:33.584 D/G3StateTracker( 1984): 3g interfaceLinkStateChanged wlan0 link down
+08-29 11:28:33.585 D/Tethering( 1984): sendTetherStateChangedBroadcast 0, 0, 0
+08-29 11:28:33.586 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:33.589 I/wpa_supplicant(30670): wlan0: CTRL-EVENT-TERMINATING 
+08-29 11:28:33.610 D/NtpTrustedTime( 1984): auto_time is false
+08-29 11:28:33.648 D/dalvikvm(30395): GC_FOR_ALLOC freed 415K, 24% free 4630K/6080K, paused 40ms, total 40ms
+08-29 11:28:33.695 W/Settings( 3001): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-29 11:28:33.737 I/k       ( 2411): b:-1: tms:get name=acs_password
+08-29 11:28:33.737 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_password
+08-29 11:28:33.739 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:33.739 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:33.739 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:33.739 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:33.757 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): cwmp_http_recv 1383 [Receive]:
+08-29 11:28:33.757 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): ****
+08-29 11:28:33.757 I/CWMP (swtr069/src/cwmp_http.c:1486)( 2411): cwmp_http_recv 1486 ***
+08-29 11:28:33.758 D/CWMP (swtr069/src/swcwmp.c:217)( 2411): sw_cwmp_on_package 217 eventcode------------------>1
+08-29 11:28:33.758 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = MTRANSFERCOMPLETE
+08-29 11:28:33.758 D/k       ( 2411): b:-1: tms:get MTRANSFERCOMPLETE
+08-29 11:28:33.765 I/k       ( 2411): b:-1: tms:get name=MTRANSFERCOMPLETE
+08-29 11:28:33.765 I/Tms     ( 2411): getParameterFormNative:-1: tms:get MTRANSFERCOMPLETE
+08-29 11:28:33.765 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:33.765 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:33.765 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:33.765 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:33.773 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): cwmp_http_recv 1383 [Receive]:
+08-29 11:28:33.773 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): ****
+08-29 11:28:33.773 I/CWMP (swtr069/src/cwmp_http.c:1486)( 2411): cwmp_http_recv 1486 ***
+08-29 11:28:33.774 I/swshowmsg( 1456): [sw_check_userdata_proc:135]clearDataOperation:0
+08-29 11:28:33.774 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:33.774 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:33.774 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:33.774 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:33.781 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): cwmp_http_recv 1383 [Receive]:
+08-29 11:28:33.781 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): ****
+08-29 11:28:33.781 I/CWMP (swtr069/src/cwmp_http.c:1486)( 2411): cwmp_http_recv 1486 ***
+08-29 11:28:33.782 D/CWMP (swtr069/src/cwmp_parameter.c:260)( 2411): cwmp_method_getParameterValues 260  @@@@@@ Device.X_00E0FC.ServiceInfo.UserID
+08-29 11:28:33.782 D/CWMP (swtr069/src/cwmp_parameter.c:296)( 2411): cwmp_method_getParameterValues 296 item->name ============= Device.X_00E0FC.ServiceInfo.UserID
+08-29 11:28:33.783 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = ntvuseraccount
+08-29 11:28:33.783 D/k       ( 2411): b:-1: tms:get ntvuseraccount
+08-29 11:28:33.792 D/dalvikvm(30395): GC_CONCURRENT freed 1347K, 24% free 4656K/6080K, paused 6ms+8ms, total 57ms
+08-29 11:28:33.793 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 39ms
+08-29 11:28:33.793 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 25ms
+08-29 11:28:33.794 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 39ms
+08-29 11:28:33.794 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 40ms
+08-29 11:28:33.794 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 38ms
+08-29 11:28:33.794 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 40ms
+08-29 11:28:33.794 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 38ms
+08-29 11:28:33.794 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 39ms
+08-29 11:28:33.800 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 46ms
+08-29 11:28:33.811 I/k       ( 2411): b:-1: tms:get name=ntvuseraccount
+08-29 11:28:33.811 I/Tms     ( 2411): getParameterFormNative:-1: tms:get ntvuseraccount
+08-29 11:28:33.811 D/CWMP (swtr069/src/cwmp_parameter.c:260)( 2411): cwmp_method_getParameterValues 260  @@@@@@ Device.X_00E0FC.STBID
+08-29 11:28:33.811 D/CWMP (swtr069/src/cwmp_parameter.c:296)( 2411): cwmp_method_getParameterValues 296 item->name ============= Device.X_00E0FC.STBID
+08-29 11:28:33.811 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = stbid
+08-29 11:28:33.811 D/k       ( 2411): b:-1: tms:get stbid
+08-29 11:28:33.812 I/k       ( 2411): b:-1: tms:get name=stbid
+08-29 11:28:33.812 I/Tms     ( 2411): getParameterFormNative:-1: tms:get stbid
+08-29 11:28:33.812 D/CWMP (swtr069/src/cwmp_parameter.c:260)( 2411): cwmp_method_getParameterValues 260  @@@@@@ Device.LAN.AddressingType
+08-29 11:28:33.812 D/CWMP (swtr069/src/cwmp_parameter.c:296)( 2411): cwmp_method_getParameterValues 296 item->name ============= Device.LAN.AddressingType
+08-29 11:28:33.812 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:33.812 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:33.816 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:33.817 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:33.821 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:33.822 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:33.823 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:33.823 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:33.823 D/CWMP (swtr069/src/cwmp_parameter.c:260)( 2411): cwmp_method_getParameterValues 260  @@@@@@ Device.LAN.IPAddress
+08-29 11:28:33.823 D/CWMP (swtr069/src/cwmp_parameter.c:296)( 2411): cwmp_method_getParameterValues 296 item->name ============= Device.LAN.IPAddress
+08-29 11:28:33.823 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = defaultnetmode
+08-29 11:28:33.823 D/k       ( 2411): b:-1: tms:get defaultnetmode
+08-29 11:28:33.827 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:33.828 D/j       ( 2411): a:-1: tms:isEthnetConnect=true
+08-29 11:28:33.832 D/j       ( 2411): c:-1: connect is cut,but still can
+08-29 11:28:33.833 D/j       ( 2411): a:-1: tms:Ethernet mode is:static
+08-29 11:28:33.833 I/k       ( 2411): b:-1: tms:get name=defaultnetmode
+08-29 11:28:33.834 I/Tms     ( 2411): getParameterFormNative:-1: tms:get defaultnetmode
+08-29 11:28:33.834 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = lan_ip
+08-29 11:28:33.834 D/k       ( 2411): b:-1: tms:get lan_ip
+08-29 11:28:33.834 I/k       ( 2411): b:-1: tms:get name=lan_ip
+08-29 11:28:33.834 I/Tms     ( 2411): getParameterFormNative:-1: tms:get lan_ip
+08-29 11:28:33.834 D/CWMP (swtr069/src/cwmp_parameter.c:260)( 2411): cwmp_method_getParameterValues 260  @@@@@@ Device.X_00E0FC.ServiceInfo.PPPoEID
+08-29 11:28:33.834 D/CWMP (swtr069/src/cwmp_parameter.c:296)( 2411): cwmp_method_getParameterValues 296 item->name ============= Device.X_00E0FC.ServiceInfo.PPPoEID
+08-29 11:28:33.835 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = pppoe_user
+08-29 11:28:33.835 D/k       ( 2411): b:-1: tms:get pppoe_user
+08-29 11:28:33.835 W/System.err( 2411): java.lang.IllegalArgumentException: USER is not a constant in net.sunniwell.base.tms.e.j
+08-29 11:28:33.835 W/System.err( 2411): 	at java.lang.Enum.valueOf(Enum.java:198)
+08-29 11:28:33.835 W/System.err( 2411): 	at net.sunniwell.base.tms.e.j.valueOf(Unknown Source)
+08-29 11:28:33.835 W/System.err( 2411): 	at net.sunniwell.base.tms.e.h.b(Unknown Source)
+08-29 11:28:33.835 W/System.err( 2411): 	at net.sunniwell.base.tms.e.h.b(Unknown Source)
+08-29 11:28:33.836 W/System.err( 2411): 	at net.sunniwell.base.tms.e.k.b(Unknown Source)
+08-29 11:28:33.836 W/System.err( 2411): 	at net.sunniwell.base.tms.Tms.getParameterFormNative(Unknown Source)
+08-29 11:28:33.836 W/System.err( 2411): 	at dalvik.system.NativeStart.run(Native Method)
+08-29 11:28:33.836 E/PppoeManager( 2411): getUsername()
+08-29 11:28:33.836 I/k       ( 2411): b:-1: tms:get name=pppoe_user
+08-29 11:28:33.837 I/Tms     ( 2411): getParameterFormNative:-1: tms:get pppoe_user
+08-29 11:28:33.837 D/CWMP (swtr069/src/cwmp_parameter.c:260)( 2411): cwmp_method_getParameterValues 260  @@@@@@ Device.X_00E0FC.ServiceInfo.DHCPID
+08-29 11:28:33.837 D/CWMP (swtr069/src/cwmp_parameter.c:296)( 2411): cwmp_method_getParameterValues 296 item->name ============= Device.X_00E0FC.ServiceInfo.DHCPID
+08-29 11:28:33.837 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = dhcpaccount
+08-29 11:28:33.837 D/k       ( 2411): b:-1: tms:get dhcpaccount
+08-29 11:28:33.843 D/dalvikvm(30395): GC_FOR_ALLOC freed 117K, 24% free 4627K/6080K, paused 40ms, total 40ms
+08-29 11:28:33.843 I/dalvikvm-heap(30395): Grow heap (frag case) to 4.557MB for 16400-byte allocation
+08-29 11:28:33.843 I/k       ( 2411): b:-1: tms:get name=dhcpaccount
+08-29 11:28:33.844 I/Tms     ( 2411): getParameterFormNative:-1: tms:get dhcpaccount
+08-29 11:28:33.844 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): cwmp_http_send 1549 
+08-29 11:28:33.844 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): [Send]:
+08-29 11:28:33.844 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): ***
+08-29 11:28:33.844 I/CWMP (swtr069/src/cwmp_http.c:1549)( 2411): 
+08-29 11:28:33.852 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): cwmp_http_recv 1383 [Receive]:
+08-29 11:28:33.852 I/CWMP (swtr069/src/cwmp_http.c:1383)( 2411): ****
+08-29 11:28:33.852 I/CWMP (swtr069/src/cwmp_http.c:1486)( 2411): cwmp_http_recv 1486 ***
+08-29 11:28:33.855 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_crusername
+08-29 11:28:33.855 D/k       ( 2411): b:-1: tms:get acs_crusername
+08-29 11:28:33.866 I/k       ( 2411): b:-1: tms:get name=acs_crusername
+08-29 11:28:33.866 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_crusername
+08-29 11:28:33.866 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_crusername
+08-29 11:28:33.866 I/k       ( 2411): a:-1: tms:set acs_crusername
+08-29 11:28:33.871 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs.crusername' no need to update.
+08-29 11:28:33.872 D/CWMP (swtr069/src/cwmp_parameter.c:1251)( 2411): cwmp_method_setParameterValues 1251 
+08-29 11:28:33.872 D/CWMP (swtr069/src/cwmp_db.c:4068)( 2411): Device_ManagementServer_STUNUsername 4068 paraname = acs_stun_username, writeable = 1, value = ****
+08-29 11:28:33.872 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_username
+08-29 11:28:33.872 D/k       ( 2411): b:-1: tms:get acs_stun_username
+08-29 11:28:33.879 D/dalvikvm(30395): GC_FOR_ALLOC freed 3K, 24% free 4640K/6100K, paused 36ms, total 36ms
+08-29 11:28:33.880 D/dalvikvm(30395): WAIT_FOR_CONCURRENT_GC blocked 112ms
+08-29 11:28:33.925 W/Netd    ( 1448): No subsystem found in netlink event
+08-29 11:28:33.925 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0/queues/rx-0
+08-29 11:28:33.925 D/NetlinkEvent( 1448): Unexpected netlink message. type=0x11
+08-29 11:28:33.941 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0/queues/tx-0
+08-29 11:28:33.952 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/uap0
+08-29 11:28:33.953 I/k       ( 2411): b:-1: tms:get name=acs_stun_username
+08-29 11:28:33.953 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_username
+08-29 11:28:33.953 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_stun_username
+08-29 11:28:33.953 I/k       ( 2411): a:-1: tms:set acs_stun_username
+08-29 11:28:33.955 W/StreamClient(30395): HTTP request took a long time (6775ms): (StreamRequestMessage) GET http://192.168.1.1:1900/l3f.xml
+08-29 11:28:33.956 D/dalvikvm( 2411): GC_CONCURRENT freed 774K, 34% free 3061K/4600K, paused 3ms+43ms, total 94ms
+08-29 11:28:33.959 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs.stun_username' no need to update.
+08-29 11:28:33.959 D/CWMP (swtr069/src/cwmp_parameter.c:1251)( 2411): cwmp_method_setParameterValues 1251 
+08-29 11:28:33.960 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_enable
+08-29 11:28:33.960 D/k       ( 2411): b:-1: tms:get acs_stun_enable
+08-29 11:28:33.967 I/k       ( 2411): b:-1: tms:get name=acs_stun_enable
+08-29 11:28:33.967 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_enable
+08-29 11:28:33.968 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_enable
+08-29 11:28:33.968 D/k       ( 2411): b:-1: tms:get acs_stun_enable
+08-29 11:28:33.975 I/k       ( 2411): b:-1: tms:get name=acs_stun_enable
+08-29 11:28:33.975 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_enable
+08-29 11:28:33.976 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_stu[ 5996.259694] PM: suspend entry 2017-08-29 03:28:54.893500960 UTC
+n_enable
+08-29 [ 5996.266805] PM: Syncing filesystems ... 11:28:33.976 I/k       ( 2411): a:-1: tms:set acs_stun_enable
+08-29 11:28:33.977 W/Netd    ( 1448): No subsystem found in netlink event
+08-29 11:28:33.977 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0/queues/rx-0
+08-29 11:28:33.977 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0/queues/tx-0
+08-29 11:28:33.977 D/NetlinkEvent( 1448): Unexpected netlink message. type=0x11
+08-29 11:28:33.978 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/p2p0
+08-29 11:28:33.978 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs_stun_enable' no need to update.
+08-29 11:28:33.978 D/CWMP (swtr069/src/cwmp_parameter.c:1251)( 2411): cwmp_method_setParameterValues 1251 
+08-29 11:28:33.978 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_done.
+serveraddress
+08-29 11:28:33.978 D/k       ( 2411): b:-1: tms:get acs_stun_serveraddress
+08-29 11:28:33.990 I/k       ( 2411): b:-1: tms:get name=acs_stun_serveraddress
+08-29 11:28:33.990 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_serveraddress
+08-29 11:28:33.991 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_stun_serveraddress
+08-29 11:28:33.991 I/k       ( 241[ 5996.383757] Freezing user space processes ... 1): a:-1: tms:set acs_stun_serve[ 5996.389343] [738781423 ERROR-HI_IR]:IR_STD_Read[664]:wait data err.
+raddress
+08-29 11:28:33.995 D/SWAPKSQLiteOpenHelper( 24(elapsed 0.012 seconds) 11): setParametedone.r:-1: primary ke
+y 'tms.acs_stun_[ 5996.408553] Freezing remaining freezable tasks ... serveraddress' no need to update(elapsed 0.001 seconds) .
+08-29 11:28:3done.3.996 D/CWMP (sw
+tr069/src/cwmp_parameter.c:1251)( 2411): cwmp_method_setParameterValues 1251 
+08-29 11:28:33.996 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = acs_stun_serverport
+08-29 11:28:33.996 D/k       ( 2411): b:-1: tms:get acs_stun_serverport
+08-29 11:28:33.997 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/wlan0/queues/rx-0
+08-29 11:28:33.997 W/Netd    ( 1448): No subsystem found in netlink event
+08-29 11:28:33.997 D/NetlinkEvent( 1448): Unexpected netlink message. type=0x11
+08-29 11:28:33.998 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/wlan0/queues/tx-0
+08-29 11:28:33.998 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/net/wlan0
+08-29 11:28:34.001 D/dalvikvm(30395): GC_FOR_ALLOC freed 1011K, 25% free 4598K/6100K, paused 46ms, total 46ms
+08-29 11:28:34.024 I/k       ( 2411): b:-1: tms:get name=acs_stun_serverport
+08-29 11:28:34.024 I/Tms     ( 2411): getParameterFormNative:-1: tms:get acs_stun_serverport
+08-29 11:28:34.024 D/Tms     ( 2411): setParameterFormNative:-1: tms:set acs_stun_serverport
+08-29 11:28:34.025 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/ieee80211/phy0/rfkill12
+08-29 11:28:34.027 I/k       ( 2411): a:-1: tms:set acs_stun_serverport
+08-29 11:28:34.034 D/SWAPKSQLiteOpenHelper( 2411): setParameter:-1: primary key 'tms.acs_stun_serverport' no need to update.
+08-29 11:28:34.039 D/CWMP (swtr069/src/cwmp_parameter.c:1251)( 2411): cwmp_method_setParameterValues 1251 
+08-29 11:28:34.039 D/CWMP (swtr069/src/cwmp_db.c:3789)( 2411): Device_ManagementServer_ConnectionRequestPassword 3789 paraname = acs_crpassword, writeable = 1
+08-29 11:28:34.039 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:34.039 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:34.056 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:34.056 I/Tms     ( 2411): getParameterFormNative:-1: tms:get isEncryptMark
+08-29 11:28:34.056 D/Tms     ( 2411): getParameterFormNative:-1: tms:get pname = isEncryptMark
+08-29 11:28:34.056 D/k       ( 2411): b:-1: tms:get isEncryptMark
+08-29 11:28:34.057 I/AOService( 1460): hdmi_observer  remove@/devices/platform/hiusb-ehci.0/usb1/1-2/ieee80211/phy0
+08-29 11:28:34.079 I/k       ( 2411): b:-1: tms:get name=isEncryptMark
+08-29 11:28:34.079 I/Tms[ 5996.991009] PM suspend OK
+[ 5996.993687] SIL9293 Suspend OK
+[ 5996.996773] Vi suspend OK
+[ 5996.999422] VENC suspend OK
+[ 5997.002244] AENC suspend OK
+[ 5997.005062] KEYLED suspend OK
+[ 5997.008057] JPGE suspend OK
+[ 5997.010884] PNG suspend OK
+[ 5997.013717] VDEC suspend OK
+[ 5997.016563] ADEC suspend OK
+[ 5997.019389] AFLT suspend OK
+[ 5997.052669] AO suspend OK
+[ 5997.055332] AI suspend OK
+[ 5997.057979] ADSP suspend OK
+[ 5997.060800] SYNC suspend OK
+[ 5997.063643] ADVCA suspend OK
+[ 5997.066547] OTP suspend OK
+[ 5997.069322] CIPHER suspend OK
+[ 5997.072329] DEMUX suspend OK
+[ 5997.075238] I2C suspend OK
+[ 5997.077979] TDE suspend OK
+[ 5997.131658] VO suspend OK
+[ 5997.265642] HDMI suspend OK
+[ 5997.408648] DISP suspend OK
+[ 5997.411473] IR suspend OK
+[ 5997.414105] GPIO suspend OK
+
+[END] 2017/8/29 11:29:16

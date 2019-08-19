@@ -1,0 +1,149 @@
+    常用的git命令
+	   
+	   1： git config --global user.name "yourname"   配置全局的gitusername
+	   2:  git config --global user.email "youremail" 配置全局的gitemail
+	   3:  git config --list 列出所有的git配置
+	   
+	   配置git仓库；
+	     1： 首先新建一个空的文件夹，
+		 2： 进入gitbash  使用命令git init 进行仓库的初始化 ｛Initialized empty Git repository in /Users/michael/learngit/.git/｝
+		
+
+        添加文件：
+		     第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+             第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支
+         1： git add filename  将git 仓库的文件添加到git暂存区
+         2： git commit -m "information"  将暂存区的文件添加到git仓库
+         3： git status  此命令用来查看	当前git 仓库的状态
+         4： git diff   此命令用来查看当前文件和仓库中文件的区别
+                 git diff  filename  用来对比某一个修改了的文件
+				 git diff  commitId  用来和某一个版本进行对比
+				 git diff  HEAD  -- readme.txt  将readme.txt和版本最新的进行对比
+         5： git log  用来查看当前仓库的提交的信息
+		         git log  --pretty=oneline   仅仅显示总要的信息
+				 git reflog 用来查看更加详细的修改日志，当使用了硬回退之后
+         6：git当中使用HEAD表示当前的最新版本， HEAD^表示向前一个版本 HEAD^^表示向前两个版本 往前100个版本 HEAD~100
+         7:	git reset  用来进行版本的回退	
+		     git  reset HEAD   app/src/main/java/net/sunniwell/myapplicationrecyclerview/MainActivity.java 
+			   用来针对某一个文件进行回退
+
+                       git reset --hard   commitId 表示向某一个版本进行强制回退本地修改不再保留
+                       git reset --soft 软回退，
+                       git reset --mixed  使用混合型回退，	
+         撤销修改：
+					1：如果某次修改你的修改有错误，并不想使用这一次的修改，那么就可以使用git checkout  -- filename 来使工作区域
+					的修改全部撤销。一种情况是你的修改已经提交到了暂存 区域，现在撤回就和添加到暂存区域中的文件一样；另一种是你
+					的修改还没有提交到暂存区域现在撤回就和版本库中的文件一样。总之这个命令就是让你的修改回到最近一次git add 或者
+					gitcommit 的状态。注意 git checkout 后面的参数，如果搞错就有可能是另一种含义的命令了。当然，如果你已经git add，那就可以使用git reset HEAD filename 将某个文件回退到版本仓库中的最新的版本
+	     文件的删除：
+					1：如果你想从git仓库当中删除一个文件应该怎么办呢？当然 ，你可以现在仓库当中先删除文件，然后git status 查看当前的修改，如果你确实想删除， 使用git rm  filename 来删除这个文件， 然后git commit
+					2:如果你是误删的话就可以使用gitcheckout -- filename来将这个文件进行恢复 
+					
+	     8： git 分支切换：
+		   git  checkout   app/src/main/java/net/sunniwell/myapplicationrecyclerview/MainActivity.java 
+		       表明从仓库来还原 这个文件
+		   git branch -a  查看git所有分支
+		   git checkout -b master   等同于  git branch  master  ， git checkout master。  创建master分支，并且从当前分支切换到master分支
+		    git remote -v
+sunniwell	ssh://gerrit.sys.sunniwell.net/android-hisilicon/hi3798mv200-nougat-20161104/platform/device/sunniwell/apps (fetch)
+sunniwell	ssh://gerrit.sys.sunniwell.net/android-hisilicon/hi3798mv200-nougat-20161104/platform/device/sunniwell/apps (push)
+		    git pull sunniwell master 关联远端 sunniwell到当前的msater
+        9： git push sunniwell HEAD:refs/for/master   sunniwell 远程地址   HEAD当前分支， master远程分支   对于gerrit必须 要添加refs/for/来表明
+		$ git pull <远程主机名> <远程分支名>:<本地分支名>
+		10： 同一个仓库push到两个远程地址
+		    ------------------------------ 1.若现在本地有一个已经和github远程仓库关联好的本地仓库，平时都会将本地仓库push到github上。
+
+2.有一天突然发现"码云"这个远程仓库网站，咦！这个还可以创建private仓库，挺不错的。
+
+3.那我就有想法了= =，我想要把我现在在做的这个项目不仅push到github上（因为之前这个项目已经push过很多次了，半途而废不太好），而且也要push到码云上（毕竟可以创建私人仓库，安全点）。
+
+4.那就开始动手吧。
+
+5.首先将本地仓库（已经关联过github远程仓库）再次关联远程仓库（码云的远程仓库）。$ git remote add MYorigin git@gitee.com:luyuefeng/lr-manager.git
+$ git push MYorigin master
+		-------------------------------
+		
+	使用远程仓库：
+	  1：使用github的仓库，上传本地的ssh公钥
+	  2： github创建仓库 然后会有这个仓库的地址 
+	       你可以创建一个新的仓库，
+		    git init
+            git add README.md
+			git commit -m "first commit"
+			git remote add origin https://github.com/CHENVICTORY/chendegittestcangku.git 如果https比较慢还可以使用 ssh的命令 git clone git@github.com:CHENVICTORY/chendegittestcangku.git
+			git push -u origin master
+		或者push一个已有的仓库
+			git remote add origin https://github.com/CHENVICTORY/chendegittestcangku.git
+			git push -u origin master
+			git push origin  Head:refs/for/master
+    分支的使用：
+	   分支的创建：
+					git checkout  -b  hill 参数 -b表示创建并切换到新的分支此条命令相当于： 
+	                git branch hill  创建新hill的分支
+					git checkout hill 切换到新的hill分支
+					git branch -all 表示查看所有的分支
+					git merge  branchname 合并分支到当前分支
+					git branch -d branchname 删除某个分支
+	    解决冲突：git merge 之后如果有冲突的话，就进行冲突的修改，本地的文件当中是含有冲突的信息的，在本地文件当中进行修改，然后再次提交，提交之后就没有冲突了。
+		
+		分支管理策略： 
+					通常的git合并，一般采用的是 fast forward 模式这样有缺点，一点删除了分支之后，就丢失了这个分支的信息。
+					git merge --no-ff -m "merge with no-ff" dev  使用非fast forward模式进行合并，这样即使删除了分支以后还可以进行恢复
+					分支策略
+
+					在实际开发中，我们应该按照几个基本原则进行分支管理：
+
+						首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+
+						那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+
+						你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+
+		Bug分支：
+					git stash 将正在修改的内容存入，但是并没有提交（对于某些正在修改的内容，现在不能提交，但是有不能进行消除）
+					git stash apply 将存入的未合入的内容弹出
+					git status drop 将stash内容进行消除
+					git status pop  等于上面两个命令的和
+					git stash list  查看stash当中的存入的内容
+					$ git stash apply stash@{0} 恢复指定的内容
+				
+	    Feature分支：当添加一个新的功能的时候，需要添加一些代码，这样就需要一个新的分支进行管理
+		           git checkout -b feature-feichuan 创建并切换到新的分支上去
+				   如果一个分支还没有被合并到主分支上，使用命令删除
+				   $ git branch  -d  feature-feichuan
+				   error: The branch 'feature-feichuan' is not fully merged.
+					If you are sure you want to delete it, run 'git branch -D feature-feichuan'. 这样会提示没有合并，删除失败，那么就需要使用 -D进行删除
+					
+		多人协作：
+					git remote  此命令用来查看远端仓库的信息
+					git remote  -v 查看远端仓库的详细信息
+					git push origin master  将本地的修改push到远端分支
+					git push origin  dev    将本地的修改push到dev分支
+					
+		git标签：在仓库当中，找到某一个时间点的代码可以通过commitid来进行，但是如果使用tag，给这个commit添加一个有意义的解释这样就更好找了。
+		          git tag  information 在当前的仓库当中使用 在当前的版本号下贴上一个标签
+				  git tag  information  commitId  给某一个commitId贴上标签
+				  git  tag 查看当前的所有tag
+				  git show  tagname  查看tag对应版本的详细信息
+				  git tag -a v0.1 -m "version 0.1 released" 3628164  -a表明tag名称 -m表示说明文字
+				  git log --pretty=oneline --abbrev-commit
+				  git tag  -d  tagname  删除一个标签
+				  git push origin tagname 将标签推送到远端
+				  git push origin --tags  将所有的标签都进行推送
+				  如果标签已经推送到远端，那么就要先从本地删除
+				  git tag  -d  tagname  删除本地的tag
+				  git push  origin ：refs/tags/tagname
+				  
+		git 配置别名：
+					 git config --global alias.st status  将st配置为status的别名 
+					 
+		搭建git服务器：
+					git init --bare sample.git 创建一个空的仓库
+					git clone swapk@10.10.10.251:/home/swapk/chenguo/work/git/sample.git
+					swapk@10.10.10.251:/home/swapk/chenguo/work/git/SWUpgradeImpl.git
+					SWUpgrade
+					swapk@10.10.10.251:/home/swapk/chenguo/work/git/SWUpgrade.git
+	   
+	  
+		
+					

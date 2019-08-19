@@ -1,0 +1,9 @@
+
+
+1: 首先确定项目的apk，以及项目群的名字， gerrit申请创建项目， 
+    android-apk-source/Kongfu/apk/customize/SWIPTVImpl   Kongfu 表示项目群的名字， apk表示是apk代码，customize表示是项目自己有定制的东西
+	                             /master/SWNtpImpl                                                   master 表示项目通用的apk，
+    android-apk-source/Banana/apk/TBO-K140A/SWProductService                                         TBO-k140a 项目名称 表示项目特有的apk
+	                             /core/SWActionImpl                                                   core 表示项目的核心代码
+2： 项目审批， 批准之后 修改manifest当中的项目dereadme和default.xml
+git clone ssh://chenguo@gt-gerrit.sys.sunniwell.net:29418/android-apk-release/TBO-K140A-2

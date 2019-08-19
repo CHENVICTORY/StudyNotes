@@ -1,0 +1,35 @@
+$ history
+    2  git log .
+    3  git log .
+    4  git reste --
+    5  git reste - h
+    6  git reste --help
+    7  git reste --NM
+    8  git
+    9  git reset
+   10  git reset -MMMV
+   11  git reset --hard
+   12  git rest --hard  08e9e7d2f383ce82e68c8874f5a4bc2ed10e4d51  // 使当前代码回退到某一个时间结点
+   13  git reset --hard  08e9e7d2f383ce82e68c8874f5a4bc2ed10e4d51
+   14  git log .
+   15  git status
+   16  history
+   17  git add .
+   18  git status                                                // 查看当前的代码修改的状态
+   19  git commit -m "项目初始化，添加readme和项目apk的源代码地址。Change-Id: I0000000000000000000000000000000000000000 Signed-off-by: chenguo <chenguo@sunniwell.net>" // 提交代码
+   20  git status
+   21  git status
+   22  git log .
+   23  git reset --hard  08e9e7d2f383ce82e68c8874f5a4bc2ed10e4d51
+   24  git status .
+   25  git log .
+   26  git status
+   27  git add .
+   28  git status
+   29  git commit -m "项目初始化，添加readme和项目apk的源代码地址。Change-Id: I0000000000000000000000000000000000000000 Signed-off-by: chenguo <chenguo@sunniwell.net>"
+   30  git status
+   31  git log .
+   32  git push origin  Head:refs/for/master
+   33  git status
+   34  git status .
+   35  history

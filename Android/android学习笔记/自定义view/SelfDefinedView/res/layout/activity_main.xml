@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+      xmlns:myViewXmls="http://schemas.android.com/apk/res/net.sunniwell.study.selfdefinedview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:id="@+id/main_tv_showtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <net.sunniwell.study.selfdefinedview.view.SWMyView
+         android:id="@+id/app_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        myViewXmls:attr1="false"
+        myViewXmls:attr2="1"
+        android:focusable="true" 
+        />
+        
+     
+</RelativeLayout>

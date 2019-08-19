@@ -1,0 +1,7 @@
+
+由于使用了错误的参数进行判断，现修正。Change-Id: I0000000000000000000000000000000000000000 Signed-off-by: chenguo <chenguo@sunniwell.net>
+
+
+
+8G40 HD channel hangs when playing for 1 to 1.5 days
+Installing APK on the box
